@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Sugarizer: un goût de Sugar sur n'importe quelle machine</title>
+    <title>Sugarizer: le goût de Sugar sur n'importe quelle machine</title>
 	
 	<link href="../styles.css" rel="stylesheet" type="text/css" />
   </head>
@@ -17,14 +17,14 @@
 			<img src="../images/sugarizer.png" class="logo"/>
 			<a href="http://server.sugarizer.org"><img src="../images/play.png" title="Exécuter !" class="play"/></a>
 		</div>
-		<div class="baseline"><i>Un goût de Sugar sur n'importe quelle machine</i></div>
+		<div class="baseline"><i>Le goût de Sugar sur n'importe quelle machine</i></div>
 	</div>
 
 	
     <div class="text">
 		<p>La <a href="http://sugarlabs.org">plate-forme pédagogique Sugar</a> est la première plate-forme pédagogique au monde. Développée pour le projet <a href="http://laptop.org">One Laptop per Child</a>,
 		elle est utilisée par presque 3 millions d'enfants partout dans le monde. Avec <strong>Sugarizer</strong>, vous pouvez découvrir la plate-forme pédagogique Sugar sur n'importe quelle machine: du minuscule RaspberryPI
-		  au gros PC/Mac en passant par la tablet Android/iOS. Profitez de l'expérience et aidez-nous à faire en sorte que Sugar atteigne tous les enfants sur toutes les machines dans tous les pays.</p>
+		  au gros PC/Mac en passant par une tablet Android/iOS. Profitez de l'expérience et aidez-nous à faire en sorte que Sugar atteigne tous les enfants sur toutes les machines dans tous les pays.</p>
     </div>
 	
 	<div class="architecture">
@@ -32,7 +32,7 @@
 		<ul>
 			<li><a href="#thinclient">Client léger</a>: un accès distant à Sugarizer via un navigateur,</li>
 			<li><a href="#client">Client</a>: Sugarizer s'exécutant localement,</li>
-			<li><a href="#server">Serveur</a>: pour exécuter les fonctionnalités distante de Sugarizer.</li>
+			<li><a href="#server">Serveur</a>: pour exécuter les fonctionnalités distantes de Sugarizer.</li>
 		<ul>
 	</div>
 
@@ -118,8 +118,8 @@ Il peut fonctionner sur n'importe quelle machine avec une version récente de Ch
 	<p>Les fonctionnalités du Serveur Sugarizer sont notamment:</p>
 	<ul>
 	<li>Accès Client léger Sugarizer,</li>
-	<li><i>Stockage des sauvegardes et partages pour les Clients et Clients légers (Pas encore implementé).</i></li>
-	<li><i>Gestion de la collaboration entre les Clients/Clients légers sur le réseau (Pas encore implementé),</i></li>
+	<li>Espace de stockage partagé pour les Clients et Clients légers,</li>
+	<li>Gestion de la collaboration entre les Clients/Clients légers sur le réseau (Partiellement implementé),</li>
 	<li><i>"Store" d'activités pour les Clients (Pas encore implementé),</i></li>
 	</ul>
 	
@@ -130,6 +130,9 @@ Il peut fonctionner sur n'importe quelle machine avec une version récente de Ch
 	</td>
 	</tr>	
 	</table>
+	
+	<iframe frameborder="0" width="480" height="270" src="http://www.dailymotion.com/embed/video/x1zypes" allowfullscreen></iframe><p><a href="http://www.dailymotion.com/video/x1zypes_sugarizer-server-features_school" target="_blank"><i>Démonstration en vidéo des fonctionnalités du Serveur Sugarizer</i></a></p></iframe>
+	<br/>
 	
 	<p>Pour exécuter votre propre Serveur Sugarizer, suivre les étapes ci-dessous. Les commandes indiquées sont pour l'installation sur une machine Debian vierge, elles peuvent être différentes pour une autre plate-forme ou sur une machine déjà installée:</p>
 	<ol>
@@ -143,7 +146,7 @@ sudo ln -s ../mods-available/proxy.load proxy.load
 sudo ln -s ../mods-available/proxy_http.load proxy_http.load
 sudo vi /etc/apache2/sites-available/default  # Set to all value for /var/www AllowOverride
 sudo /etc/init.d/apache2 restart</pre>
-	<li><b>Installer Node.js</b>: Installez Node.js et le gestionnaire de package npm. Voir <a href="http://nodejs.org/">ici</a> pour plus d'informations.</li>
+	<li><b>Installer Node.js</b>: Installer Node.js et le gestionnaire de package npm. Voir <a href="http://nodejs.org/">ici</a> pour plus d'informations.</li>
 <pre>
 sudo apt-get install python g++ make checkinstall fakeroot
 src=$(mktemp -d) && cd $src
@@ -171,7 +174,7 @@ sudo nohup node sugarizer.js > /home/root/sugarizer.log &
 sudo iptables -A INPUT -i eth0 -p tcp --dport 8039 -j ACCEPT   # Presence 
 sudo iptables -A OUTPUT -p tcp --dport 8039 -j ACCEPT    # Presence</pre>
 	</ol>
-	<p>Pour vérifier votre installation, exécuter "http://&lt;server name&gt;/sugarizer" dans votre navigateur: vous devez voir la page d'accueil avec les activités. Puis, rendez-vous sur la vue Journal view et vérifiez que les 2 icônes pour accéder à la zone privée et partagée du serveur sont visibles.</p>
+	<p>Pour vérifier votre installation, exécuter "http://&lt;server name&gt;/sugarizer" dans votre navigateur: vous devez voir la page d'accueil avec les activités. Puis, rendez-vous sur la vue Journal et vérifier que les 2 icônes pour accéder à la zone privée et partagée du serveur sont visibles.</p>
 		
 	<div class="compatibility">
 		<p>Sugarizer est un logiciel open source basé sur la <a href="http://www.apache.org/licenses/LICENSE-2.0">licence Apache 2</a>, le code source est disponible sur Github <a href="https://github.com/llaske/sugarizer">ici</a>.</p>
