@@ -20,7 +20,15 @@
 		</div>
 		<div class="baseline"><i>A taste of Sugar on any device</i></div>
 	</div>
-
+	<a id="stores"/>
+	<div class="stores">
+		<a href="https://play.google.com/store/apps/details?id=org.olpc_france.sugarizer" class="onestore"><img src="images/googleplay.png" title="Get on Google Play!"/></a>
+		<a href="https://itunes.apple.com/us/app/sugarizer/id978495303" class="onestore"><img src="images/applestore.png" title="Get on Apple Store!"/></a>
+		<a href="https://chrome.google.com/webstore/detail/sugarizer/omfgclgehghdlloggibhgicnlldjiboo" class="onestore"><img src="images/chromewebstore.png" title="Get on Chrome Web Store!"/></a>
+		<a href="http://www.amazon.com/gp/product/B00NKK7PZA" class="onestore"><img src="images/amazonappstore.png" title="Get on Amazon Store!"/></a>
+		<a href="https://marketplace.firefox.com/app/sugarizer/" class="onestore"><img src="images/firefoxmarketplace.png" title="Get on Firefox Marketplace!"/></a>
+		<a href="https://f-droid.org/repository/browse/?fdid=org.olpc_france.sugarizer" class="onestore"><img src="images/fdroid.png" title="Get on F-Droid!"/></a>
+	</div>
 	
     <div class="text">
 		<p>The <a href="http://sugarlabs.org">Sugar Learning Platform</a> is a leading learning platform developed for the <a href="http://laptop.org">One Laptop per Child</a> 
@@ -53,7 +61,7 @@
 	<li>Sugar Local data store storage - limited by the browser to 5Mb (see <a href="http://en.wikipedia.org/wiki/Web_Storage">here</a>),</li>
 	<li>Running of remote stored Sugar Web Activities,</li>
 	<li>Backup or sharing of local storage content to the Server,</li>
-	<li>Collaboration (Partially implemented)</li>
+	<li>Presence and collaboration</li>
 	</ul>
 	<p>You can <font class="important-text">run Sugarizer</font> <a href="http://server.sugarizer.org">here</a> but every Sugarizer Server could also provide a Thin Client access.</p>
 	</td>
@@ -69,7 +77,7 @@
 	<tr>
 	<td>
 	<p>Sugarizer Client is Sugarizer installed locally on the device so it does not require any access to the Server - it works stand-alone. Server access could be required only when it needs network features. Sugarizer could work on any device with a recent Chrome/Chromium version and has also been tested successfully on Firefox, Safari and IE. 
-	Sugarizer Client is available for PC or for Android.</p>
+	Sugarizer Client is available for PC, for Android, iOS, Chrome Web App and for Firefox OS devices.</p>
 	
 	<p class="margin">To <font class="important-text">install Sugarizer on a PC</font> (GNU Linux/Mac OS/Windows), download the file <a href="org.olpc-france.sugarizer.zip">org.olpc-france.sugarizer.zip</a>, unzip its content, then launch Chrome using the command line:</p>
 	<pre>
@@ -79,10 +87,19 @@
 	
 	<a href="org.olpc-france.sugarizer.zip" class="download-button">Download for PC</a>
 	
-	<p class="margin">To <font class="important-text">install Sugarizer on Android</font>, first "enable installation from unknown sources" in the Android device settings to allow the installion of an application outside Google Play (see <a href="http://www.tech-recipes.com/rx/22616/android-allow-installation-of-non-market-apps/">here</a> to learn how). 
+	<p class="margin">Note that if your browser is Chrome you could <font class="important-text">install Sugarizer as a Chrome Web App</font>, just go to the Chrome Web Store (see <a href="#stores">here</a>) and click on it.
+	It will avoid you any installation.</p>
+	
+	<p class="margin">To <font class="important-text">install Sugarizer on Android</font>, you could install it directly from Google Play, Amazon App Store or F-Droid (see <a href="#stores">here</a>).
+	However if you don't want to use stores, you could download it directly. First "enable installation from unknown sources" in the Android device settings to allow the installation of an application outside Google Play (see <a href="http://www.tech-recipes.com/rx/22616/android-allow-installation-of-non-market-apps/">here</a> to learn how). 
 	Then download the file <a href="org.olpc-france.sugarizer.apk">org.olpc-france.sugarizer.apk</a> from your browser and accept conditions.</p>
 	
 	<a href="org.olpc-france.sugarizer.apk" class="download-button">Download for Android</a>
+	
+	<p class="margin">To <font class="important-text">install Sugarizer on Firefox OS</font>, you could install it directly from the Firefox Marketplace (see <a href="#stores">here</a>).
+	However if you don't want to use the marketplace, you could download it directly. Just click on the button below and follow instructions on the next screen.</p>
+	
+	<a href="firefoxos" class="download-button">Download for Firefox OS</a>
 	
 	<p>Features of Sugarizer Client include:</p>
 	<ul>
@@ -90,8 +107,7 @@
 	<li>Sugar Local data store storage - limited by the browser to 5Mb (see <a href="http://en.wikipedia.org/wiki/Web_Storage">here</a>),</li>
 	<li>Running of locally stored Sugar Web Activities,</li>
 	<li>Capability to connect to a server to backup or sharing local storage to the Server,</li>
-	<li>Collaboration (Partially implemented),</li>
-	<li><i>Ability to download locally new activity coming from the Server (Not yet implemented).</i></li>	
+	<li>Presence and collaboration</li>
 	</ul>
 	</td>
 	<td>
@@ -116,8 +132,7 @@
 	<ul>
 	<li>Sugarizer Thin Client access,</li>
 	<li>Backup and shared storage for Client and Thin Client,</li>	
-	<li>Collaboration handling between Client/Thin Client on the same network (Partially implemented),</li>
-	<li><i>Activity Store for Client (Not yet implemented).</i></li>
+	<li>Presence and collaboration handling between Client/Thin Client on the same network</li>
 	</ul>
 	
 	<p>A <font class="important-text">Sugarizer server instance</font> is accessible <a href="http://server.sugarizer.org">here</a>.</p>
@@ -175,7 +190,7 @@ sudo iptables -A OUTPUT -p tcp --dport 8039 -j ACCEPT    # Presence</pre>
 	
 	<div class="compatibility">
 		<p>Sugarizer is an open source software under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2 licence</a>, source code is available on Github <a href="https://github.com/llaske/sugarizer">here</a>.</p>
-		<p>© 2013-2014 Lionel Laské, Sugar Labs Inc and Contributors.</p>
+		<p>© 2013-2015 Lionel Laské, Sugar Labs Inc and Contributors.</p>
 		<p></p>
 		<p>Image credits: Play by P.J. Onori from the Noun Project, Responsive Design by Benni from the Noun Project, 
 Server image by aLf from the Noun Project, Cloud by Dmitry Baranovskiy from the Noun Project, Tablet by Konstantin Velichko from the Noun Project.</p>

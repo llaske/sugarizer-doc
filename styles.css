@@ -64,6 +64,17 @@ pre {
 	color: black;
 }
 
+.stores {
+	margin-top: 5%;
+	width: 100%;
+	text-align: center;
+	vertical-align: top;
+}
+
+.onestore {
+	margin-right: 20px;
+}
+
 .text {
 	margin-top: 50px;
 	font-family: Verdana;
@@ -137,7 +148,7 @@ pre {
 	font-style:normal;
 	height:40px;
 	line-height:40px;
-	width:200px;
+	width:250px;
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 0px #810e05;

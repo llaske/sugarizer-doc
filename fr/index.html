@@ -19,7 +19,14 @@
 		</div>
 		<div class="baseline"><i>Le goût de Sugar sur n'importe quelle machine</i></div>
 	</div>
-
+	<div class="stores">
+		<a href="https://play.google.com/store/apps/details?id=org.olpc_france.sugarizer" class="onestore"><img src="../images/googleplay.png" title="Télécharger sur Google Play!"/></a>
+		<a href="https://itunes.apple.com/us/app/sugarizer/id978495303" class="onestore"><img src="../images/applestore.png" title="Télécharger sur l'Apple Store!"/></a>
+		<a href="https://chrome.google.com/webstore/detail/sugarizer/omfgclgehghdlloggibhgicnlldjiboo" class="onestore"><img src="../images/chromewebstore.png" title="Télécharger sur Chrome Web Store!"/></a>		
+		<a href="http://www.amazon.com/gp/product/B00NKK7PZA" class="onestore"><img src="../images/amazonappstore.png" title="Télécharger sur Amazon Store !"/></a>
+		<a href="https://marketplace.firefox.com/app/sugarizer/" class="onestore"><img src="../images/firefoxmarketplace.png" title="Télécharger sur Firefox Marketplace!"/></a>
+		<a href="https://f-droid.org/repository/browse/?fdid=org.olpc_france.sugarizer" class="onestore"><img src="../images/fdroid.png" title="Télécharger sur F-Droid!"/></a>		
+	</div>
 	
     <div class="text">
 		<p>La <a href="http://sugarlabs.org">plate-forme pédagogique Sugar</a> est la première plate-forme pédagogique au monde. Développée pour le projet <a href="http://laptop.org">One Laptop per Child</a>,
@@ -53,7 +60,7 @@
 	<li>Stockage local du datastore - limité par le navigateur à 5Mo (voir <a href="http://en.wikipedia.org/wiki/Web_Storage">ici</a>),</li>
 	<li>Exécution d'activités Sugar Web stockées à distance,</li>
 	<li>Sauvegarde et partage des contenus locaux sur le serveur,</li>
-	<li>Collaboration (Partiellement implementée)</li>
+	<li>Présence et collaboration</li>
 	</ul>
 	<p>Vous pouvez <font class="important-text">exécuter Sugarizer</font> <a href="http://server.sugarizer.org">ici</a> mais chaque Serveur Sugarizer peut également fournir un accès Client léger Sugarizer.</p>
 	</td>
@@ -72,7 +79,7 @@
 	Des accès Serveur peuvent néanmoins être nécessaires pour utiliser les fonctionnalités réseau.
 Il peut fonctionner sur n'importe quelle machine avec une version récente de Chrome/Chromium, 
 	il a aussi été testé avec succès sur Firefox, Safari et IE.  
-	Le Client Sugarizer est disponible sur PC et sur Android.</p>
+	Le Client Sugarizer est disponible sur PC, sur Android, iOS, Chrome Web App et sur Firefox OS.</p>
 	
 	<p class="margin">Pour <font class="important-text">installer Sugarizer sur un PC</font> (GNU Linux/Mac OS/Windows), télécharger le fichier <a href="../org.olpc-france.sugarizer.zip">org.olpc-france.sugarizer.zip</a>, décompresser son contenu puis lancer Chrome en utilisant la ligne de commande:</p>
 	<pre>
@@ -82,10 +89,19 @@ Il peut fonctionner sur n'importe quelle machine avec une version récente de Ch
 	
 	<a href="../org.olpc-france.sugarizer.zip" class="download-button">Télécharger pour PC</a>
 	
-	<p class="margin">Pour <font class="important-text">installer Sugarizer sur Android</font>, commencer par "autoriser l'installation depuis des sources inconnues" dans les paramètres Android. Cela permet  l'installation d'applications ne provenant pas de Google Play (voir <a href="http://www.tech-recipes.com/rx/22616/android-allow-installation-of-non-market-apps/">ici</a> pour apprendre comment). 
+	<p class="margin">Notez que si votre navigateur est Chrome vous pouvez <font class="important-text">installer Sugarizer en tant que Chrome Web App</font>, rendez-vous simplement sur Chrome Web Store (voir <a href="#stores">ici</a>) et cliquez pour l'installer.
+	cela vous évitera toute installation.</p>
+	
+	<p class="margin">Pour <font class="important-text">installer Sugarizer sur Android</font>, vous pouvez le télécharger directement depuis Google Play, Amazon App Store ou F-Droid (voir <a href="#stores">ici</a>).
+	Cependant, si vous ne voulez pas utiliser les stores, vous pouvez le télécharger directement. Commencer par "autoriser l'installation depuis des sources inconnues" dans les paramètres Android. Cela permet  l'installation d'applications ne provenant pas de Google Play (voir <a href="http://www.tech-recipes.com/rx/22616/android-allow-installation-of-non-market-apps/">ici</a> pour apprendre comment). 
 	Puis télécharger le fichier <a href="../org.olpc-france.sugarizer.apk">org.olpc-france.sugarizer.apk</a> depuis le navigateur de votre Android et accepter les conditions d'installation.</p>
 	
 	<a href="../org.olpc-france.sugarizer.apk" class="download-button">Télécharger pour Android</a>
+	
+	<p class="margin">Pour <font class="important-text">installer Sugarizer sur Firefox OS</font>, vous pouvez le télécharger directement depuis la Firefox Marketplace (voir <a href="#stores">ici</a>).
+	Cependant, si vous ne voulez pas utiliser le store Firefox, vous pouvez le télécharger directement cliquer sur le bouton ci-dessous et suivre les instructions qui vont apparaître.</p>
+	
+	<a href="../firefoxos" class="download-button">Télécharger pour Firefox OS</a>
 	
 	<p>Les fonctionnalités du Client Sugarizer sont notamment:</p>
 	<ul>
@@ -93,8 +109,7 @@ Il peut fonctionner sur n'importe quelle machine avec une version récente de Ch
 	<li>Stockage local du datastore - limité par le navigateur à 5Mo (voir <a href="http://en.wikipedia.org/wiki/Web_Storage">ici</a>),</li>
 	<li>Exécution d'activités Sugar Web stockées localement,</li>
 	<li>Sauvegarde et partage des contenus locaux sur le serveur,</i></li>
-	<li>Collaboration (Partiellement implementé),</li>
-	<li><i>Possibilité de télécharger localement de nouvelles activités en provenance du Serveur (Pas encore implementé).</i></li>
+	<li>Présence et collaboration</li>
 	</ul>
 	</td>
 	<td>
@@ -119,8 +134,7 @@ Il peut fonctionner sur n'importe quelle machine avec une version récente de Ch
 	<ul>
 	<li>Accès Client léger Sugarizer,</li>
 	<li>Espace de stockage partagé pour les Clients et Clients légers,</li>
-	<li>Gestion de la collaboration entre les Clients/Clients légers sur le réseau (Partiellement implementé),</li>
-	<li><i>"Store" d'activités pour les Clients (Pas encore implementé),</i></li>
+	<li>Gestion de la présence et de la collaboration entre les Clients/Clients légers sur le réseau</li>
 	</ul>
 	
 	<p>Une instance du <font class="important-text">Serveur Sugarizer</font> (uniquement l'accès Client léger) est utilisable <a href="http://server.sugarizer.org">ici</a>.</p>
@@ -178,7 +192,7 @@ sudo iptables -A OUTPUT -p tcp --dport 8039 -j ACCEPT    # Presence</pre>
 		
 	<div class="compatibility">
 		<p>Sugarizer est un logiciel open source basé sur la <a href="http://www.apache.org/licenses/LICENSE-2.0">licence Apache 2</a>, le code source est disponible sur Github <a href="https://github.com/llaske/sugarizer">ici</a>.</p>
-		<p>© 2013-2014 Lionel Laské, Sugar Labs Inc and Contributors.</p>
+		<p>© 2013-2015 Lionel Laské, Sugar Labs Inc and Contributors.</p>
 		<p></p>
 		<p>Crédits images: Play by P.J. Onori from the Noun Project, Responsive Design by Benni from the Noun Project, 
 Server image by aLf from the Noun Project, Cloud by Dmitry Baranovskiy from the Noun Project, Tablet by Konstantin Velichko from the Noun Project.</p>
