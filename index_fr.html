@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The Sugar Learning Platform is a leading learning platform developed for the One Laptop per Child project and used every day by nearly 3 million children around the world. With Sugarizer, you could discover the Sugar Learning Platform on any device: from the tiny Raspberry PI to the small Android/iOS tablet or the bigger PC/Mac. Enjoy the experience and help us reach every children on every device in every country.">
+  <meta name="description" content="La plate-forme pédagogique Sugar est la première plate-forme pédagogique au monde. Développée pour le projet One Laptop per Child, elle est utilisée par presque 3 millions d'enfants partout dans le monde. Avec Sugarizer, vous pouvez découvrir la plate-forme pédagogique Sugar sur n'importe quelle machine: du minuscule RaspberryPI au gros PC/Mac en passant par la tablet Android/iOS. Profitez de l'expérience et aidez-nous à faire en sorte que Sugar atteigne tous les enfants sur toutes les machines dans tous les pays.">
   <meta name="author" content="Sugar Labs community">
-  <title>Sugarizer | A taste of Sugar on any device</title>
+  <title>Sugarizer | un goût de Sugar sur n'importe quelle machine</title>
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
           </li>
           <li>
               <a href="#home" class="page-scroll">
-                <span class="menu-title">Home</span>
+                <span class="menu-title">Accueil</span>
                 <span class="dot"></span>
               </a>
           </li>
@@ -42,7 +42,7 @@
           </li>
           <li>
               <a href="#websites" class="page-scroll">
-                <span class="menu-title">More</span>
+                <span class="menu-title">Plus</span>
                 <span class="dot"></span>
               </a>
           </li>
@@ -53,10 +53,10 @@
         <div class="row hero-header" id="home">
           <div class="col-md-7">
             <img src="img/logo.png" class="logo">
-            <h1>A taste of <a href="http://www.sugarlabs.org" title="Sugar Labs"><strong>Sugar</strong></a> on any device</h1>
-            <h3>With Sugarizer, you can discover the Sugar Learning Platform on any device</h3>
-            <h4><i>Used every day by nearly 3 million children around the world, Sugar is a leading learning platform developed for the One Laptop per Child project. With Sugarizer, it's now on your device.</i></h4>
-            <a href="http://server.sugarizer.org/" target="_blank" title="Sugarizer Server" class="btn btn-lg btn-red">Try now <span class="ti-arrow-right"></span></a>
+            <h1>Un goût de <a href="http://www.sugarlabs.org" title="Sugar Labs"><strong>Sugar</strong></a> sur n'importe quelle machine</h1>
+            <h3>Avec Sugarizer, vous pouvez découvrir la plate-forme pédagogique Sugar sur n'importe quelle machine</h3>
+            <h4><i>Développée pour le projet One Laptop per Child, Sugar est utilisée par presque 3 millions d'enfants partout dans le monde. Avec Sugarizer, Sugar est maintenant sur votre machine.</i></h4>
+            <a href="http://server.sugarizer.org/" target="_blank" title="Sugarizer Server" class="btn btn-lg btn-red">Exécuter maintenant <span class="ti-arrow-right"></span></a>
 
           </div>
           <div class="col-md-5 hidden-xs">
@@ -68,21 +68,28 @@
       <div class="container-fluid" id="components">
         <!-- Start: Desc -->
         <div class="row me-row content-ct">
-          <h2 class="row-title">Sugarizer is distributed in the form of 3 components:</h2>
+          <h2 class="row-title">Sugarizer est distribué de 3 manières:</h2>
           <div class="col-md-4 feature">
             <img src="img/sugarizer_thinclient.svg" height="90" class="architecture-image"/>
-            <h3>Thin client</h3>
-            <p> It could work on any device with a recent Chrome/Chromium version, and has also been tested successfully on Firefox, Safari and IE. Sugarizer Thin Client doesn't need any installation on the device but requires a permanent access to a Sugarizer Server.</p>
+            <h3>Client léger</h3>
+            <p>Le Client léger permet d'exécuter Sugarizer depuis un navigateur. Il peut fonctionner sur n'importe quelle machine avec une version récente de Chrome/Chromium, 
+	il a aussi été testé avec succès sur Firefox, Safari et IE. 
+	Le Client léger Sugarizer ne nécessite aucune installation sur la machine mais doit disposer d'un accès permanent à un Serveur Sugarizer.</p>
           </div>
           <div class="col-md-4 feature">
             <img src="img/sugarizer_client.svg" height="90" class="architecture-image"/>
             <h3>Client</h3>
-            <p>Sugarizer installed locally on the device so it does not require any access to the Server - it works stand-alone. Sugarizer Client is available for PC/MacOS, for Android, iOS and Chrome Web App.</p>
+            <p>Sugarizer est installé localement sur la machine, il ne nécessite donc aucun accès Serveur - il peut fonctionner de manière autonome. 
+			Sugarizer Client est disponible pour PC/MacOS, Android, iOS et Chrome Web App.</p>
           </div>
           <div class="col-md-4 feature">
             <img src="img/sugarizer_server.svg" height="90" class="architecture-image"/>
-            <h3>Server</h3>
-            <p>Sugarizer Server is the back-end for network features of Sugarizer. It expose locally Thin Client so allow deployment of Sugarizer on a local server, for example on a school server. Sugarizer Server can also be used to provide collaboration features for Client and Thin Client on the network.</p>
+            <h3>Serveur</h3>
+            <p>
+			Le Serveur Sugarizer est le coeur des fonctions réseau de Sugarizer.
+			Cela signifie exposer le Client léger pour permettre le déploiement de Sugarizer sur une serveur local, par exemple un serveur d'école. 
+	Le Serveur Sugarizer permet aussi de fournir à travers le réseau des fonctions de collaboration aux Clients et Clients légers.
+</p>
           </div>
         </div>
         <!-- End: Desc -->
@@ -90,7 +97,7 @@
       <div class="container">
         <!-- Start: Apps -->
         <div class="row me-row content-ct app" id="apps">
-          <h2 class="row-title">Download Sugarizer app on...</h2>
+          <h2 class="row-title">Télécharger l'application Sugarizer sur...</h2>
           <div class="col-md-4 col-sm-6 feature">
             <a href="https://play.google.com/store/apps/details?id=org.olpc_france.sugarizer" title="Google Play">
             <img src="img/googleplay.jpg" class="app-img">
@@ -123,21 +130,21 @@
       <!-- Start: Websites -->
       <div class="container-fluid websites" id="websites">
         <div class="row me-row content-ct">
-          <h2 class="row-title">More information on...</h2>
+          <h2 class="row-title">Plus d'information...</h2>
           <div class="col-md-4 col-sm-4">
             <p class="web">GitHub</p>
-            <p>Sugarizer project on GitHub.</p>
-            <a href="https://github.com/llaske/sugarizer" title="Sugarizer GitHub" class="btn btn-lg btn-red">Open</a>
+            <p>Le projet Sugarizer sur GitHub.</p>
+            <a href="https://github.com/llaske/sugarizer" title="Sugarizer GitHub" class="btn btn-lg btn-red">Ouvrir</a>
           </div>
           <div class="col-md-4 col-sm-4">
             <p class="web">Wiki</p>
-            <p>Find anwsers for questions.</p>
-            <a href="http://wiki.sugarlabs.org/go/Sugarizer" title="Sugarizer Wiki page" class="btn btn-lg btn-red">Open</a>
+            <p>Trouver les réponses à vos questions.</p>
+            <a href="http://wiki.sugarlabs.org/go/Sugarizer" title="Sugarizer Wiki page" class="btn btn-lg btn-red">Ouvrir</a>
           </div>
           <div class="col-md-4 col-sm-4">
             <p class="web">Mailing List</p>
-            <p>Sugar devel mailing list.</p>
-            <a href="http://lists.sugarlabs.org/listinfo/sugar-devel" title="Sugar Mailing List" class="btn btn-lg btn-red">Open</a>
+            <p>Liste de diffusion Sugar devel.</p>
+            <a href="http://lists.sugarlabs.org/listinfo/sugar-devel" title="Mailing list" class="btn btn-lg btn-red">Ouvrir</a>
           </div>
         </div>
       </div>
@@ -147,12 +154,12 @@
       <div class="container-fluid footer">
         <div class="row footer-credit">
           <div class="col-md-6 col-sm-6">
-			<p>Sugarizer is an open source software under <a href="http://www.apache.org/licenses/LICENSE-2.0" title="_blank">Apache 2 licence</a>, source code is available on GitHub <a href="https://github.com/llaske/sugarizer" title="_blank">here</a>.</p><br/>
-            <p>&copy; 2013-2016, Lionel Laské, <a href="http://sugarlabs.org" title="_blank">Sugar Labs Inc</a> and Contributors.</p><br/>
+			<p>Sugarizer est un logiciel open source basé sur la  <a href="http://www.apache.org/licenses/LICENSE-2.0" title="_blank">licence Apache 2</a>, le code source est disponible sur GitHub <a href="https://github.com/llaske/sugarizer" title="_blank">ici</a>.</p><br/>
+            <p>&copy; 2013-2016, Lionel Laské, <a href="http://sugarlabs.org" title="_blank">Sugar Labs Inc</a> et Contributeurs.</p><br/>
 		  </div>
 		  <div class="col-md-6 col-sm-6">
-			<p>Original page design by: Piotr Antosz.</p><br/>
-            <p>Image credits: Play by P.J. Onori from the Noun Project, Responsive Design by Benni from the Noun Project, Server image by aLf from the Noun Project, Cloud by Dmitry Baranovskiy from the Noun Project, Tablet by Konstantin Velichko from the Noun Project.</p>
+			<p>Conception originale du site par: Piotr Antosz.</p><br/>
+            <p>Crédits images: Play by P.J. Onori from the Noun Project, Responsive Design by Benni from the Noun Project, Server image by aLf from the Noun Project, Cloud by Dmitry Baranovskiy from the Noun Project, Tablet by Konstantin Velichko from the Noun Project.</p>
           </div>
         </div>
       </div>
