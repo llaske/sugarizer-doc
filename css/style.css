@@ -107,21 +107,14 @@ a:hover, a:focus, a:active, a:visited {
 }
 
 .language {
-	padding-top: 7px;
-	padding-right: 7px;
-	padding-left: 7px;
-	padding-bottom: 4px;
-	background-color: #fcd93b;
-	display: inline-block;
+	position: absolute;
+	right: 1px;
+	margin: 5px;
 }
 
-.language img {
-	margin-left: 10px;
-}
-
-.lan-active {
-	background-color: yellow;
-	padding-bottom: 3px;
+.language img{
+	margin-bottom: 3px;
+	margin-left: 3px;
 }
 
 .hero-header {
@@ -315,6 +308,11 @@ ul.footer-menu li a:hover {
 ======================================== */
 
 /* Mobile */
+@media (max-width: 991px) {
+	.flag {
+		display: none !important;
+	}
+}
 
 @media (max-width: 767px) {
     .hero-header {

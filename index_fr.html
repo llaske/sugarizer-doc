@@ -50,10 +50,13 @@
       </nav>
       <div class="container-fluid">
         <div class="language">
-          <p>Langue:
-            <a href="index.html" title="English language"><img class="lan-disabled" src="img/flag-en.png" width="20px" height="20px" alt="English language"></a>
-            <a href="index_pl.html" title="Polish language"><img class="lan-disabled" src="img/flag-pl.png" width="20px" height="20px" alt="Polish language"></a>
-            <a href="index_fr.html" title="French language"><img class="lan-active" src="img/flag-fr.png" width="20px" height="20px" alt="French language"></a>
+          <p>
+            <img src="img/flag-fr.png" class="flag" width="20px">
+            <select class="selectpicker" onchange="location = this.options[this.selectedIndex].value;">
+              <option value="index_fr.html">French</option>
+              <option value="index.html">English</option>
+              <option value="index_pl.html">Polish</option>
+            </select>
           </p>
         </div>
         <!-- Start: Header -->
