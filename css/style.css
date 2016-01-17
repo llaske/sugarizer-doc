@@ -106,6 +106,16 @@ a:hover, a:focus, a:active, a:visited {
 	transform: scale(1.8);
 }
 
+.language {
+	position: absolute;
+	right: 1px;
+	margin: 5px;
+}
+
+.language img{
+	margin-bottom: 3px;
+	margin-left: 3px;
+}
 
 .hero-header {
 	background: #ffffff;
@@ -298,6 +308,11 @@ ul.footer-menu li a:hover {
 ======================================== */
 
 /* Mobile */
+@media (max-width: 991px) {
+	.flag {
+		display: none !important;
+	}
+}
 
 @media (max-width: 767px) {
     .hero-header {
@@ -323,6 +338,13 @@ ul.footer-menu li a:hover {
 				max-width: 50vw;
 		}
 }
+
+@media (max-width: 390px){
+	.hero-header h4{
+		display: none !important;
+	}
+}
+
 
 @media (max-width: 321px){
 	#home .btn{

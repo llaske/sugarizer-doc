@@ -49,6 +49,16 @@
         </ul>
       </nav>
       <div class="container-fluid">
+        <div class="language">
+          <p>
+            <img src="img/flag-fr.png" class="flag" width="20px">
+            <select class="selectpicker" onchange="location = this.options[this.selectedIndex].value;">
+              <option value="index_fr.html">French</option>
+              <option value="index.html">English</option>
+              <option value="index_pl.html">Polish</option>
+            </select>
+          </p>
+        </div>
         <!-- Start: Header -->
         <div class="row hero-header" id="home">
           <div class="col-md-7">
@@ -72,14 +82,14 @@
           <div class="col-md-4 feature">
             <img src="img/sugarizer_thinclient.svg" height="90" class="architecture-image"/>
             <h3>Client léger</h3>
-            <p>Le Client léger permet d'exécuter Sugarizer depuis un navigateur. Il peut fonctionner sur n'importe quelle machine avec une version récente de Chrome/Chromium, 
-	il a aussi été testé avec succès sur Firefox, Safari et IE. 
+            <p>Le Client léger permet d'exécuter Sugarizer depuis un navigateur. Il peut fonctionner sur n'importe quelle machine avec une version récente de Chrome/Chromium,
+	il a aussi été testé avec succès sur Firefox, Safari et IE.
 	Le Client léger Sugarizer ne nécessite aucune installation sur la machine mais doit disposer d'un accès permanent à un Serveur Sugarizer.</p>
           </div>
           <div class="col-md-4 feature">
             <img src="img/sugarizer_client.svg" height="90" class="architecture-image"/>
             <h3>Client</h3>
-            <p>Sugarizer est installé localement sur la machine, il ne nécessite donc aucun accès Serveur - il peut fonctionner de manière autonome. 
+            <p>Sugarizer est installé localement sur la machine, il ne nécessite donc aucun accès Serveur - il peut fonctionner de manière autonome.
 			Sugarizer Client est disponible pour PC/MacOS, Android, iOS et Chrome Web App.</p>
           </div>
           <div class="col-md-4 feature">
@@ -87,7 +97,7 @@
             <h3>Serveur</h3>
             <p>
 			Le Serveur Sugarizer est le coeur des fonctions réseau de Sugarizer.
-			Cela signifie exposer le Client léger pour permettre le déploiement de Sugarizer sur une serveur local, par exemple un serveur d'école. 
+			Cela signifie exposer le Client léger pour permettre le déploiement de Sugarizer sur une serveur local, par exemple un serveur d'école.
 	Le Serveur Sugarizer permet aussi de fournir à travers le réseau des fonctions de collaboration aux Clients et Clients légers.
 </p>
           </div>
