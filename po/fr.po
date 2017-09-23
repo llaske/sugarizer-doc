@@ -1,0 +1,210 @@
+#. extracted from ../locale.ini
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Tue Aug 29 2017 16:17:22 GMT+0200 (CEST)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: ini2po 0.0.1\n"
+
+#: menu-title
+msgctxt "menu-title"
+msgid "Home"
+msgstr "Accueil"
+
+#: menu-apps
+msgctxt "menu-apps"
+msgid "Apps"
+msgstr "Apps"
+
+#: menu-more
+msgctxt "menu-more"
+msgid "More"
+msgstr "Plus"
+
+#: head-taste
+msgctxt "head-taste"
+msgid "A taste of"
+msgstr "Un goût de"
+
+#: head-sugar-genitiv
+msgctxt "head-sugar-genitiv"
+msgid "Sugar"
+msgstr "Sugar"
+
+#: head-device
+msgctxt "head-device"
+msgid "on any device"
+msgstr "sur n'importe quelle machine"
+
+#: head-discover
+msgctxt "head-discover"
+msgid "With Sugarizer, you can discover the Sugar Learning Platform on any device"
+msgstr "Avec Sugarizer, vous pouvez découvrir la plate-forme pédagogique Sugar sur n'importe quelle machine"
+
+#: head-children
+msgctxt "head-children"
+msgid "Used every day by nearly 3 million children around the world, Sugar is a leading learning platform developed for the One Laptop per Child project. With Sugarizer, it's now on your device."
+msgstr "Développée pour le projet One Laptop per Child, Sugar est utilisée par presque 3 millions d'enfants partout dans le monde. Avec Sugarizer, Sugar est maintenant sur votre machine."
+
+#: head-try
+msgctxt "head-try"
+msgid "Try now"
+msgstr "Essayer"
+
+#: head-download
+msgctxt "head-download"
+msgid "Download"
+msgstr "Télécharger"
+
+#: head-source
+msgctxt "head-source"
+msgid "Source"
+msgstr "Source"
+
+#: content-components
+msgctxt "content-components"
+msgid "Sugarizer is distributed in the form of 3 components:"
+msgstr "Sugarizer est distribué de 3 manières:"
+
+#: head-web
+msgctxt "head-web"
+msgid "Web App"
+msgstr "Application Web"
+
+#: content-web
+msgctxt "content-web"
+msgid "It could work on any device with a recent browser version. Sugarizer Web App doesn't need any installation on the device but requires a permanent access to a Sugarizer Server."
+msgstr "L'Application Web permet d'exécuter Sugarizer depuis un navigateur. Il peut fonctionner sur n'importe quelle machine avec une version récente de navigateur. L'Application Web Sugarizer ne nécessite aucune installation sur la machine mais doit disposer d'un accès permanent à un Serveur Sugarizer."
+
+#: head-app
+msgctxt "head-app"
+msgid "App"
+msgstr "Application"
+
+#: content-app
+msgctxt "content-app"
+msgid "Sugarizer installed locally on the device so it does not require any access to the Server - it works stand-alone. Sugarizer App is available for PC/MacOS, for Android, iOS and Chrome Web App."
+msgstr "Sugarizer est installé localement sur la machine, il ne nécessite donc aucun accès Serveur - il peut fonctionner de manière autonome. L'Application Sugarizer est disponible pour PC/MacOS, Android, iOS et Chrome Web App."
+
+#: head-server
+msgctxt "head-server"
+msgid "Server"
+msgstr "Serveur"
+
+#: content-server
+msgctxt "content-server"
+msgid "Sugarizer Server is the back-end for network features of Sugarizer. It expose locally Web App so allow deployment of Sugarizer on a local server, for example on a school server. Sugarizer Server can also be used to provide collaboration features for App and Web App on the network."
+msgstr "Le Serveur Sugarizer est le coeur des fonctions réseau de Sugarizer. Cela signifie exposer l'Application Web pour permettre le déploiement de Sugarizer sur une serveur local, par exemple un serveur d'école. Le Serveur Sugarizer permet aussi de fournir à travers le réseau des fonctions de collaboration aux Applications et Applications Web."
+
+#: head-sugarizer
+msgctxt "head-sugarizer"
+msgid "Download Sugarizer app on..."
+msgstr "Télécharger l'application Sugarizer sur..."
+
+#: google-play
+msgctxt "google-play"
+msgid "Google Play"
+msgstr "Google Play"
+
+#: app-store
+msgctxt "app-store"
+msgid "App Store"
+msgstr "App Store"
+
+#: chrome-web-store
+msgctxt "chrome-web-store"
+msgid "Chrome Web Store"
+msgstr "Chrome Web Store"
+
+#: amazon-apps
+msgctxt "amazon-apps"
+msgid "Amazon Apps"
+msgstr "Amazon Apps"
+
+#: f-droid
+msgctxt "f-droid"
+msgid "F-Droid"
+msgstr "F-Droid"
+
+#: head-info
+msgctxt "head-info"
+msgid "More information on..."
+msgstr "Plus d'information..."
+
+#: gh
+msgctxt "gh"
+msgid "GitHub"
+msgstr "GitHub"
+
+#: gh-content
+msgctxt "gh-content"
+msgid "Sugarizer project on GitHub."
+msgstr "Le projet Sugarizer sur GitHub."
+
+#: open
+msgctxt "open"
+msgid "Open"
+msgstr "Ouvrir"
+
+#: wiki
+msgctxt "wiki"
+msgid "Wiki"
+msgstr "Wiki"
+
+#: wiki-content
+msgctxt "wiki-content"
+msgid "Find anwsers for questions."
+msgstr "Trouver les réponses à vos questions."
+
+#: mailing
+msgctxt "mailing"
+msgid "Mailing List"
+msgstr "Mailing List"
+
+#: mailing-content
+msgctxt "mailing-content"
+msgid "Sugar devel mailing list."
+msgstr "Liste de diffusion Sugar devel."
+
+#: oss
+msgctxt "oss"
+msgid "Sugarizer is an open source software under"
+msgstr "Sugarizer est un logiciel open source basé sur la"
+
+#: licence
+msgctxt "licence"
+msgid "Apache 2 licence"
+msgstr "licence Apache 2"
+
+#: code
+msgctxt "code"
+msgid "source code is available on GitHub"
+msgstr "le code source est disponible sur GitHub"
+
+#: here
+msgctxt "here"
+msgid "here"
+msgstr "ici"
+
+#: original
+msgctxt "original"
+msgid "Original page design by:"
+msgstr "Conception originale du site par:"
+
+#: antosz
+msgctxt "antosz"
+msgid "Piotr Antosz"
+msgstr "Piotr Antosz"
+
+#: credits
+msgctxt "credits"
+msgid "Image credits: Play by P.J. Onori from the Noun Project, Responsive Design by Benni from the Noun Project, Server image by aLf from the Noun Project, Cloud by Dmitry Baranovskiy from the Noun Project, Tablet by Konstantin Velichko from the Noun Project."
+msgstr "Crédits images: Play by P.J. Onori from the Noun Project, Responsive Design by Benni from the Noun Project, Server image by aLf from the Noun Project, Cloud by Dmitry Baranovskiy from the Noun Project, Tablet by Konstantin Velichko from the Noun Project."
+
