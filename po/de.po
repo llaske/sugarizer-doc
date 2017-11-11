@@ -1,0 +1,209 @@
+#. extracted from ../locale.ini
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Tue Aug 29 2017 16:17:22 GMT+0200 (CEST)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: ini2po 0.0.1\n"
+
+#: menu-title
+msgctxt "menu-title"
+msgid "Home"
+msgstr ""
+
+#: menu-apps
+msgctxt "menu-apps"
+msgid "Apps"
+msgstr ""
+
+#: menu-more
+msgctxt "menu-more"
+msgid "More"
+msgstr ""
+
+#: head-taste
+msgctxt "head-taste"
+msgid "A taste of"
+msgstr ""
+
+#: head-sugar-genitiv
+msgctxt "head-sugar-genitiv"
+msgid "Sugar"
+msgstr ""
+
+#: head-device
+msgctxt "head-device"
+msgid "on any device"
+msgstr ""
+
+#: head-discover
+msgctxt "head-discover"
+msgid "With Sugarizer, you can discover the Sugar Learning Platform on any device"
+msgstr ""
+
+#: head-children
+msgctxt "head-children"
+msgid "Used every day by nearly 3 million children around the world, Sugar is a leading learning platform developed for the One Laptop per Child project. With Sugarizer, it's now on your device."
+msgstr ""
+
+#: head-try
+msgctxt "head-try"
+msgid "Try now"
+msgstr ""
+
+#: head-download
+msgctxt "head-download"
+msgid "Download"
+msgstr ""
+
+#: head-source
+msgctxt "head-source"
+msgid "Source"
+msgstr ""
+
+#: content-components
+msgctxt "content-components"
+msgid "Sugarizer is distributed in the form of 3 components:"
+msgstr ""
+
+#: head-web
+msgctxt "head-web"
+msgid "Web App"
+msgstr ""
+
+#: content-web
+msgctxt "content-web"
+msgid "It could work on any device with a recent browser version. Sugarizer Web App doesn't need any installation on the device but requires a permanent access to a Sugarizer Server."
+msgstr ""
+
+#: head-app
+msgctxt "head-app"
+msgid "App"
+msgstr ""
+
+#: content-app
+msgctxt "content-app"
+msgid "Sugarizer installed locally on the device so it does not require any access to the Server - it works stand-alone. Sugarizer App is available for PC/MacOS, for Android, iOS and Chrome Web App."
+msgstr ""
+
+#: head-server
+msgctxt "head-server"
+msgid "Server"
+msgstr ""
+
+#: content-server
+msgctxt "content-server"
+msgid "Sugarizer Server is the back-end for network features of Sugarizer. It expose locally Web App so allow deployment of Sugarizer on a local server, for example on a school server. Sugarizer Server can also be used to provide collaboration features for App and Web App on the network."
+msgstr ""
+
+#: head-sugarizer
+msgctxt "head-sugarizer"
+msgid "Download Sugarizer app on..."
+msgstr ""
+
+#: google-play
+msgctxt "google-play"
+msgid "Google Play"
+msgstr ""
+
+#: app-store
+msgctxt "app-store"
+msgid "App Store"
+msgstr ""
+
+#: chrome-web-store
+msgctxt "chrome-web-store"
+msgid "Chrome Web Store"
+msgstr ""
+
+#: amazon-apps
+msgctxt "amazon-apps"
+msgid "Amazon Apps"
+msgstr ""
+
+#: f-droid
+msgctxt "f-droid"
+msgid "F-Droid"
+msgstr ""
+
+#: head-info
+msgctxt "head-info"
+msgid "More information on..."
+msgstr ""
+
+#: gh
+msgctxt "gh"
+msgid "GitHub"
+msgstr ""
+
+#: gh-content
+msgctxt "gh-content"
+msgid "Sugarizer project on GitHub."
+msgstr ""
+
+#: open
+msgctxt "open"
+msgid "Open"
+msgstr ""
+
+#: wiki
+msgctxt "wiki"
+msgid "Wiki"
+msgstr ""
+
+#: wiki-content
+msgctxt "wiki-content"
+msgid "Find anwsers for questions."
+msgstr ""
+
+#: mailing
+msgctxt "mailing"
+msgid "Mailing List"
+msgstr ""
+
+#: mailing-content
+msgctxt "mailing-content"
+msgid "Sugar devel mailing list."
+msgstr ""
+
+#: oss
+msgctxt "oss"
+msgid "Sugarizer is an open source software under"
+msgstr ""
+
+#: licence
+msgctxt "licence"
+msgid "Apache 2 licence"
+msgstr ""
+
+#: code
+msgctxt "code"
+msgid "source code is available on GitHub"
+msgstr ""
+
+#: here
+msgctxt "here"
+msgid "here"
+msgstr ""
+
+#: original
+msgctxt "original"
+msgid "Original page design by:"
+msgstr ""
+
+#: antosz
+msgctxt "antosz"
+msgid "Piotr Antosz"
+msgstr ""
+
+#: credits
+msgctxt "credits"
+msgid "Image credits: Play by P.J. Onori from the Noun Project, Responsive Design by Benni from the Noun Project, Server image by aLf from the Noun Project, Cloud by Dmitry Baranovskiy from the Noun Project, Tablet by Konstantin Velichko from the Noun Project."
+msgstr ""
