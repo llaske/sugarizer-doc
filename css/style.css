@@ -280,8 +280,50 @@ ul.footer-menu li a {
 ul.footer-menu li a:hover {
     color: #dd5138;
 }
+.selectpicker{
+    background-color: #404142;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    border: 0px;
+    padding:  3px;    			 
+}
+.styleSelect select {
+  background: transparent;
+  width: 120px;
+  padding: 0px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 25px;
+  -webkit-appearance: none;
+  color: white;
+  margin: 0px;
+}
 
-
+.styleSelect {
+  width: 100px;
+  height: 25px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #404142;
+  border: 0px;
+  margin-right: 125px;
+  padding-left: 18px;	
+}
+.flag{
+  background-color: #404142;
+  margin-top: 5px;
+  margin-right: 85px;
+  height: 25px;
+  width: 40px;
+}
+.flagLoc{
+}
+.language {
+   	display: inline-block;
+}
 .contact {
     background-color: #3a3a3a;
     color: #fff;
