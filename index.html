@@ -50,6 +50,22 @@
           </li>
         </ul>
       </nav>
+	<!-- Start: Language Selector -->
+	<div class="language" align="right">
+
+		<div class="styleSelect" style="display: inline-block;" >
+  		<select id="Lang" class="units">
+      			<option value ="0" onclick="document.webL10n.setLanguage('us') ; changeflag('us')">English</option>
+    			  <option value ="1" onclick="document.webL10n.setLanguage('es') ; changeflag('es')">Español</option>
+  			    <option value ="2" onclick="document.webL10n.setLanguage('pl') ; changeflag('pl')">Polski</option>
+  			    <option value ="3" onclick="document.webL10n.setLanguage('fr') ; changeflag('fr')">Français</option>
+  		</select>
+	</div>
+</div>
+	<div class="flagLoc" align="right">
+	  <img class="flag" id="flag" src="img/us.svg">
+	</div>
+	<!-- End: Language Selector -->
         <!-- Start: Header -->
         <div class="row hero-header" id="home">
           <div class="col-md-7">
@@ -160,7 +176,7 @@
             <p>&copy; 2013-2017, Lionel Laské, <a href="http://sugarlabs.org" title="Sugar Labs" target="_blank">Sugar Labs Inc.</a> and Contributors.</p><br/>
 		  </div>
 		  <div class="col-md-6 col-sm-6">
-			<p><span data-l10n-id="original">Original page design by:</span> <a href="http://piotrantosz.pl" title="Piotr Antosz website"><span data-l10n-id="antosz">Piotr Antosz</span></a>.</p><br/>
+			<p><span data-l10n-id="original">Original page design by:</span> <a href="https://piotr-antosz.pl" title="Piotr Antosz website"><span data-l10n-id="antosz">Piotr Antosz</span></a>.</p><br/>
             <p data-l10n-id="credits">Image credits: Play by P.J. Onori from the Noun Project, Responsive Design by Benni from the Noun Project, Server image by aLf from the Noun Project, Cloud by Dmitry Baranovskiy from the Noun Project, Tablet by Konstantin Velichko from the Noun Project.</p>
           </div>
         </div>
@@ -171,5 +187,29 @@
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery.easing.min.js"></script>
       <script src="js/scrolling-nav.js"></script>
+      <script type="text/javascript">
+        function changeflag(c){
+          document.getElementById('flag').src = "img/" + c + ".svg";
+        }
+	window.addEventListener('localized', function() {
+		lang = document.webL10n.getLanguage();
+		lang = lang[0] + lang[1];
+		switch(lang){
+		      case "us":
+			document.getElementById("Lang").value = '0';
+			break;
+		      case "es":
+			document.getElementById("Lang").value = '1';
+			break;
+		      case "pl":
+			document.getElementById("Lang").value = '2';
+			break;
+		      case "fr":
+			document.getElementById("Lang").value = '3';
+			break
+		    }
+    		document.getElementById('flag').src = "img/" + lang + ".svg";
+		}, false);
+      </script>
     </body>
     </html>
