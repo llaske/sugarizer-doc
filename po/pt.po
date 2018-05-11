@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Tue Aug 29 2017 16:17:22 GMT+0200 (CEST)\n"
-"PO-Revision-Date: 2018-05-10 18:41+0000\n"
+"PO-Revision-Date: 2018-05-11 14:19+0000\n"
 "Last-Translator: Paulo Francisco Slomp <slomp@ufrgs.br>\n"
 "Language-Team: Portuguese <http://translate.sugarizer.org/projects/sugarizer"
 "/sugarizer-website/pt/>\n"
@@ -33,12 +33,12 @@ msgstr "Mais"
 #: head-taste
 msgctxt "head-taste"
 msgid "A taste of"
-msgstr "Um toque de"
+msgstr "Prove um pouco do"
 
 #: head-sugar-genitiv
 msgctxt "head-sugar-genitiv"
 msgid "Sugar"
-msgstr "Açúcar"
+msgstr "Sugar"
 
 #: head-device
 msgctxt "head-device"
@@ -49,21 +49,21 @@ msgstr "Em qualquer dispositivo"
 msgctxt "head-discover"
 msgid "With Sugarizer, you can discover the Sugar Learning Platform on any device"
 msgstr ""
-"Com o sugarizer, você pode explorar a Plataforma se ensino Sugar em qualquer "
-"dipositivo"
+"Com o Sugarizer, você pode experimentar a Plataforma de Aprendizagem Sugar "
+"em qualquer dispositivo"
 
 #: head-children
 msgctxt "head-children"
 msgid "Used every day by nearly 3 million children around the world, Sugar is a leading learning platform developed for the One Laptop per Child project. With Sugarizer, it's now on your device."
 msgstr ""
 "Utilizado todos os dias por quase 3 milhões de crianças ao redor do mundo, "
-"Sugar é a plataforma de aprendizado líder desenvolvida para o projeto de um "
-"computador por criança. Com sugarizer, ela está agora em seu dispostivo."
+"Sugar é uma plataforma de aprendizagem líder desenvolvida para o projeto Um "
+"Laptop por Criança OLPC. Sugarizer está agora em seu dispositivo."
 
 #: head-try
 msgctxt "head-try"
 msgid "Try now"
-msgstr "Tente novamente"
+msgstr "Experimente agora"
 
 #: head-download
 msgctxt "head-download"
@@ -78,20 +78,20 @@ msgstr "Fonte"
 #: content-components
 msgctxt "content-components"
 msgid "Sugarizer is distributed in the form of 3 components:"
-msgstr "Sugarizer está distribuído na forma de 3 componentes:"
+msgstr "Sugarizer é distribuído de 3 maneiras:"
 
 #: head-web
 msgctxt "head-web"
 msgid "Web App"
-msgstr "Aplicativo da web"
+msgstr "Aplicação web"
 
 #: content-web
 msgctxt "content-web"
 msgid "It could work on any device with a recent browser version. Sugarizer Web App doesn't need any installation on the device but requires a permanent access to a Sugarizer Server."
 msgstr ""
-"Isso pode funcionar em qualquer dispositivo com uma versão recente do "
-"browser. O aplicativo sugarizer web não demanda nenhuma instalação no "
-"dispositivo, mas requer acesso permanente a um servidor sugarizer."
+"Funciona em qualquer dispositivo com uma versão recente de navegador web. A "
+"aplicação Sugarizer web não requer nenhuma instalação no dispositivo, mas "
+"necessita acesso permanente a um Servidor Sugarizer na Internet."
 
 #: head-app
 msgctxt "head-app"
@@ -102,9 +102,9 @@ msgstr "Aplicativo"
 msgctxt "content-app"
 msgid "Sugarizer installed locally on the device so it does not require any access to the Server - it works stand-alone. Sugarizer App is available for PC/MacOS, for Android, iOS and Chrome Web App."
 msgstr ""
-"Sugarizer instalado localmente no dispositivo para que não exija acesso ao "
-"servidor - funciona sozinho. O aplicativo sugarizer está disponível para PC/"
-"MacOS, android, iOS e Chrome Web App."
+"O Sugarizer instalado localmente no dispositivo não exije acesso ao servidor "
+"- funciona sem Internet. O aplicativo Sugarizer está disponível para PC/"
+"MacOS, Android, iOS e Chrome Web App."
 
 #: head-server
 msgctxt "head-server"
@@ -115,11 +115,11 @@ msgstr "Servidor"
 msgctxt "content-server"
 msgid "Sugarizer Server is the back-end for network features of Sugarizer. It expose locally Web App so allow deployment of Sugarizer on a local server, for example on a school server. Sugarizer Server can also be used to provide collaboration features for App and Web App on the network."
 msgstr ""
-"O servidor sugarizer é o back-end para recursos de rede do Sugarizer. Ele "
-"expõe localmente o aplicativo da web para permitir a implantação do "
+"O Servidor Sugarizer é o back-end de rede para recursos do Sugarizer. Ele "
+"expõe localmente o aplicativo da web para permitir a disponibilização do "
 "Sugarizer em um servidor local, por exemplo, em um servidor de uma escola. O "
-"Servidor Sugarizer também pode ser usado para fornecer recursos de "
-"colaboração para aplicativos e web aplicativos na rede."
+"servidor Sugarizer também pode ser usado para fornecer recursos de "
+"colaboração para aplicações e aplicativos web."
 
 #: head-sugarizer
 msgctxt "head-sugarizer"
@@ -164,7 +164,7 @@ msgstr "GitHub"
 #: gh-content
 msgctxt "gh-content"
 msgid "Sugarizer project on GitHub."
-msgstr "Projeto sugarizer no GitHub."
+msgstr "Projeto Sugarizer no GitHub."
 
 #: open
 msgctxt "open"
@@ -179,7 +179,7 @@ msgstr "Wiki"
 #: wiki-content
 msgctxt "wiki-content"
 msgid "Find anwsers for questions."
-msgstr "Encontre respostas para as perguntas."
+msgstr "Busque respostas para suas perguntas."
 
 #: mailing
 msgctxt "mailing"
@@ -189,7 +189,7 @@ msgstr "Lista de discussão"
 #: mailing-content
 msgctxt "mailing-content"
 msgid "Sugar devel mailing list."
-msgstr "Lista de discussão de Sugar devel."
+msgstr "Lista de discussão dos desenvolvedores do Sugar."
 
 #: oss
 msgctxt "oss"
@@ -209,7 +209,7 @@ msgstr "Código-fonte disponível no GitHub"
 #: here
 msgctxt "here"
 msgid "here"
-msgstr "Aqui"
+msgstr "aqui"
 
 #: original
 msgctxt "original"
