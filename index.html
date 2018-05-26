@@ -54,11 +54,11 @@
 	<div class="language" align="right">
 
 		<div class="styleSelect" style="display: inline-block;" >
-  		<select id="Lang" class="units">
-      			<option value ="0" onclick="document.webL10n.setLanguage('us') ; changeflag('us')">English</option>
-    			  <option value ="1" onclick="document.webL10n.setLanguage('es') ; changeflag('es')">Español</option>
-  			    <option value ="2" onclick="document.webL10n.setLanguage('pl') ; changeflag('pl')">Polski</option>
-  			    <option value ="3" onclick="document.webL10n.setLanguage('fr') ; changeflag('fr')">Français</option>
+  		<select id="Lang" class="units" onclick="changeflag(this.selectedIndex)"  onchange="changeflag(this.selectedIndex)">
+      			<option value ="0">English</option>
+    			  <option value ="1">Español</option>
+  			    <option value ="2">Polski</option>
+  			    <option value ="3">Français</option>
   		</select>
 	</div>
 </div>
@@ -172,7 +172,9 @@
       <div class="container-fluid footer">
         <div class="row footer-credit">
           <div class="col-md-6 col-sm-6">
-			<p><span data-l10n-id="oss">Sugarizer is an open source software under</span> <a href="http://www.apache.org/licenses/LICENSE-2.0" title="Apache License" target="_blank"><span data-l10n-id="licence">Apache 2 licence</span></a>, <span data-l10n-id="code">source code is available on GitHub</span> <a href="https://github.com/llaske/sugarizer" title="GitHub" target="_blank"><span data-l10n-id="here">here</span></a>.</p><br/>
+			<p><span data-l10n-id="oss">Sugarizer is an open source software under</span> <a href="http://www.apache.org/licenses/LICENSE-2.0" title="Apache License" target="_blank"><span data-l10n-id="licence">Apache 2 licence</span></a>, <span data-l10n-id="code">source code is available on GitHub</span> <a href="https://github.com/llaske/sugarizer" title="GitHub" target="_blank"><span data-l10n-id="here">here</span></a>.
+			<span data-l10n-id="activities">Most activities use this license too but some could use a different license, check activities credits to be sure.</span>
+			</p><br/>
             <p>&copy; 2013-2018, Lionel Laské, <a href="http://sugarlabs.org" title="Sugar Labs" target="_blank">Sugar Labs Inc.</a> and Contributors.</p><br/>
 		  </div>
 		  <div class="col-md-6 col-sm-6">
@@ -188,27 +190,18 @@
       <script src="js/jquery.easing.min.js"></script>
       <script src="js/scrolling-nav.js"></script>
       <script type="text/javascript">
+		var langs = ["us", "es", "pl", "fr"];
         function changeflag(c){
-          document.getElementById('flag').src = "img/" + c + ".svg";
+		  if (c == -1) return;
+		  lang = langs[c];
+		  document.webL10n.setLanguage(lang) ;
+          document.getElementById('flag').src = "img/" + lang + ".svg";
         }
 	window.addEventListener('localized', function() {
 		lang = document.webL10n.getLanguage();
 		lang = lang[0] + lang[1];
-		switch(lang){
-		      case "us":
-			document.getElementById("Lang").value = '0';
-			break;
-		      case "es":
-			document.getElementById("Lang").value = '1';
-			break;
-		      case "pl":
-			document.getElementById("Lang").value = '2';
-			break;
-		      case "fr":
-			document.getElementById("Lang").value = '3';
-			break
-		    }
-    		document.getElementById('flag').src = "img/" + lang + ".svg";
+		document.getElementById("Lang").value = langs.indexOf(lang);
+    	document.getElementById('flag').src = "img/" + lang + ".svg";
 		}, false);
       </script>
     </body>
