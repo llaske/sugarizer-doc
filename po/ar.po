@@ -1,235 +1,209 @@
+#. extracted from ../locale.ini
 msgid ""
 msgstr ""
-"Project-Id-Version: Portuguese (Sugarizer)\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-17 16:02+0000\n"
+"POT-Creation-Date: Tue Aug 29 2017 16:17:22 GMT+0200 (CEST)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Portuguese <http://translate.sugarizer.org/projects/sugarizer"
-"/sugarizer-website/pt/>\n"
-"Language: pt\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.16\n"
+"X-Generator: ini2po 0.0.1\n"
 
-#: menu-home
-msgctxt "menu-home"
+#: menu-title
+msgctxt "menu-title"
 msgid "Home"
-msgstr "Início"
+msgstr ""
 
 #: menu-apps
 msgctxt "menu-apps"
 msgid "Apps"
-msgstr "Apps"
+msgstr ""
 
 #: menu-more
 msgctxt "menu-more"
 msgid "More"
-msgstr "Mais"
+msgstr ""
 
 #: head-taste
 msgctxt "head-taste"
 msgid "A taste of"
-msgstr "Prove um pouco do"
+msgstr ""
 
 #: head-sugar-genitiv
 msgctxt "head-sugar-genitiv"
 msgid "Sugar"
-msgstr "Sugar"
+msgstr ""
 
 #: head-device
 msgctxt "head-device"
 msgid "on any device"
-msgstr "Em qualquer dispositivo"
+msgstr ""
 
 #: head-discover
 msgctxt "head-discover"
 msgid "With Sugarizer, you can discover the Sugar Learning Platform on any device"
 msgstr ""
-"Com o Sugarizer, você pode experimentar a Plataforma de Aprendizagem Sugar "
-"em qualquer dispositivo"
 
 #: head-children
 msgctxt "head-children"
 msgid "Used every day by nearly 3 million children around the world, Sugar is a leading learning platform developed for the One Laptop per Child project. With Sugarizer, it's now on your device."
 msgstr ""
-"Utilizado todos os dias por quase 3 milhões de crianças ao redor do mundo, "
-"Sugar é uma plataforma de aprendizagem líder desenvolvida para o projeto Um "
-"Laptop por Criança OLPC. Sugarizer está agora em seu dispositivo."
 
 #: head-try
 msgctxt "head-try"
 msgid "Try now"
-msgstr "Experimente agora"
+msgstr ""
 
 #: head-download
 msgctxt "head-download"
 msgid "Download"
-msgstr "Baixar"
+msgstr ""
 
 #: head-source
 msgctxt "head-source"
 msgid "Source"
-msgstr "Fonte"
+msgstr ""
 
 #: content-components
 msgctxt "content-components"
 msgid "Sugarizer is distributed in the form of 3 components:"
-msgstr "Sugarizer é distribuído de 3 maneiras:"
+msgstr ""
 
 #: head-web
 msgctxt "head-web"
 msgid "Web App"
-msgstr "Aplicação web"
+msgstr ""
 
 #: content-web
 msgctxt "content-web"
 msgid "It could work on any device with a recent browser version. Sugarizer Web App doesn't need any installation on the device but requires a permanent access to a Sugarizer Server."
 msgstr ""
-"Funciona em qualquer dispositivo com uma versão recente de navegador web. A "
-"aplicação Sugarizer web não requer nenhuma instalação no dispositivo, mas "
-"necessita acesso permanente a um Servidor Sugarizer na Internet."
 
 #: head-app
 msgctxt "head-app"
 msgid "App"
-msgstr "Aplicativo"
+msgstr ""
 
 #: content-app
 msgctxt "content-app"
 msgid "Sugarizer installed locally on the device so it does not require any access to the Server - it works stand-alone. Sugarizer App is available for PC/MacOS, for Android, iOS and Chrome Web App."
 msgstr ""
-"O Sugarizer instalado localmente no dispositivo não exije acesso ao servidor "
-"- funciona sem Internet. O aplicativo Sugarizer está disponível para PC/"
-"MacOS, Android, iOS e Chrome Web App."
 
 #: head-server
 msgctxt "head-server"
 msgid "Server"
-msgstr "Servidor"
+msgstr ""
 
 #: content-server
 msgctxt "content-server"
 msgid "Sugarizer Server is the back-end for network features of Sugarizer. It expose locally Web App so allow deployment of Sugarizer on a local server, for example on a school server. Sugarizer Server can also be used to provide collaboration features for App and Web App on the network."
 msgstr ""
-"O Servidor Sugarizer é o back-end de rede para recursos do Sugarizer. Ele "
-"expõe localmente o aplicativo da web para permitir a disponibilização do "
-"Sugarizer em um servidor local, por exemplo, em um servidor de uma escola. O "
-"servidor Sugarizer também pode ser usado para fornecer recursos de "
-"colaboração para aplicações e aplicativos web."
 
 #: head-sugarizer
 msgctxt "head-sugarizer"
 msgid "Download Sugarizer app on..."
-msgstr "Baixar o aplicativo Sugarizer em..."
+msgstr ""
 
 #: google-play
 msgctxt "google-play"
 msgid "Google Play"
-msgstr "Google Play"
+msgstr ""
 
 #: app-store
 msgctxt "app-store"
 msgid "App Store"
-msgstr "App Store"
+msgstr ""
 
 #: chrome-web-store
 msgctxt "chrome-web-store"
 msgid "Chrome Web Store"
-msgstr "Chrome Web Store"
+msgstr ""
 
 #: amazon-apps
 msgctxt "amazon-apps"
 msgid "Amazon Apps"
-msgstr "Amazon Apps"
+msgstr ""
 
 #: f-droid
 msgctxt "f-droid"
 msgid "F-Droid"
-msgstr "F-Droid"
+msgstr ""
 
 #: head-info
 msgctxt "head-info"
 msgid "More information on..."
-msgstr "Mais informações em..."
+msgstr ""
 
 #: gh
 msgctxt "gh"
 msgid "GitHub"
-msgstr "GitHub"
+msgstr ""
 
 #: gh-content
 msgctxt "gh-content"
 msgid "Sugarizer project on GitHub."
-msgstr "Projeto Sugarizer no GitHub."
+msgstr ""
 
 #: open
 msgctxt "open"
 msgid "Open"
-msgstr "Abrir"
+msgstr ""
 
 #: wiki
 msgctxt "wiki"
 msgid "Wiki"
-msgstr "Wiki"
+msgstr ""
 
 #: wiki-content
 msgctxt "wiki-content"
 msgid "Find anwsers for questions."
-msgstr "Busque respostas para suas perguntas."
+msgstr ""
 
 #: mailing
 msgctxt "mailing"
 msgid "Mailing List"
-msgstr "Lista de discussão"
+msgstr ""
 
 #: mailing-content
 msgctxt "mailing-content"
 msgid "Sugar devel mailing list."
-msgstr "Lista de discussão dos desenvolvedores do Sugar."
+msgstr ""
 
 #: oss
 msgctxt "oss"
 msgid "Sugarizer is an open source software under"
-msgstr "Sugarizer é um software de código aberto sob"
+msgstr ""
 
 #: licence
 msgctxt "licence"
 msgid "Apache 2 licence"
-msgstr "Licença Apache 2"
+msgstr ""
 
 #: code
 msgctxt "code"
 msgid "source code is available on GitHub"
-msgstr "Código-fonte disponível no GitHub"
+msgstr ""
 
 #: here
 msgctxt "here"
 msgid "here"
-msgstr "aqui"
-
-#: activities
-msgctxt "activities"
-msgid "Most activities use this license too but some could use a different license, check activities credits to be sure."
-msgstr "Most activities use this license too but some could use a different license, check activities credits to be sure."
+msgstr ""
 
 #: original
 msgctxt "original"
 msgid "Original page design by:"
-msgstr "Página original desenvolvida por:"
+msgstr ""
 
 #: antosz
 msgctxt "antosz"
 msgid "Piotr Antosz"
-msgstr "Piotr Antosz"
+msgstr ""
 
 #: credits
 msgctxt "credits"
 msgid "Image credits: Play by P.J. Onori from the Noun Project, Responsive Design by Benni from the Noun Project, Server image by aLf from the Noun Project, Cloud by Dmitry Baranovskiy from the Noun Project, Tablet by Konstantin Velichko from the Noun Project."
 msgstr ""
-"Créditos da imagem: Peça de P. J. Onori do Noun Project, design responsivo "
-"de Benni do Noun Project, imagem de servidor de aLf do Noun Project, cloud "
-"de Dmitry Baranovskiy do Noun Project, tablet de Konstantin Velichko do Noun "
-"Project."
