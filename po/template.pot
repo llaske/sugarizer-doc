@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Aug 29 2017 16:17:22 GMT+0200 (CEST)\n"
+"POT-Creation-Date: Tue Jul 17 2018 18:06:34 GMT+0200 (CEST)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,8 +13,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: ini2po 0.0.1\n"
 
-#: menu-title
-msgctxt "menu-title"
+#: menu-home
+msgctxt "menu-home"
 msgid "Home"
 msgstr ""
 
@@ -191,6 +191,11 @@ msgstr ""
 #: here
 msgctxt "here"
 msgid "here"
+msgstr ""
+
+#: activities
+msgctxt "activities"
+msgid "Most activities use this license too but some could use a different license, check activities credits to be sure."
 msgstr ""
 
 #: original
