@@ -39,13 +39,13 @@
           </li>
           <li>
               <a href="#features" class="page-scroll">
-                <span data-l10n-id="menu-features" class="menu-title">Apps</span>
+                <span data-l10n-id="menu-features" class="menu-title">Features</span>
                 <span class="dot"></span>
               </a>
           </li>
           <li>
               <a href="#apps" class="page-scroll">
-                <span data-l10n-id="menu-apps" class="menu-title">Apps</span>
+                <span data-l10n-id="menu-apps" class="menu-title">Download</span>
                 <span class="dot"></span>
               </a>
           </li>
@@ -57,38 +57,39 @@
           </li>
         </ul>
       </nav>
-	<!-- Start: Language Selector -->
-	<div class="language" align="right">
 
-		<div class="styleSelect" style="display: inline-block;" >
-  		<select id="Lang" class="units" onclick="changeflag(this.selectedIndex)"  onchange="changeflag(this.selectedIndex)">
-      			<option value ="0">English</option>
-    			  <option value ="1">Español</option>
-  			    <option value ="2">Polski</option>
-  			    <option value ="3">Français</option>
-  			    <option value ="4">Portuguese</option>
-  		</select>
-	</div>
-</div>
-	<div class="flagLoc" align="right">
-	  <img class="flag" id="flag" src="img/us.svg">
-	</div>
 	<!-- End: Language Selector -->
         <!-- Start: Header -->
-        <div class="row hero-header" id="home">
+		<section class="header-area" style="background-image: url('img/background.jpg');">
+			<!-- Start: Language Selector -->
+			<div class="language" align="right">
+
+				<div class="styleSelect" style="display: inline-block;" >
+		  		<select id="Lang" class="units" onclick="changeflag(this.selectedIndex)"  onchange="changeflag(this.selectedIndex)">
+		      			<option value ="0">English</option>
+		    			  <option value ="1">Español</option>
+		  			    <option value ="2">Polski</option>
+		  			    <option value ="3">Français</option>
+		  			    <option value ="4">Portuguese</option>
+		  		</select>
+			</div>
+		</div>
+			<div class="flagLoc">
+			  <img class="flag" id="flag" src="img/us.svg">
+			</div>
           <div class="col-md-7">
             <img src="img/logo.png" class="logo">
-            <h1><span data-l10n-id="head-taste">The leading learning platform for children</span></h1>
-            <h4><i data-l10n-id="head-children">Used every day by nearly 3 million children around the world, Sugar is a leading learning platform developed for the One Laptop per Child project. With Sugarizer, it's now accessible to any children.</i></h4>
-            <a href="http://try.sugarizer.org/" data-l10n-id="head-try" target="_blank" title="Try" class="btn btn-lg btn-red">Try now</a>
+            <h1 style="color:white;"><span data-l10n-id="head-taste">The leading learning platform for children</span></h1>
+            <h4><i style="color:white;" data-l10n-id="head-children">Used every day by nearly 3 million children around the world, Sugar is a leading learning platform developed for the One Laptop per Child project. With Sugarizer, it's now accessible to any children.</i></h4>
+			<br/>
+			<a href="http://try.sugarizer.org/" data-l10n-id="head-try" target="_blank" title="Try" class="btn btn-lg btn-red">Try now</a>
             <a href="#apps" data-l10n-id="head-download" title="Download" class="btn btn-lg btn-red page-scroll">Download</a>
             <a href="https://github.com/llaske/sugarizer/archive/v1.1.0.zip" data-l10n-id="head-source" title="Source" class="btn btn-lg btn-red">Source</a>
-
-          </div>
-          <div class="col-md-5 hidden-xs">
+          <!--div class="col-md-5 hidden-xs">
             <img src="img/sugar_animation.gif" class="screenshotes">
-          </div>
+		</div-->
         </div>
+		</section>
         <!-- End: Header -->
       </div>
 

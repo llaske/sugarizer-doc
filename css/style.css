@@ -222,6 +222,15 @@ a span.ti-twitter-alt {
 	flex-flow: row wrap;
 }
 
+.header-area {
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .activity-gallery-item {
 	display: flex;
 	flex-flow: row;
@@ -332,6 +341,7 @@ ul.footer-menu li a:hover {
   padding-left: 18px;
 }
 .flag{
+  position: absolute;
   background-color: #404142;
   margin-top: 5px;
   margin-right: 85px;
@@ -339,9 +349,14 @@ ul.footer-menu li a:hover {
   width: 40px;
 }
 .flagLoc{
+  position: absolute;
+  top: 10px;
+  right: 120px;
 }
 .language {
-   	display: inline-block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
 }
 .contact {
     background-color: #3a3a3a;
@@ -370,12 +385,6 @@ ul.footer-menu li a:hover {
 ======================================== */
 
 /* Mobile */
-@media (max-width: 991px) {
-	.flag {
-		display: none !important;
-	}
-}
-
 @media (max-width: 767px) {
     .hero-header {
         padding: 3em 1em 1em 1em;
