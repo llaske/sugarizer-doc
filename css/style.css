@@ -209,8 +209,27 @@ a span.ti-twitter-alt {
 	color: #4099ff;
 }
 
+#features {
+	background-color: #fcd93b;
+}
+
 #components {
 	background-color: #fcd93b;
+}
+
+.activity-gallery {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.activity-gallery-item {
+	display: flex;
+	flex-flow: row;
+	flex-direction: column;
+	flex: 0 0 0%;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
 .websites {
@@ -286,7 +305,7 @@ ul.footer-menu li a:hover {
     border-radius: 10px;
     width: 150px;
     border: 0px;
-    padding:  3px;    			 
+    padding:  3px;
 }
 .styleSelect select {
   background: transparent;
@@ -310,7 +329,7 @@ ul.footer-menu li a:hover {
   background: #404142;
   border: 0px;
   margin-right: 125px;
-  padding-left: 18px;	
+  padding-left: 18px;
 }
 .flag{
   background-color: #404142;
