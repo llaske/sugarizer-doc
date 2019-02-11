@@ -32,6 +32,7 @@ a:hover, a:focus, a:active, a:visited {
     line-height: none;
     border-radius: 4px;
 	margin-left: 10px;
+	margin-top: 10px;
 }
 .btn-red {
 	background-color: #dd5138;
@@ -135,6 +136,9 @@ a:hover, a:focus, a:active, a:visited {
 	opacity: 0.6;
     letter-spacing: 1px;
     margin: 2em 0;
+}
+.logo {
+	max-width: 95%;
 }
 .hero-header .logo {
 	max-width: 450px;
@@ -385,6 +389,15 @@ ul.footer-menu li a:hover {
 ======================================== */
 
 /* Mobile */
+@media (max-width: 530px) {
+	.flag {
+		display: none !important;
+	}
+	.styleSelect {
+		display: none !important;
+	}
+}
+
 @media (max-width: 767px) {
     .hero-header {
         padding: 3em 1em 1em 1em;
@@ -459,4 +472,31 @@ ul.footer-menu li a:hover {
         width: 49%;
         margin-right: 9px;
     }
+}
+
+@media (min-width: 1400px) {
+	body {
+	    font-size: 22px;
+	}
+	h4 {
+	    font-size: 24px;
+	}
+	h4 i {
+		line-height: 30px !important;
+	}
+	h3 {
+	    font-size: 30px;
+	}
+	h2 {
+	    font-size: 36px;
+	}
+	h1 {
+	    font-size: 42px;
+	}
+	.btn {
+		font-size: 18px;
+	}
+	.btn-lg {
+		font-size: 22px;
+	}
 }
