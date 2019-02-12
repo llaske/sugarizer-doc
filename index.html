@@ -1,424 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The Sugar Learning Platform is a leading learning platform developed for the One Laptop per Child project and used every day by nearly 3 million children around the world. With Sugarizer, you could discover the Sugar Learning Platform on any device: from the tiny Raspberry PI to the small Android/iOS tablet or the bigger PC/Mac. Enjoy the experience and help us reach every children on every device in every country.">
-  <meta name="author" content="Sugar Labs community">
-  <title>Sugarizer | The leading learning platform for children</title>
-  <script type="text/javascript" src="js/l10n.js"></script>
-  <link rel="prefetch" type="application/l10n" href="locale.ini" />
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/themify-icons.css" rel="stylesheet">
-  <link href='css/dosis-font.css' rel='stylesheet' type='text/css'>
-  <link href='css/fontawesome.min.css' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="The Sugar Learning Platform is a leading learning platform developed for the One Laptop per Child project and used every day by nearly 3 million children around the world. With Sugarizer, you could discover the Sugar Learning Platform on any device: from the tiny Raspberry PI to the small Android/iOS tablet or the bigger PC/Mac. Enjoy the experience and help us reach every children on every device in every country.">
+	<meta name="author" content="Sugar Labs community">
+	<title>Sugarizer | The leading learning platform for children</title>
+	<script type="text/javascript" src="js/l10n.js"></script>
+	<link rel="prefetch" type="application/l10n" href="locale.ini" />
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/themify-icons.css" rel="stylesheet">
+	<link href='css/dosis-font.css' rel='stylesheet' type='text/css'>
+	<link href='css/fontawesome.min.css' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    </head>
-    <body id="page-top" data-spy="scroll" data-target=".side-menu">
-      <nav class="side-menu">
-        <ul>
-          <li class="hidden active">
-              <a class="page-scroll" href="#page-top"></a>
-          </li>
-          <li>
-              <a href="#home" class="page-scroll">
-                <span data-l10n-id="menu-home" class="menu-title">Home</span>
-                <span class="dot"></span>
-              </a>
-          </li>
-          <li>
-              <a href="#features" class="page-scroll">
-                <span data-l10n-id="menu-features" class="menu-title">Features</span>
-                <span class="dot"></span>
-              </a>
-          </li>
-          <li>
-              <a href="#apps" class="page-scroll">
-                <span data-l10n-id="menu-apps" class="menu-title">Download</span>
-                <span class="dot"></span>
-              </a>
-          </li>
-          <li>
-              <a href="#websites" class="page-scroll">
-                <span data-l10n-id="menu-more" class="menu-title">More</span>
-                <span class="dot"></span>
-              </a>
-          </li>
-        </ul>
-      </nav>
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".side-menu">
+	<nav class="side-menu">
+		<ul>
+			<li class="hidden active">
+				<a class="page-scroll" href="#page-top"></a>
+			</li>
+			<li>
+				<a href="#home" class="page-scroll">
+					<span data-l10n-id="menu-home" class="menu-title">Home</span>
+					<span class="dot"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#features" class="page-scroll">
+					<span data-l10n-id="menu-features" class="menu-title">Features</span>
+					<span class="dot"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#apps" class="page-scroll">
+					<span data-l10n-id="menu-apps" class="menu-title">Download</span>
+					<span class="dot"></span>
+				</a>
+			</li>
+			<li>
+				<a href="#websites" class="page-scroll">
+					<span data-l10n-id="menu-more" class="menu-title">More</span>
+					<span class="dot"></span>
+				</a>
+			</li>
+		</ul>
+	</nav>
 
 	<!-- End: Language Selector -->
-        <!-- Start: Header -->
-		<section class="header-area" style="background-image: url('img/background.jpg');">
-			<!-- Start: Language Selector -->
-			<div class="language" align="right">
+	<!-- Start: Header -->
+	<section class="header-area" style="background-image: url('img/background.jpg');">
+		<!-- Start: Language Selector -->
+		<div class="language" align="right">
 
-				<div class="styleSelect" style="display: inline-block;" >
-		  		<select id="Lang" class="units" onclick="changeflag(this.selectedIndex)"  onchange="changeflag(this.selectedIndex)">
-		      			<option value ="0">English</option>
-		    			  <option value ="1">Español</option>
-		  			    <option value ="2">Polski</option>
-		  			    <option value ="3">Français</option>
-		  			    <option value ="4">Portuguese</option>
-		  		</select>
+			<div class="styleSelect" style="display: inline-block;" >
+				<select id="Lang" class="units" onclick="changeflag(this.selectedIndex)"  onchange="changeflag(this.selectedIndex)">
+					<option value ="0">English</option>
+					<option value ="1">Español</option>
+					<option value ="2">Polski</option>
+					<option value ="3">Français</option>
+					<option value ="4">Portuguese</option>
+				</select>
 			</div>
 		</div>
-			<div class="flagLoc">
-			  <img class="flag" id="flag" src="img/us.svg">
-			</div>
-          <div class="col-md-7">
-            <img src="img/logo.png" class="logo">
-            <h1 style="color:white;"><span data-l10n-id="head-taste">The leading learning platform for children</span></h1>
-            <h4><i style="color:white;line-height:24px" data-l10n-id="head-children">Used every day by nearly 3 million children around the world, Sugar is a leading learning platform developed for the One Laptop per Child project. With Sugarizer, it's now accessible to any children.</i></h4>
+		<div class="flagLoc">
+			<img class="flag" id="flag" src="img/us.svg">
+		</div>
+		<div class="col-md-7">
+			<img src="img/logo.png" class="logo">
+			<h1 style="color:white;"><span data-l10n-id="head-taste">The leading learning platform for children</span></h1>
+			<h4><i style="color:white;line-height:24px" data-l10n-id="head-children">Used every day by nearly 3 million children around the world, Sugar is a leading learning platform developed for the One Laptop per Child project. With Sugarizer, it's now accessible to any children.</i></h4>
 			<br/>
 			<a href="http://try.sugarizer.org/" data-l10n-id="head-try" target="_blank" title="Try now" class="btn btn-lg btn-red">Try now</a>
-            <a href="#apps" data-l10n-id="head-download" title="Install" class="btn btn-lg btn-red page-scroll">Download</a>
-            <a href="https://github.com/llaske/sugarizer/tree/v1.1.0" data-l10n-id="head-source" title="Source code" class="btn btn-lg btn-red">Source</a>
-          <!--div class="col-md-5 hidden-xs">
-            <img src="img/sugar_animation.gif" class="screenshotes">
+			<a href="#apps" data-l10n-id="head-download" title="Install" class="btn btn-lg btn-red page-scroll">Download</a>
+			<a href="https://github.com/llaske/sugarizer/tree/v1.1.0" data-l10n-id="head-source" title="Source code" class="btn btn-lg btn-red">Source</a>
+			<!--div class="col-md-5 hidden-xs">
+			<img src="img/sugar_animation.gif" class="screenshotes">
 		</div-->
-        </div>
-		</section>
-        <!-- End: Header -->
-      </div>
+	</div>
+</section>
+<!-- End: Header -->
+</div>
 
-	  <div class="container-fluid" id="features">
-        <!-- Start: Desc -->
-        <div class="row me-row content-ct">
-          <div class="col-md-4 feature">
-            <img src="img/children.svg" height="60" class="architecture-image"/>
-            <h3 data-l10n-id="headfeat-children">Children focused</h3>
-            <p data-l10n-id="feature-children">Sugarizer was thought for children between 6 and 12. The unique Sugarizer UI is discoverable, wholly intuitive, and use metaphors usable by children who don't know how to read.</p>
-          </div>
-          <div class="col-md-4 feature">
-            <img src="img/school.svg" height="60" class="architecture-image"/>
-            <h3 data-l10n-id="headfeat-school">Learn at school and beyond</h3>
-            <p data-l10n-id="feature-school">Sugarizer provide a set of "activities", not a set of applications. This is more than a new naming convention; it represents an intrinsic quality of the learning experience that could be use by children in the classroom or at home.</p>
-          </div>
-          <div class="col-md-4 feature">
-            <img src="img/collaborative.svg" height="60" class="architecture-image"/>
-            <h3 data-l10n-id="headfeat-collaborative">Collaborative</h3>
-            <p data-l10n-id="feature-collaborative">Everyone has the potential for being both a learner and a teacher. Sugarizer has chosen to put collaboration at the core of the user experience in order to realize this potential.</p>
-          </div>
-        </div>
-        <div class="row me-row content-ct">
-          <div class="col-md-4 feature">
-            <img src="img/approved.svg" height="60" class="architecture-image"/>
-            <h3 data-l10n-id="headfeat-approved">Field approved</h3>
-            <p data-l10n-id="feature-approved">Used every day by nearly 3 million children around the world, Sugar is a leading learning platform developed for the One Laptop per Child project. With Sugarizer, it's now accessible to any children.</p>
-          </div>
-          <div class="col-md-4 feature">
-            <img src="img/adblocker.svg" height="60" class="architecture-image"/>
-            <h3 data-l10n-id="headfeat-adblocker">Ads Free</h3>
-            <p data-l10n-id="feature-adblocker">95% of apps market for children in stores contain advertising! With Sugarizer you've got the guaranty to have 0% advertisement and 0% tracking tools included.</p>
-          </div>
-          <div class="col-md-4 feature">
-            <img src="img/opensource.svg" height="40" class="architecture-image"/>
-            <h3 data-l10n-id="headfeat-opensource">Open Source</h3>
-            <p data-l10n-id="feature-opensource">Sugarizer is a Free, Libre and Open Source Software. We believe that source code transparency, simple customization and free contents, are absolute requirements for a tool in children's hands.</p>
-          </div>
-        </div>
-        <!-- End: Desc -->
-	  </div>
+<div class="container-fluid" id="features">
+	<!-- Start: Desc -->
+	<div class="row me-row content-ct">
+		<div class="col-md-4 feature">
+			<img src="img/children.svg" height="60" class="architecture-image"/>
+			<h3 data-l10n-id="headfeat-children">Children focused</h3>
+			<p data-l10n-id="feature-children">Sugarizer was thought for children between 6 and 12. The unique Sugarizer UI is discoverable, wholly intuitive, and use metaphors usable by children who don't know how to read.</p>
+		</div>
+		<div class="col-md-4 feature">
+			<img src="img/school.svg" height="60" class="architecture-image"/>
+			<h3 data-l10n-id="headfeat-school">Learn at school and beyond</h3>
+			<p data-l10n-id="feature-school">Sugarizer provide a set of "activities", not a set of applications. This is more than a new naming convention; it represents an intrinsic quality of the learning experience that could be use by children in the classroom or at home.</p>
+		</div>
+		<div class="col-md-4 feature">
+			<img src="img/collaborative.svg" height="60" class="architecture-image"/>
+			<h3 data-l10n-id="headfeat-collaborative">Collaborative</h3>
+			<p data-l10n-id="feature-collaborative">Everyone has the potential for being both a learner and a teacher. Sugarizer has chosen to put collaboration at the core of the user experience in order to realize this potential.</p>
+		</div>
+	</div>
+	<div class="row me-row content-ct">
+		<div class="col-md-4 feature">
+			<img src="img/approved.svg" height="60" class="architecture-image"/>
+			<h3 data-l10n-id="headfeat-approved">Field approved</h3>
+			<p data-l10n-id="feature-approved">Used every day by nearly 3 million children around the world, Sugar is a leading learning platform developed for the One Laptop per Child project. With Sugarizer, it's now accessible to any children.</p>
+		</div>
+		<div class="col-md-4 feature">
+			<img src="img/adblocker.svg" height="60" class="architecture-image"/>
+			<h3 data-l10n-id="headfeat-adblocker">Ads Free</h3>
+			<p data-l10n-id="feature-adblocker">95% of apps market for children in stores contain advertising! With Sugarizer you've got the guaranty to have 0% advertisement and 0% tracking tools included.</p>
+		</div>
+		<div class="col-md-4 feature">
+			<img src="img/opensource.svg" height="40" class="architecture-image"/>
+			<h3 data-l10n-id="headfeat-opensource">Open Source</h3>
+			<p data-l10n-id="feature-opensource">Sugarizer is a Free, Libre and Open Source Software. We believe that source code transparency, simple customization and free contents, are absolute requirements for a tool in children's hands.</p>
+		</div>
+	</div>
+	<!-- End: Desc -->
+</div>
 
-	  	<div class="container" id="gallery">
-		  <div class="row me-row content-ct">
-		  <h2 class="row-title" data-l10n-id="gallery-title">Examples of activities:</h2>
-	  	  </div>
-		  <div class="card-deck activity-gallery">
-		    <div class="card activity-gallery-item">
-		      <img class="card-img-top" src="img/gears.png" width="200px" alt="Gears">
-		      <div class="card-body">
-		        <h3 class="card-title">Gears</h3>
-		        <p class="card-text" data-l10n-id="activity-gears-description">Gears is a tool to explore the ways in which gears and chains transmit motion. Draw your gears and see it coming to life.</p>
-		        <a href="img/gears.gif" target="_blank" class="btn btn-red" data-l10n-id="demo">Demo</a>
-		      </div>
-		    </div>
-		    <div class="card activity-gallery-item">
-		      <img class="card-img-top" src="img/abacus.png" width="200px" alt="Gears">
-		      <div class="card-body">
-		        <h3 class="card-title">Abacus</h3>
-		        <p class="card-text" data-l10n-id="activity-abacus-description">Abacus lets the learner explore different representations of numbers using different mechanical counting systems developed by the ancient Romans and Chinese.</p>
-		        <a href="img/abacus.gif" target="_blank" class="btn btn-red" data-l10n-id="demo">Demo</a>
-		      </div>
-		    </div>
-		    <div class="card activity-gallery-item">
-		      <img class="card-img-top" src="img/reflection.png" width="200px" alt="Gears">
-		      <div class="card-body">
-		        <h3 class="card-title">Reflection</h3>
-		        <p class="card-text" data-l10n-id="activity-reflection-description">Reflection is a game designed around reflective symmetry. The user modifies an image until it has reflective symmetry around either the horizontal or vertical axis.</p>
-		        <a href="img/reflection.gif" target="_blank" class="btn btn-red" data-l10n-id="demo">Demo</a>
-		      </div>
-		    </div>
-		    <div class="card activity-gallery-item">
-		      <img class="card-img-top" src="img/scratch.png" width="200px" alt="Gears">
-		      <div class="card-body">
-		        <h3 class="card-title">Scratch</h3>
-		        <p class="card-text" data-l10n-id="activity-scratch-description">Scratch is a full environment where you can program your own interactive stories, games, and animations.</p>
-		        <a href="img/scratch.gif" target="_blank" class="btn btn-red" data-l10n-id="demo">Demo</a>
-		      </div>
-		    </div>
-		    <div class="card activity-gallery-item">
-		      <img class="card-img-top" src="img/colormyworld.png" width="200px" alt="Gears">
-		      <div class="card-body">
-		        <h3 class="card-title">Color My World</h3>
-		        <p class="card-text" data-l10n-id="activity-colormyworld-description">Color My World activity let you explore the world and its countries. Fill countries with color you like or use the interactive mode to find location of countries on the offline map.</p>
-		        <a href="img/colormyworld.gif" target="_blank" class="btn btn-red" data-l10n-id="demo">Demo</a>
-		      </div>
-		    </div>
-		    <div class="card activity-gallery-item">
-		      <img class="card-img-top" src="img/gridpaint.png" width="200px" alt="Gears">
-		      <div class="card-body">
-		        <h3 class="card-title">Grid Paint</h3>
-		        <p class="card-text" data-l10n-id="activity-gridpaint-description">Grid Paint is a simple paint activity for kids to draw pictures using a grid of triangles. Never miss your drawing with Grid Paint activity!</p>
-		        <a href="img/gridpaint.gif" target="_blank" class="btn btn-red" data-l10n-id="demo">Demo</a>
-		      </div>
-		    </div>
-		    <div class="card activity-gallery-item">
-		      <img class="card-img-top" src="img/abecedarium.png" width="200px" alt="Gears">
-		      <div class="card-body">
-		        <h3 class="card-title">Abecedarium</h3>
-		        <p class="card-text" data-l10n-id="activity-abecedarium-description">Abecedarium is an abecedary activity to learn its alphabet using images, sounds and words.</p>
-		        <a href="img/abecedarium.gif" target="_blank" class="btn btn-red" data-l10n-id="demo">Demo</a>
-		      </div>
-		    </div>
-		    <div class="card activity-gallery-item">
-		      <img class="card-img-top" src="img/tamtammicro.png" width="200px" alt="Gears">
-		      <div class="card-body">
-		        <h3 class="card-title">Tam Tam Micro</h3>
-		        <p class="card-text" data-l10n-id="activity-tamtammicro-description">Tam Tam Micro is an activity to play instruments, sounds and noise of different type.</p>
-		        <a href="img/tamtammicro.gif" target="_blank" class="btn btn-red" data-l10n-id="demo">Demo</a>
-		      </div>
-		    </div>
-		  </div>
-		  <br/>
-  	  </div>
+<div class="container" id="gallery">
+	<div class="row me-row content-ct">
+		<h2 class="row-title" data-l10n-id="gallery-title">Examples of activities:</h2>
+	</div>
+	<div class="card-deck activity-gallery">
+		<div class="card activity-gallery-item">
+			<img class="card-img-top" src="img/gears.png" width="200px" alt="Gears">
+			<div class="card-body">
+				<h3 class="card-title">Gears</h3>
+				<p class="card-text" data-l10n-id="activity-gears-description">Gears is a tool to explore the ways in which gears and chains transmit motion. Draw your gears and see it coming to life.</p>
+				<a href="img/gears.gif" target="_blank" class="btn btn-red" data-l10n-id="demo">Demo</a>
+			</div>
+		</div>
+		<div class="card activity-gallery-item">
+			<img class="card-img-top" src="img/abacus.png" width="200px" alt="Gears">
+			<div class="card-body">
+				<h3 class="card-title">Abacus</h3>
+				<p class="card-text" data-l10n-id="activity-abacus-description">Abacus lets the learner explore different representations of numbers using different mechanical counting systems developed by the ancient Romans and Chinese.</p>
+				<a href="img/abacus.gif" target="_blank" class="btn btn-red" data-l10n-id="demo">Demo</a>
+			</div>
+		</div>
+		<div class="card activity-gallery-item">
+			<img class="card-img-top" src="img/reflection.png" width="200px" alt="Gears">
+			<div class="card-body">
+				<h3 class="card-title">Reflection</h3>
+				<p class="card-text" data-l10n-id="activity-reflection-description">Reflection is a game designed around reflective symmetry. The user modifies an image until it has reflective symmetry around either the horizontal or vertical axis.</p>
+				<a href="img/reflection.gif" target="_blank" class="btn btn-red" data-l10n-id="demo">Demo</a>
+			</div>
+		</div>
+		<div class="card activity-gallery-item">
+			<img class="card-img-top" src="img/scratch.png" width="200px" alt="Gears">
+			<div class="card-body">
+				<h3 class="card-title">Scratch</h3>
+				<p class="card-text" data-l10n-id="activity-scratch-description">Scratch is a full environment where you can program your own interactive stories, games, and animations.</p>
+				<a href="img/scratch.gif" target="_blank" class="btn btn-red" data-l10n-id="demo">Demo</a>
+			</div>
+		</div>
+		<div class="card activity-gallery-item">
+			<img class="card-img-top" src="img/colormyworld.png" width="200px" alt="Gears">
+			<div class="card-body">
+				<h3 class="card-title">Color My World</h3>
+				<p class="card-text" data-l10n-id="activity-colormyworld-description">Color My World activity let you explore the world and its countries. Fill countries with color you like or use the interactive mode to find location of countries on the offline map.</p>
+				<a href="img/colormyworld.gif" target="_blank" class="btn btn-red" data-l10n-id="demo">Demo</a>
+			</div>
+		</div>
+		<div class="card activity-gallery-item">
+			<img class="card-img-top" src="img/gridpaint.png" width="200px" alt="Gears">
+			<div class="card-body">
+				<h3 class="card-title">Grid Paint</h3>
+				<p class="card-text" data-l10n-id="activity-gridpaint-description">Grid Paint is a simple paint activity for kids to draw pictures using a grid of triangles. Never miss your drawing with Grid Paint activity!</p>
+				<a href="img/gridpaint.gif" target="_blank" class="btn btn-red" data-l10n-id="demo">Demo</a>
+			</div>
+		</div>
+		<div class="card activity-gallery-item">
+			<img class="card-img-top" src="img/abecedarium.png" width="200px" alt="Gears">
+			<div class="card-body">
+				<h3 class="card-title">Abecedarium</h3>
+				<p class="card-text" data-l10n-id="activity-abecedarium-description">Abecedarium is an abecedary activity to learn its alphabet using images, sounds and words.</p>
+				<a href="img/abecedarium.gif" target="_blank" class="btn btn-red" data-l10n-id="demo">Demo</a>
+			</div>
+		</div>
+		<div class="card activity-gallery-item">
+			<img class="card-img-top" src="img/tamtammicro.png" width="200px" alt="Gears">
+			<div class="card-body">
+				<h3 class="card-title">Tam Tam Micro</h3>
+				<p class="card-text" data-l10n-id="activity-tamtammicro-description">Tam Tam Micro is an activity to play instruments, sounds and noise of different type.</p>
+				<a href="img/tamtammicro.gif" target="_blank" class="btn btn-red" data-l10n-id="demo">Demo</a>
+			</div>
+		</div>
+	</div>
+	<br/>
+</div>
 
-      <div class="container-fluid" id="components">
-        <!-- Start: Desc -->
-        <div class="row me-row content-ct">
-          <h2 class="row-title" data-l10n-id="content-components">Sugarizer is distributed in the form of 3 components:</h2>
-          <div class="col-md-4 feature">
-            <img src="img/sugarizer_thinclient.svg" height="90" class="architecture-image"/>
-            <h3 data-l10n-id="head-web">Web App</h3>
-            <p data-l10n-id="content-web">It could work on any device with a recent browser version. Sugarizer Web App doesn't need any installation on the device but requires a permanent access to a Sugarizer Server.</p>
-          </div>
-          <div class="col-md-4 feature">
-            <img src="img/sugarizer_client.svg" height="90" class="architecture-image"/>
-            <h3 data-l10n-id="head-app">App</h3>
-            <p data-l10n-id="content-app">Sugarizer installed locally on the device so it does not require any access to the Server - it works stand-alone. Sugarizer App is available for Window/GNU-Linux/MacOS, for Android and iOS.</p>
-          </div>
-          <div class="col-md-4 feature">
-            <img src="img/sugarizer_server.svg" height="90" class="architecture-image"/>
-            <h3 data-l10n-id="head-server">Server</h3>
-            <p data-l10n-id="content-server">Sugarizer Server is the back-end for network features of Sugarizer. It expose locally Web App so allow deployment of Sugarizer on a local server, for example on a school server. Sugarizer Server can also be used to provide collaboration features for App and Web App on the network.</p>
-          </div>
-        </div>
-        <!-- End: Desc -->
-	  </div>
+<div class="container-fluid" id="components">
+	<!-- Start: Desc -->
+	<div class="row me-row content-ct">
+		<h2 class="row-title" data-l10n-id="content-components">Sugarizer is distributed in the form of 3 components:</h2>
+		<div class="col-md-4 feature">
+			<img src="img/sugarizer_thinclient.svg" height="90" class="architecture-image"/>
+			<h3 data-l10n-id="head-web">Web App</h3>
+			<p data-l10n-id="content-web">It could work on any device with a recent browser version. Sugarizer Web App doesn't need any installation on the device but requires a permanent access to a Sugarizer Server.</p>
+		</div>
+		<div class="col-md-4 feature">
+			<img src="img/sugarizer_client.svg" height="90" class="architecture-image"/>
+			<h3 data-l10n-id="head-app">App</h3>
+			<p data-l10n-id="content-app">Sugarizer installed locally on the device so it does not require any access to the Server - it works stand-alone. Sugarizer App is available for Window/GNU-Linux/MacOS, for Android and iOS.</p>
+		</div>
+		<div class="col-md-4 feature">
+			<img src="img/sugarizer_server.svg" height="90" class="architecture-image"/>
+			<h3 data-l10n-id="head-server">Server</h3>
+			<p data-l10n-id="content-server">Sugarizer Server is the back-end for network features of Sugarizer. It expose locally Web App so allow deployment of Sugarizer on a local server, for example on a school server. Sugarizer Server can also be used to provide collaboration features for App and Web App on the network.</p>
+		</div>
+	</div>
+	<!-- End: Desc -->
+</div>
 
-      <div class="container">
-		<a name="apps"></a>
-        <!-- Start: Apps -->
-        <div class="row me-row content-ct app" id="apps">
-          <h2 data-l10n-id="head-sugarizer" class="row-title">Download Sugarizer app on...</h2>
-          <div class="col-md-4 col-sm-6 feature">
-            <a href="https://play.google.com/store/apps/details?id=org.olpc_france.sugarizer" title="Google Play">
-            <img src="img/googleplay.jpg" class="app-img">
-            <h3 data-l10n-id="google-play">Google Play</h3></a>
-          </div>
-          <div class="col-md-4 col-sm-6 feature">
-            <a href="https://itunes.apple.com/us/app/sugarizer/id978495303" title="Apple Store">
-            <img src="img/applestore.jpg" class="app-img">
-            <h3 data-l10n-id="app-store">App Store</h3></a>
-          </div>
-		  <div class="col-md-4 col-sm-6 feature">
-			  <a href="http://www.amazon.com/gp/product/B00NKK7PZA" title="Amazon Apps">
-              <img src="img/amazon.jpg" class="app-img">
-              <h3 data-l10n-id="amazon-apps">Amazon Apps</h3></a>
-          </div>
-		  <div class="col-md-4 col-sm-6 feature">
-            <a href="https://f-droid.org/repository/browse/?fdid=org.olpc_france.sugarizer" title="F-Droid">
-            <img src="img/f-droid.jpg" class="app-img">
-            <h3 data-l10n-id="f-droid">F-Droid</h3></a>
-          </div>
-          <div class="col-md-4 col-sm-6 feature">
-            <a href="https://snapcraft.io/sugarizer/" title="Snapcraft">
-            <img src="img/snapcraft.jpg" class="app-img">
-            <h3 data-l10n-id="snapcraft">Snapcraft</h3></a>
-          </div>
-        </div>
+<div class="container">
+	<a name="apps"></a>
+	<!-- Start: Apps -->
+	<div class="row me-row content-ct app" id="apps">
+		<h2 data-l10n-id="head-sugarizer" class="row-title">Download Sugarizer app on...</h2>
+		<div class="col-md-4 col-sm-6 feature">
+			<a href="https://play.google.com/store/apps/details?id=org.olpc_france.sugarizer" title="Google Play">
+				<img src="img/googleplay.jpg" class="app-img">
+				<h3 data-l10n-id="google-play">Google Play</h3>
+			</a>
+		</div>
+		<div class="col-md-4 col-sm-6 feature">
+			<a href="https://itunes.apple.com/us/app/sugarizer/id978495303" title="Apple Store">
+				<img src="img/applestore.jpg" class="app-img">
+				<h3 data-l10n-id="app-store">App Store</h3>
+			</a>
+		</div>
+		<div class="col-md-4 col-sm-6 feature">
+			<a href="http://www.amazon.com/gp/product/B00NKK7PZA" title="Amazon Apps">
+				<img src="img/amazon.jpg" class="app-img">
+				<h3 data-l10n-id="amazon-apps">Amazon Apps</h3>
+			</a>
+		</div>
+		<div class="col-md-4 col-sm-6 feature">
+			<a href="https://f-droid.org/repository/browse/?fdid=org.olpc_france.sugarizer" title="F-Droid">
+				<img src="img/f-droid.jpg" class="app-img">
+				<h3 data-l10n-id="f-droid">F-Droid</h3>
+			</a>
+		</div>
+		<div class="col-md-4 col-sm-6 feature">
+			<a href="https://snapcraft.io/sugarizer/" title="Snapcraft">
+				<img src="img/snapcraft.jpg" class="app-img">
+				<h3 data-l10n-id="snapcraft">Snapcraft</h3>
+			</a>
+		</div>
+	</div>
 
-		<a name="desktop"></a>
+	<a name="desktop"></a>
 
-		<h3>
-        <i class="fa fa-lg fa-desktop fa-fw"></i> <span  data-l10n-id="content-desktop">Desktop Installation</span>
-		</h3>
-		<hr/>
+	<h3>
+		<i class="fa fa-lg fa-desktop fa-fw"></i> <span  data-l10n-id="content-desktop">Desktop Installation</span>
+	</h3>
+	<hr/>
 
-		<h4>
-			<i class="fab fa-windows fa-lg fa-fw"></i> Windows
-		</h4>
-		<ul class="fa-ul">
+	<h4>
+		<i class="fab fa-windows fa-lg fa-fw"></i> Windows
+	</h4>
+	<ul class="fa-ul">
 		<li>
 			<i class="fa-li fa fa-arrow-right"></i>
-        <small>
-            <a href="https://sugarizer.org/download/Sugarizer-Setup-1.1.0.exe">
-                <i class="fa fa-download"></i> Sugarizer-Setup-1.1.0.exe
-            </a>
-        </small>
+			<small>
+				<a href="https://sugarizer.org/download/Sugarizer-Setup-1.1.0.exe">
+					<i class="fa fa-download"></i> Sugarizer-Setup-1.1.0.exe
+				</a>
+			</small>
 		</li>
-        </ul>
-		<br/>
+	</ul>
+	<br/>
 
-		<h4>
-			 <i class="fab fa-apple fa-lg fa-fw"></i> macOS
-		</h4>
-		<ul class="fa-ul">
+	<h4>
+		<i class="fab fa-apple fa-lg fa-fw"></i> macOS
+	</h4>
+	<ul class="fa-ul">
 		<li>
 			<i class="fa-li fa fa-arrow-right"></i>
-        <small>
-            <a href="https://sugarizer.org/download/Sugarizer-1.1.0.dmg">
-                <i class="fa fa-download"></i> Sugarizer-1.1.0.dmg
-            </a>
-        </small>
+			<small>
+				<a href="https://sugarizer.org/download/Sugarizer-1.1.0.dmg">
+					<i class="fa fa-download"></i> Sugarizer-1.1.0.dmg
+				</a>
+			</small>
 		</li>
-		</ul>
-		<br/>
+	</ul>
+	<br/>
 
-		<h4>
-			 <i class="fab fa-linux fa-lg fa-fw"></i> Linux
-		</h4>
-		<ul class="fa-ul">
+	<h4>
+		<i class="fab fa-linux fa-lg fa-fw"></i> Linux
+	</h4>
+	<ul class="fa-ul">
 		<li>
 			<i class="fa-li fa fa-arrow-right"></i>
-        <small>
-            <a href="https://sugarizer.org/download/Sugarizer_1.1.0_i386.deb">
-                <i class="fa fa-download"></i> Sugarizer_1.1.0_i386.deb
-            </a>
-        </small>
-		</li>
-		<li>
-			<i class="fa-li fa fa-arrow-right"></i>
-        <small>
-            <a href="https://sugarizer.org/download/Sugarizer_1.1.0_amd64.deb">
-                <i class="fa fa-download"></i> Sugarizer_1.1.0_amd64.deb
-            </a>
-        </small>
+			<small>
+				<a href="https://sugarizer.org/download/Sugarizer_1.1.0_i386.deb">
+					<i class="fa fa-download"></i> Sugarizer_1.1.0_i386.deb
+				</a>
+			</small>
 		</li>
 		<li>
 			<i class="fa-li fa fa-arrow-right"></i>
-        <small>
-            <a href="https://sugarizer.org/download/Sugarizer-1.1.0-i386.AppImage">
-                <i class="fa fa-download"></i> Sugarizer-1.1.0-i386.AppImage
-            </a>
-        </small>
+			<small>
+				<a href="https://sugarizer.org/download/Sugarizer_1.1.0_amd64.deb">
+					<i class="fa fa-download"></i> Sugarizer_1.1.0_amd64.deb
+				</a>
+			</small>
 		</li>
 		<li>
 			<i class="fa-li fa fa-arrow-right"></i>
-        <small>
-            <a href="https://sugarizer.org/download/Sugarizer-1.1.0-amd64.AppImage">
-                <i class="fa fa-download"></i> Sugarizer-1.1.0-amd64.AppImage
-            </a>
-        </small>
+			<small>
+				<a href="https://sugarizer.org/download/Sugarizer-1.1.0-i386.AppImage">
+					<i class="fa fa-download"></i> Sugarizer-1.1.0-i386.AppImage
+				</a>
+			</small>
 		</li>
-		</ul>
-		<br/>
-		<br/>
+		<li>
+			<i class="fa-li fa fa-arrow-right"></i>
+			<small>
+				<a href="https://sugarizer.org/download/Sugarizer-1.1.0-amd64.AppImage">
+					<i class="fa fa-download"></i> Sugarizer-1.1.0-amd64.AppImage
+				</a>
+			</small>
+		</li>
+	</ul>
+	<br/>
+	<br/>
 
 
-		<a name="server"></a>
+	<a name="server"></a>
 
-		<h3>
-        <i class="fa fa-lg fa-server fa-fw"></i> <span  data-l10n-id="content-serverinstall">Server Installation on</span> <font color="#2496ed">Docker <i class="fab fa-docker"></i></font>
-		</h3>
-		<hr/>
-		<pre class="command-line language-bash">
+	<h3>
+		<i class="fa fa-lg fa-server fa-fw"></i> <span  data-l10n-id="content-serverinstall">Server Installation on</span> <font color="#2496ed">Docker <i class="fab fa-docker"></i></font>
+	</h3>
+	<hr/>
+	<pre class="command-line language-bash">
 git clone https://github.com/llaske/sugarizer
 git clone https://github.com/llaske/sugarizer-server
 cd sugarizer-server
 sh generate-docker-compose.sh
 docker-compose up -d
-</pre>
-		<span  data-l10n-id="content-moreinfo">More information</span> <a href="https://github.com/llaske/sugarizer-server"><span  data-l10n-id="content-here">here</span></a>.
-		<br/>
-		<br/>
+	</pre>
+	<span  data-l10n-id="content-moreinfo">More information</span> <a href="https://github.com/llaske/sugarizer-server"><span  data-l10n-id="content-here">here</span></a>.
+	<br/>
+	<br/>
 
-        <!-- End: Apps -->
-      </div>
+	<!-- End: Apps -->
+</div>
 
-      <!-- Start: Websites -->
-      <div class="container-fluid websites" id="websites">
-        <div class="row me-row content-ct">
-          <h2 data-l10n-id="head-info" class="row-title">More information on...</h2>
-          <div class="col-md-4 col-sm-4">
-            <p data-l10n-id="gh" class="web">GitHub</p>
-            <p data-l10n-id="gh-content">Sugarizer project on GitHub.</p>
-            <a data-l10n-id="open" href="https://github.com/llaske/sugarizer" title="Sugarizer GitHub" class="btn btn-lg btn-red">Open</a>
-          </div>
-          <div class="col-md-4 col-sm-4">
-            <p data-l10n-id="wiki" class="web">Wiki</p>
-            <p data-l10n-id="wiki-content">Find anwsers for questions.</p>
-            <a data-l10n-id="open" href="https://github.com/llaske/sugarizer/blob/master/README.md" title="Sugarizer Wiki page" class="btn btn-lg btn-red">Open</a>
-          </div>
-          <div class="col-md-4 col-sm-4">
-            <p data-l10n-id="mailing" class="web">Mailing List</p>
-            <p data-l10n-id="mailing-content">Sugar devel mailing list.</p>
-            <a data-l10n-id="open" href="http://lists.sugarlabs.org/listinfo/sugar-devel" title="Sugar Mailing List" class="btn btn-lg btn-red">Open</a>
-          </div>
-        </div>
-      </div>
-      <!-- End: Websites -->
+<!-- Start: Websites -->
+<div class="container-fluid websites" id="websites">
+	<div class="row me-row content-ct">
+		<h2 data-l10n-id="head-info" class="row-title">More information on...</h2>
+		<div class="col-md-4 col-sm-4">
+			<p data-l10n-id="gh" class="web">GitHub</p>
+			<p data-l10n-id="gh-content">Sugarizer project on GitHub.</p>
+			<a data-l10n-id="open" href="https://github.com/llaske/sugarizer" title="Sugarizer GitHub" class="btn btn-lg btn-red">Open</a>
+		</div>
+		<div class="col-md-4 col-sm-4">
+			<p data-l10n-id="wiki" class="web">Wiki</p>
+			<p data-l10n-id="wiki-content">Find anwsers for questions.</p>
+			<a data-l10n-id="open" href="https://github.com/llaske/sugarizer/blob/master/README.md" title="Sugarizer Wiki page" class="btn btn-lg btn-red">Open</a>
+		</div>
+		<div class="col-md-4 col-sm-4">
+			<p data-l10n-id="mailing" class="web">Mailing List</p>
+			<p data-l10n-id="mailing-content">Sugar devel mailing list.</p>
+			<a data-l10n-id="open" href="http://lists.sugarlabs.org/listinfo/sugar-devel" title="Sugar Mailing List" class="btn btn-lg btn-red">Open</a>
+		</div>
+	</div>
+</div>
+<!-- End: Websites -->
 
-      <!-- Start: Footer -->
-      <div class="container-fluid footer">
-        <div class="row footer-credit">
-          <div class="col-md-6 col-sm-6">
+<!-- Start: Footer -->
+<div class="container-fluid footer">
+	<div class="row footer-credit">
+		<div class="col-md-6 col-sm-6">
 			<p><span data-l10n-id="oss">Sugarizer is an open source software under</span> <a href="http://www.apache.org/licenses/LICENSE-2.0" title="Apache License" target="_blank"><span data-l10n-id="licence">Apache 2 licence</span></a>, <span data-l10n-id="code">source code is available on GitHub</span> <a href="https://github.com/llaske/sugarizer" title="GitHub" target="_blank"><span data-l10n-id="here">here</span></a>.
-			<span data-l10n-id="activities">Most activities use this license too but some could use a different license, check activities credits to be sure.</span>
+				<span data-l10n-id="activities">Most activities use this license too but some could use a different license, check activities credits to be sure.</span>
 			</p><br/>
-            <p>&copy; 2013-2019, Lionel Laské, <a href="http://sugarlabs.org" title="Sugar Labs" target="_blank">Sugar Labs Inc.</a> and Contributors.</p><br/>
+			<p>&copy; 2013-2019, Lionel Laské, <a href="http://sugarlabs.org" title="Sugar Labs" target="_blank">Sugar Labs Inc.</a> and Contributors.</p><br/>
 			<a href="https://github.com/llaske/sugarizer" target="_blank"><i class="fab fa-github-square fa-3x" style="margin-left:8px;margin-top:5px;color:#ffffff;"></i></a>
 			<a href="https://twitter.com/sugarizerapp" target="_blank"><i class="fab fa-twitter-square fa-3x" style="margin-left:8px;margin-top:5px;color:#ffffff;"></i></a>
 			<a href="https://www.facebook.com/Sugarizer" target="_blank"><i class="fab fa-facebook-square fa-3x" style="margin-left:8px;margin-top:5px;color:#ffffff;"></i></a>
-		  </div>
-		  <div class="col-md-6 col-sm-6">
+		</div>
+		<div class="col-md-6 col-sm-6">
 			<p><span data-l10n-id="original">Original page design by:</span> <a href="https://piotr-antosz.pl" title="Piotr Antosz website"><span data-l10n-id="antosz">Piotr Antosz</span></a>.</p><br/>
-            <p data-l10n-id="credits">Image credits (from the Noun Project): Play by P.J. Onori, Responsive Design by Benni, Server image by aLf, Cloud by Dmitry Baranovskiy,
-				Tablet by Konstantin Velichko, Children by Musmellow, School by Kevin, Group by Nicolas Mitchell, Approved by Gregor Cresnar, Ad Blocker by Setyo Ari Wibowo.</p>
-          </div>        </div>
-      </div>
-      <!-- End: Footer -->
+			<p data-l10n-id="credits">Image credits (from the Noun Project): Play by P.J. Onori, Responsive Design by Benni, Server image by aLf, Cloud by Dmitry Baranovskiy,
+				Tablet by Konstantin Velichko, Children by Musmellow, School by Kevin, Group by Nicolas Mitchell, Approved by Gregor Cresnar, Ad Blocker by Setyo Ari Wibowo.
+			</p>
+		</div>
+	</div>
+</div>
+<!-- End: Footer -->
 
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery.easing.min.js"></script>
-      <script src="js/scrolling-nav.js"></script>
-      <script type="text/javascript">
-		var langs = ["us", "es", "pl", "fr", "pt"];
-        function changeflag(c){
-		  if (c == -1) return;
-		  lang = langs[c];
-		  document.webL10n.setLanguage(lang) ;
-          document.getElementById('flag').src = "img/" + lang + ".svg";
-        }
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
+<script type="text/javascript">
+	var langs = ["us", "es", "pl", "fr", "pt"];
+	function changeflag(c){
+		if (c == -1) return;
+		lang = langs[c];
+		document.webL10n.setLanguage(lang) ;
+		document.getElementById('flag').src = "img/" + lang + ".svg";
+	}
 	window.addEventListener('localized', function() {
 		lang = document.webL10n.getLanguage();
 		lang = lang[0] + lang[1];
 		document.getElementById("Lang").value = langs.indexOf(lang);
-    	document.getElementById('flag').src = "img/" + lang + ".svg";
-		}, false);
-      </script>
-    </body>
-    </html>
+		document.getElementById('flag').src = "img/" + lang + ".svg";
+	}, false);
+</script>
+</body>
+</html>

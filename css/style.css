@@ -1,7 +1,7 @@
 body {
 	font-family: 'Dosis', sans-serif;
-    color: #404142;
-    font-size: 16px;
+	color: #404142;
+	font-size: 16px;
 	letter-spacing: 0.8px;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -14,23 +14,23 @@ ul {
 }
 a {
 	-webkit-transition: all 0.3s;
-  	-moz-transition: all 0.3s;
-  	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 }
 a:hover, a:focus, a:active, a:visited {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 /* Buttons override */
 .btn {
 	text-transform: uppercase;
-    font-weight: 600;
+	font-weight: 600;
 }
 .btn-lg {
 	padding: 15px 40px;
-    font-size: 16px;
-    line-height: none;
-    border-radius: 4px;
+	font-size: 16px;
+	line-height: none;
+	border-radius: 4px;
 	margin-left: 10px;
 	margin-top: 10px;
 }
@@ -48,61 +48,61 @@ a:hover, a:focus, a:active, a:visited {
 }
 .btn-yellow.disabled:hover,
 .btn-yellow[disabled]:hover {
-    opacity: 0.65;
+	opacity: 0.65;
 }
 .content-ct {
 	text-align: center;
 }
 
 /* ------------------
-	Navigation
+Navigation
 ------------------ */
 .side-menu {
 	position: fixed;
 	right: 30px;
 	top: 50%;
-    transform: translateY(-73px);
-    z-index: 99;
+	transform: translateY(-73px);
+	z-index: 99;
 }
 .side-menu ul li {
-    text-align: right;
-    margin: 10px 0;
+	text-align: right;
+	margin: 10px 0;
 }
 .side-menu ul li a span {
 	display: inline-block;
 }
 .side-menu ul li a span.menu-title {
 	color: #fff;
-    position: relative;
-    margin-right: 10px;
-    text-transform: uppercase;
-    font-size: 12px;
-    background-color: #dd5138;
-    padding: 3px 10px;
-    font-weight: 600;
-    border-radius: 3px;
-    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
-    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
-    transition: transform 0.2s, opacity 0.2s;
-    -webkit-transform-origin: 100% 50%;
-    -moz-transform-origin: 100% 50%;
-    -ms-transform-origin: 100% 50%;
-    -o-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-    opacity: 0;
+	position: relative;
+	margin-right: 10px;
+	text-transform: uppercase;
+	font-size: 12px;
+	background-color: #dd5138;
+	padding: 3px 10px;
+	font-weight: 600;
+	border-radius: 3px;
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+	transition: transform 0.2s, opacity 0.2s;
+	-webkit-transform-origin: 100% 50%;
+	-moz-transform-origin: 100% 50%;
+	-ms-transform-origin: 100% 50%;
+	-o-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+	opacity: 0;
 }
 .side-menu ul li a:hover span.menu-title {
-    opacity: 1;
+	opacity: 1;
 }
 .side-menu ul li a span.dot {
-    position: relative;
-    background-color: #dd5138;
-    border-radius: 2em;
-    height: 10px;
-    width: 10px;
-    -webkit-transition: all 0.3s;
-  	-moz-transition: all 0.3s;
-  	transition: all 0.3s;
+	position: relative;
+	background-color: #dd5138;
+	border-radius: 2em;
+	height: 10px;
+	width: 10px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .side-menu ul li a:hover span.dot {
 	transform: scale(1.8);
@@ -134,8 +134,8 @@ a:hover, a:focus, a:active, a:visited {
 .hero-header h4 {
 	font-weight: normal;
 	opacity: 0.6;
-    letter-spacing: 1px;
-    margin: 2em 0;
+	letter-spacing: 1px;
+	margin: 2em 0;
 }
 .logo {
 	max-width: 95%;
@@ -165,7 +165,7 @@ a:hover, a:focus, a:active, a:visited {
 }
 .feature span {
 	font-size: 5em;
-    color: #016cc7;
+	color: #016cc7;
 }
 
 .downloads {
@@ -176,20 +176,20 @@ a:hover, a:focus, a:active, a:visited {
 .app .feature {
 	width: 31.333333%;
 	-webkit-transition: all 0.3s;
-  	-moz-transition: all 0.3s;
-  	transition: all 0.3s;
-  	margin-right: 20px;
-  	border: 3px solid #f6f6f6;
-    border-radius: 5px;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	margin-right: 20px;
+	border: 3px solid #f6f6f6;
+	border-radius: 5px;
 }
 .app .feature:hover {
-    box-shadow: 3px 3px 10px #ccc;
-    transform: translateY(-10px);
+	box-shadow: 3px 3px 10px #ccc;
+	transform: translateY(-10px);
 }
 .app-img {
 	max-width: 40%;
-    border: 4px solid #efefef;
-    border-radius: 50%;
+	border: 4px solid #efefef;
+	border-radius: 50%;
 }
 .app a{
 	color: #2a2a2a;
@@ -251,7 +251,7 @@ a span.ti-twitter-alt {
 .websites .web {
 	font-size: 4em;
 	color: #dd5138;
-    font-weight: 100;
+	font-weight: 100;
 }
 .websites .web sup {
 	font-size: 0.4em;
@@ -264,7 +264,7 @@ a span.ti-twitter-alt {
 }
 
 .nav-tabs {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
 .installation .media {
@@ -275,8 +275,8 @@ a span.ti-twitter-alt {
 }
 .installation .media-heading {
 	font-weight: 600;
-    border-bottom: 2px solid #efefef;
-    padding-bottom: 10px;
+	border-bottom: 2px solid #efefef;
+	padding-bottom: 10px;
 }
 .installation .media-body h5 {
 	text-transform: uppercase;
@@ -285,77 +285,77 @@ a span.ti-twitter-alt {
 
 
 .footer {
-    background-color: #2a2a2a;
-    margin-top: 30px;
-    color: #fff;
+	background-color: #2a2a2a;
+	margin-top: 30px;
+	color: #fff;
 }
 .footer p {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 .footer a {
-    color: #fcd93b;
+	color: #fcd93b;
 }
 .footer-credit {
-    padding: 40px;
+	padding: 40px;
 }
 ul.footer-menu {
-    text-align: right;
+	text-align: right;
 }
 ul.footer-menu li {
-    display: inline-block;
+	display: inline-block;
 }
 ul.footer-menu li a {
-    font-size: 12px;
-    color: #fcd93b;
-    padding-right: 20px;
+	font-size: 12px;
+	color: #fcd93b;
+	padding-right: 20px;
 }
 ul.footer-menu li a:hover {
-    color: #dd5138;
+	color: #dd5138;
 }
 .selectpicker{
-    background-color: #404142;
-    color: white;
-    border-radius: 10px;
-    width: 150px;
-    border: 0px;
-    padding:  3px;
+	background-color: #404142;
+	color: white;
+	border-radius: 10px;
+	width: 150px;
+	border: 0px;
+	padding:  3px;
 }
 .styleSelect select {
-  background: transparent;
-  width: 120px;
-  padding: 0px;
-  font-size: 16px;
-  line-height: 1;
-  border: 0;
-  border-radius: 0;
-  height: 25px;
-  -webkit-appearance: none;
-  color: white;
-  margin: 0px;
+	background: transparent;
+	width: 120px;
+	padding: 0px;
+	font-size: 16px;
+	line-height: 1;
+	border: 0;
+	border-radius: 0;
+	height: 25px;
+	-webkit-appearance: none;
+	color: white;
+	margin: 0px;
 }
 
 .styleSelect {
-  width: 100px;
-  height: 25px;
-  overflow: hidden;
-  border-radius: 10px;
-  background: #404142;
-  border: 0px;
-  margin-right: 125px;
-  padding-left: 18px;
+	width: 100px;
+	height: 25px;
+	overflow: hidden;
+	border-radius: 10px;
+	background: #404142;
+	border: 0px;
+	margin-right: 125px;
+	padding-left: 18px;
 }
 .flag{
-  position: absolute;
-  background-color: #404142;
-  margin-top: 5px;
-  margin-right: 85px;
-  height: 25px;
-  width: 40px;
+	position: absolute;
+	background-color: #404142;
+	margin-top: 5px;
+	margin-right: 85px;
+	height: 25px;
+	width: 40px;
 }
 .flagLoc{
-  position: absolute;
-  top: 10px;
-  right: 120px;
+	position: absolute;
+	top: 10px;
+	right: 120px;
 }
 .language {
 	position: absolute;
@@ -363,29 +363,29 @@ ul.footer-menu li a:hover {
 	right: 10px;
 }
 .contact {
-    background-color: #3a3a3a;
-    color: #fff;
-    padding: 1em;
+	background-color: #3a3a3a;
+	color: #fff;
+	padding: 1em;
 }
 .contact h3 {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 .form-control {
-    padding: 20px 15px;
-    border: 3px solid #eee;
-    background-color: #f9f9f9;
-    box-shadow: none;
+	padding: 20px 15px;
+	border: 3px solid #eee;
+	background-color: #f9f9f9;
+	box-shadow: none;
 }
 .help-block {
-    font-size: 12px;
+	font-size: 12px;
 }
 .form-control-feedback {
-    top: 15px;
-    right: 15px;
+	top: 15px;
+	right: 15px;
 }
 
 /* ========================================
-    Custom Media Queries
+Custom Media Queries
 ======================================== */
 
 /* Mobile */
@@ -399,28 +399,28 @@ ul.footer-menu li a:hover {
 }
 
 @media (max-width: 767px) {
-    .hero-header {
-        padding: 3em 1em 1em 1em;
-        text-align: center;
-        max-height: 550px;
-    }
-    .app .feature {
-        width: 100%
-    }
-    .footer-credit {
-        text-align: center;
-        padding: 40px 20px;
-    }
-    ul.footer-menu {
-        text-align: center;
-        margin-top: 30px;
-    }
-		#websites h3 {
-			display: none;
-		}
-		#home img{
-				max-width: 50vw;
-		}
+	.hero-header {
+		padding: 3em 1em 1em 1em;
+		text-align: center;
+		max-height: 550px;
+	}
+	.app .feature {
+		width: 100%
+	}
+	.footer-credit {
+		text-align: center;
+		padding: 40px 20px;
+	}
+	ul.footer-menu {
+		text-align: center;
+		margin-top: 30px;
+	}
+	#websites h3 {
+		display: none;
+	}
+	#home img{
+		max-width: 50vw;
+	}
 }
 
 @media (max-width: 390px){
@@ -451,47 +451,47 @@ ul.footer-menu li a:hover {
 /* iPad Portrait */
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .hero-header {
-        padding: 3em 1em 1em 1em;
-        text-align: center;
-    }
-    .app .feature {
-        width: 49%;
-        margin-right: 7px;
-    }
-    ul.footer-menu {
-        margin-top: 0;
-    }
+	.hero-header {
+		padding: 3em 1em 1em 1em;
+		text-align: center;
+	}
+	.app .feature {
+		width: 49%;
+		margin-right: 7px;
+	}
+	ul.footer-menu {
+		margin-top: 0;
+	}
 }
 
 
 /* iPad Landscape */
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .app .feature {
-        width: 49%;
-        margin-right: 9px;
-    }
+	.app .feature {
+		width: 49%;
+		margin-right: 9px;
+	}
 }
 
 @media (min-width: 1400px) {
 	body {
-	    font-size: 22px;
+		font-size: 22px;
 	}
 	h4 {
-	    font-size: 24px;
+		font-size: 24px;
 	}
 	h4 i {
 		line-height: 30px !important;
 	}
 	h3 {
-	    font-size: 30px;
+		font-size: 30px;
 	}
 	h2 {
-	    font-size: 36px;
+		font-size: 36px;
 	}
 	h1 {
-	    font-size: 42px;
+		font-size: 42px;
 	}
 	.btn {
 		font-size: 18px;
