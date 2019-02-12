@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Jul 17 2018 18:06:34 GMT+0200 (CEST)\n"
+"POT-Creation-Date: Tue Feb 12 2019 21:56:24 GMT+0100 (CET)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,14 @@ msgctxt "menu-home"
 msgid "Home"
 msgstr "Główna"
 
+#: menu-features
+msgctxt "menu-features"
+msgid "Features"
+msgstr "Pobierz"
+
 #: menu-apps
 msgctxt "menu-apps"
-msgid "Apps"
+msgid "Download"
 msgstr "Aplikacje"
 
 #: menu-more
@@ -30,28 +35,13 @@ msgstr "Więcej"
 
 #: head-taste
 msgctxt "head-taste"
-msgid "A taste of"
-msgstr "Poczuj smak"
-
-#: head-sugar-genitiv
-msgctxt "head-sugar-genitiv"
-msgid "Sugar"
-msgstr "Sugar'a"
-
-#: head-device
-msgctxt "head-device"
-msgid "on any device"
-msgstr "na każdym urządzeniu"
-
-#: head-discover
-msgctxt "head-discover"
-msgid "With Sugarizer, you can discover the Sugar Learning Platform on any device"
-msgstr "Z Sugarizer możesz odkrywać Sugar'a (oprogramowanie do nauki) na każdym urządzeniu!"
+msgid "The leading learning platform for children"
+msgstr "The leading learning platform for children"
 
 #: head-children
 msgctxt "head-children"
-msgid "Used every day by nearly 3 million children around the world, Sugar is a leading learning platform developed for the One Laptop per Child project. With Sugarizer, it's now on your device."
-msgstr "Używany przez ponad 3 miliony dzieci na całym świecie, Sugar jest platformą do nauki rozwiniętą dla projektu One Laptop per Child. Dzięki Sugarizer możesz sprawdzić to na swoim urządzeniu."
+msgid "Sugarizer is a free/libre learning platform. The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
+msgstr "Sugarizer is a free/libre learning platform. The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
 
 #: head-try
 msgctxt "head-try"
@@ -60,12 +50,12 @@ msgstr "Wypróbuj"
 
 #: head-download
 msgctxt "head-download"
-msgid "Download"
+msgid "Install"
 msgstr "Pobierz"
 
 #: head-source
 msgctxt "head-source"
-msgid "Source"
+msgid "Source code"
 msgstr "Kod źródłowy"
 
 #: content-components
@@ -90,8 +80,8 @@ msgstr "App (Aplikacja)"
 
 #: content-app
 msgctxt "content-app"
-msgid "Sugarizer installed locally on the device so it does not require any access to the Server - it works stand-alone. Sugarizer App is available for PC/MacOS, for Android, iOS and Chrome Web App."
-msgstr "Sugarizer zainstalowany lokalnie na urządzeniu nie wymaga dostępu do serwera - działa sam. Aplikacja Sugarizera jest dostępna pod PC/MacOS, Android, iOS oraz Chrome Web App."
+msgid "Sugarizer installed locally on the device so it does not require any access to the Server - it works stand-alone. Sugarizer App is available for Windows/GNU-Linux/MacOS, for Android and iOS."
+msgstr "Sugarizer zainstalowany lokalnie na urządzeniu nie wymaga dostępu do serwera - działa sam. Aplikacja Sugarizera jest dostępna pod Windows/GNU-Linux/MacOS, Android oraz iOS."
 
 #: head-server
 msgctxt "head-server"
@@ -132,6 +122,26 @@ msgstr "Amazon Apps"
 msgctxt "f-droid"
 msgid "F-Droid"
 msgstr "F-Droid"
+
+#: content-desktop
+msgctxt "content-desktop"
+msgid "Desktop Installation"
+msgstr "Desktop Installation"
+
+#: content-serverinstall
+msgctxt "content-serverinstall"
+msgid "Server Installation on"
+msgstr "Server Installation on"
+
+#: content-moreinfo
+msgctxt "content-moreinfo"
+msgid "More information"
+msgstr "More information"
+
+#: content-here
+msgctxt "content-here"
+msgid "here"
+msgstr "here"
 
 #: head-info
 msgctxt "head-info"
@@ -210,6 +220,116 @@ msgstr "Piotr Antosz"
 
 #: credits
 msgctxt "credits"
-msgid "Image credits: Play by P.J. Onori from the Noun Project, Responsive Design by Benni from the Noun Project, Server image by aLf from the Noun Project, Cloud by Dmitry Baranovskiy from the Noun Project, Tablet by Konstantin Velichko from the Noun Project."
-msgstr "Obrazki: Play by P.J. Onori z the Noun Project, Responsive Design by Benni z the Noun Project, Server image by aLf z the Noun Project, Cloud by Dmitry Baranovskiy z the Noun Project, Tablet by Konstantin Velichko z the Noun Project."
+msgid "Image credits (from the Noun Project): Play by P.J. Onori, Responsive Design by Benni, Server image by aLf, Cloud by Dmitry Baranovskiy, Tablet by Konstantin Velichko, Children by Musmellow, School by Kevin, Group by Nicolas Mitchell, Approved by Gregor Cresnar, Ad Blocker by Setyo Ari Wibowo."
+msgstr "Image credits (from the Noun Project): Play by P.J. Onori, Responsive Design by Benni, Server image by aLf, Cloud by Dmitry Baranovskiy, Tablet by Konstantin Velichko, Children by Musmellow, School by Kevin, Group by Nicolas Mitchell, Approved by Gregor Cresnar, Ad Blocker by Setyo Ari Wibowo."
+
+#: headfeat-children
+msgctxt "headfeat-children"
+msgid "Children focused"
+msgstr "Children focused"
+
+#: feature-children
+msgctxt "feature-children"
+msgid "Sugarizer was thought for children between 6 and 12. The unique Sugarizer UI is discoverable, wholly intuitive, and use metaphors usable by children who don't know how to read."
+msgstr "Sugarizer was thought for children between 6 and 12. The unique Sugarizer UI is discoverable, wholly intuitive, and use metaphors usable by children who don't know how to read."
+
+#: headfeat-school
+msgctxt "headfeat-school"
+msgid "Learn at school and beyond"
+msgstr "Learn at school and beyond"
+
+#: feature-school
+msgctxt "feature-school"
+msgid "Sugarizer provide a set of \"activities\", not a set of applications. This is more than a new naming convention"
+msgstr "Sugarizer provide a set of \"activities\", not a set of applications. This is more than a new naming convention"
+
+#: headfeat-collaborative
+msgctxt "headfeat-collaborative"
+msgid "Collaborative"
+msgstr "Collaborative"
+
+#: feature-collaborative
+msgctxt "feature-collaborative"
+msgid "Everyone has the potential for being both a learner and a teacher. Sugarizer has chosen to put collaboration at the core of the user experience in order to realize this potential."
+msgstr "Everyone has the potential for being both a learner and a teacher. Sugarizer has chosen to put collaboration at the core of the user experience in order to realize this potential."
+
+#: headfeat-approved
+msgctxt "headfeat-approved"
+msgid "Field approved"
+msgstr "Field approved"
+
+#: feature-approved
+msgctxt "feature-approved"
+msgid "The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
+msgstr "The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
+
+#: headfeat-adblocker
+msgctxt "headfeat-adblocker"
+msgid "Ads Free"
+msgstr "Ads Free"
+
+#: feature-adblocker
+msgctxt "feature-adblocker"
+msgid "95% of apps market for children in stores contain advertising! With Sugarizer you've got the guaranty to have 0% advertisement and 0% tracking tools included."
+msgstr "95% of apps market for children in stores contain advertising! With Sugarizer you've got the guaranty to have 0% advertisement and 0% tracking tools included."
+
+#: headfeat-opensource
+msgctxt "headfeat-opensource"
+msgid "Open Source"
+msgstr "Open Source"
+
+#: feature-opensource
+msgctxt "feature-opensource"
+msgid "Sugarizer is a Free, Libre and Open Source Software. We believe that source code transparency, simple customization and free contents, are absolute requirements for a tool in children's hands."
+msgstr "Sugarizer is a Free, Libre and Open Source Software. We believe that source code transparency, simple customization and free contents, are absolute requirements for a tool in children's hands."
+
+#: demo
+msgctxt "demo"
+msgid "Demo"
+msgstr "Demo"
+
+#: gallery-title
+msgctxt "gallery-title"
+msgid "Examples of activities:"
+msgstr "Examples of activities:"
+
+#: activity-gears-description
+msgctxt "activity-gears-description"
+msgid "Gears is a tool to explore the ways in which gears and chains transmit motion. Draw your gears and see it coming to life."
+msgstr "Gears is a tool to explore the ways in which gears and chains transmit motion. Draw your gears and see it coming to life."
+
+#: activity-abacus-description
+msgctxt "activity-abacus-description"
+msgid "Abacus lets the learner explore different representations of numbers using different mechanical counting systems developed by the ancient Romans and Chinese."
+msgstr "Abacus lets the learner explore different representations of numbers using different mechanical counting systems developed by the ancient Romans and Chinese."
+
+#: activity-reflection-description
+msgctxt "activity-reflection-description"
+msgid "Reflection is a game designed around reflective symmetry. The user modifies an image until it has reflective symmetry around either the horizontal or vertical axis."
+msgstr "Reflection is a game designed around reflective symmetry. The user modifies an image until it has reflective symmetry around either the horizontal or vertical axis."
+
+#: activity-scratch-description
+msgctxt "activity-scratch-description"
+msgid "Scratch is a full environment where you can program your own interactive stories, games, and animations."
+msgstr "Scratch is a full environment where you can program your own interactive stories, games, and animations."
+
+#: activity-colormyworld-description
+msgctxt "activity-colormyworld-description"
+msgid "Color My World activity let you explore the world and its countries. Fill countries with color you like or use the interactive mode to find location of countries on the offline map."
+msgstr "Color My World activity let you explore the world and its countries. Fill countries with color you like or use the interactive mode to find location of countries on the offline map."
+
+#: activity-gridpaint-description
+msgctxt "activity-gridpaint-description"
+msgid "Grid Paint is a simple paint activity for kids to draw pictures using a grid of triangles. Never miss your drawing with Grid Paint activity!s"
+msgstr "Grid Paint is a simple paint activity for kids to draw pictures using a grid of triangles. Never miss your drawing with Grid Paint activity!s"
+
+#: activity-abecedarium-description
+msgctxt "activity-abecedarium-description"
+msgid "Abecedarium is an abecedary activity to learn its alphabet using images, sounds and words."
+msgstr "Abecedarium is an abecedary activity to learn its alphabet using images, sounds and words."
+
+#: activity-tamtammicro-description
+msgctxt "activity-tamtammicro-description"
+msgid "Tam Tam Micro is an activity to play instruments, sounds and noise of different type."
+msgstr "Tam Tam Micro is an activity to play instruments, sounds and noise of different type."
 
