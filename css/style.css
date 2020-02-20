@@ -384,6 +384,37 @@ ul.footer-menu li a:hover {
 	right: 15px;
 }
 
+/* ------------------
+Navigation
+------------------ */
+.left-502 {
+	display: inline-block;
+	width: 200px;
+	padding: 10px;
+}
+
+.logo-502 {
+	width: 100px;
+	position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.title-502 {
+	margin-top: 0px;
+}
+
+.warning-502 {
+	margin-top: 120px;
+}
+
+.right-502 {
+	display: inline-block;
+	vertical-align: bottom;
+	padding: 10px;
+}
+
 /* ========================================
 Custom Media Queries
 ======================================== */
