@@ -415,6 +415,11 @@ Navigation
 	padding: 10px;
 }
 
+.errorcode-502 {
+	margin-top: 40px;
+	font-family: monospace;
+}
+
 /* ========================================
 Custom Media Queries
 ======================================== */
