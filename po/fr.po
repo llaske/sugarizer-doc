@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Feb 12 2019 21:56:24 GMT+0100 (CET)\n"
+"POT-Creation-Date: Fri Feb 21 2020 10:38:38 GMT+0100 (GMT+01:00)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,6 +123,11 @@ msgctxt "f-droid"
 msgid "F-Droid"
 msgstr "F-Droid"
 
+#: snapcraft
+msgctxt "snapcraft"
+msgid "Snapcraft"
+msgstr "Snapcraft"
+
 #: content-desktop
 msgctxt "content-desktop"
 msgid "Desktop Installation"
@@ -185,8 +190,8 @@ msgstr "Liste de diffusion Sugar devel."
 
 #: oss
 msgctxt "oss"
-msgid "Sugarizer is an open source software under"
-msgstr "Sugarizer est un logiciel open source basé sur la"
+msgid "Sugarizer is a free software under"
+msgstr "Sugarizer est un logiciel libre basé sur la"
 
 #: licence
 msgctxt "licence"
@@ -205,8 +210,8 @@ msgstr "ici"
 
 #: activities
 msgctxt "activities"
-msgid "Most activities use this license too but some could use a different license, check activities credits to be sure."
-msgstr "La plupart des activités utilisent cette licence également mais certaines peuvent utiliser une licence différente, vérifiez les crédits des activités pour plus d'information."
+msgid "Most activities use this license too but some could use a different license, check the README file for more."
+msgstr "La plupart des activités utilisent cette licence également mais certaines peuvent utiliser une licence différente, vérifiez le fichier README pour plus d'information."
 
 #: original
 msgctxt "original"
@@ -275,12 +280,12 @@ msgstr "95% des applications pour enfant dans les stores contiennent de la publi
 
 #: headfeat-opensource
 msgctxt "headfeat-opensource"
-msgid "Open Source"
-msgstr "Open Source"
+msgid "Free software"
+msgstr "Libre"
 
 #: feature-opensource
 msgctxt "feature-opensource"
-msgid "Sugarizer is a Free, Libre and Open Source Software. We believe that source code transparency, simple customization and free contents, are absolute requirements for a tool in children's hands."
+msgid "Sugarizer is a Free, Libre Software. We believe that source code transparency, simple customization and free contents, are absolute requirements for a tool in children's hands."
 msgstr "Sugarizer est un logiciel libre et gratuit. Chacun peut utiliser le logiciel comme il veut, lire son code source, améliorer ce code source et partager ses améliorations. Nous pensons que le logiciel libre est aussi important pour l'éducation que l'éducation est importante pour la liberté."
 
 #: demo
@@ -332,4 +337,49 @@ msgstr "Abecedarium est une activité abécédaire pour apprendre l'alphabet en 
 msgctxt "activity-tamtammicro-description"
 msgid "Tam Tam Micro is an activity to play instruments, sounds and noise of different type."
 msgstr "Tam Tam Micro est une activité pour jouer des instruments, sons et bruits de différents types."
+
+#: data-502-oops
+msgctxt "data-502-oops"
+msgid "Oops"
+msgstr "Oups"
+
+#: data-502-sorry
+msgctxt "data-502-sorry"
+msgid "Sorry, it seems that your Sugarizer Server is currently offline :-("
+msgstr "Désolé, il semble que votre Serveur Sugarizer est actuellement hors ligne :-("
+
+#: data-502-maintenance
+msgctxt "data-502-maintenance"
+msgid "It's probably for maintenance reason. So, please retry in few minutes, it should be back."
+msgstr "C'est probablement pour cause de maintenance. Merci de réessayer dans quelques minutes, il devrait être de retour."
+
+#: data-404-oops
+msgctxt "data-404-oops"
+msgid "Oops"
+msgstr "Oups"
+
+#: data-404-sorry
+msgctxt "data-404-sorry"
+msgid "Sorry, this page doesn't exist in our Journal :-("
+msgstr "Désolé, cette page n'existe pas dans notre Journal :-("
+
+#: data-404-maintenance
+msgctxt "data-404-maintenance"
+msgid "Please check the URL in your browser address bar."
+msgstr "Merci de vérifier l'URL dans la barre d'adresse de votre navigateur."
+
+#: data-403-oops
+msgctxt "data-403-oops"
+msgid "Oops"
+msgstr "Oups"
+
+#: data-403-sorry
+msgctxt "data-403-sorry"
+msgid "Sorry, you're not authorized to display this content :-("
+msgstr "Désolé, vous n'êtes pas autorisé à afficher ce contenu :-("
+
+#: data-403-maintenance
+msgctxt "data-403-maintenance"
+msgid "Please check the URL in your browser address bar."
+msgstr "Merci de vérifier l'URL dans la barre d'adresse de votre navigateur."
 

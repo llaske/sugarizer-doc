@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Feb 12 2019 21:56:24 GMT+0100 (CET)\n"
+"POT-Creation-Date: Fri Feb 21 2020 10:38:38 GMT+0100 (GMT+01:00)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,6 +123,11 @@ msgctxt "f-droid"
 msgid "F-Droid"
 msgstr ""
 
+#: snapcraft
+msgctxt "snapcraft"
+msgid "Snapcraft"
+msgstr ""
+
 #: content-desktop
 msgctxt "content-desktop"
 msgid "Desktop Installation"
@@ -185,7 +190,7 @@ msgstr ""
 
 #: oss
 msgctxt "oss"
-msgid "Sugarizer is an open source software under"
+msgid "Sugarizer is a free software under"
 msgstr ""
 
 #: licence
@@ -205,7 +210,7 @@ msgstr ""
 
 #: activities
 msgctxt "activities"
-msgid "Most activities use this license too but some could use a different license, check activities credits to be sure."
+msgid "Most activities use this license too but some could use a different license, check the README file for more."
 msgstr ""
 
 #: original
@@ -275,12 +280,12 @@ msgstr ""
 
 #: headfeat-opensource
 msgctxt "headfeat-opensource"
-msgid "Open Source"
+msgid "Free software"
 msgstr ""
 
 #: feature-opensource
 msgctxt "feature-opensource"
-msgid "Sugarizer is a Free, Libre and Open Source Software. We believe that source code transparency, simple customization and free contents, are absolute requirements for a tool in children's hands."
+msgid "Sugarizer is a Free, Libre Software. We believe that source code transparency, simple customization and free contents, are absolute requirements for a tool in children's hands."
 msgstr ""
 
 #: demo
@@ -331,5 +336,50 @@ msgstr ""
 #: activity-tamtammicro-description
 msgctxt "activity-tamtammicro-description"
 msgid "Tam Tam Micro is an activity to play instruments, sounds and noise of different type."
+msgstr ""
+
+#: data-502-oops
+msgctxt "data-502-oops"
+msgid "Oops"
+msgstr ""
+
+#: data-502-sorry
+msgctxt "data-502-sorry"
+msgid "Sorry, it seems that your Sugarizer Server is currently offline :-("
+msgstr ""
+
+#: data-502-maintenance
+msgctxt "data-502-maintenance"
+msgid "It's probably for maintenance reason. So, please retry in few minutes, it should be back."
+msgstr ""
+
+#: data-404-oops
+msgctxt "data-404-oops"
+msgid "Oops"
+msgstr ""
+
+#: data-404-sorry
+msgctxt "data-404-sorry"
+msgid "Sorry, this page doesn't exist in our Journal :-("
+msgstr ""
+
+#: data-404-maintenance
+msgctxt "data-404-maintenance"
+msgid "Please check the URL in your browser address bar."
+msgstr ""
+
+#: data-403-oops
+msgctxt "data-403-oops"
+msgid "Oops"
+msgstr ""
+
+#: data-403-sorry
+msgctxt "data-403-sorry"
+msgid "Sorry, you're not authorized to display this content :-("
+msgstr ""
+
+#: data-403-maintenance
+msgctxt "data-403-maintenance"
+msgid "Please check the URL in your browser address bar."
 msgstr ""
 
