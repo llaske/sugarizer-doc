@@ -1,16 +1,18 @@
 // Constants
 const sugarizerUrl = "https://try.sugarizer.org/";
-const tags = [
-	"math",
-	"reading",
-	"writing",
-	"create",
-	"simulate",
-	"programming",
-	"games",
-	"content",
-	"collaborate"
-];
+const tagsProperties = {
+	"all": "#fffff",
+	"math": "#febcc8",
+	"reading": "#ffffd8",
+	"writing": "#eaebff",
+	"create": "#e0fefe",
+	"simulate": "#d3eeff",
+	"programming": "#D9FFDF",
+	"games": "#FDCFB3",
+	"content": "#CEC8E4",
+	"collaborate": "#F9F7E8",
+	"tools": "#d0d0d0"
+};
 const activitiesTags = {
 	"org.sugarlabs.Falabracman": ["games"],
 	"org.sugarlabs.Exerciser": ["collaborate"],
@@ -22,39 +24,39 @@ const activitiesTags = {
 	"org.olpg-france.physicsjs": ["simulate"],
 	"org.sugarlabs.CalculateActivity": ["math"],
 	"org.sugarlabs.TurtleBlocksJS": ["programming"],
-	"org.sugarlabs.Clock": [],
+	"org.sugarlabs.Clock": ["tools"],
 	"org.sugarlabs.SpeakActivity": ["reading"],
 	"org.sugarlabs.moon": ["simulate"],
 	"org.olpcfrance.RecordActivity": ["create"],
 	"org.olpcfrance.Abecedarium": ["reading","content"],
 	"org.olpcfrance.videoviewer": ["content"],
 	"org.olpcfrance.FoodChain": ["games"],
-	"org.olpc-france.labyrinthjs": ["create","collaborate"],
+	"org.olpc-france.labyrinthjs": ["writing","collaborate"],
 	"org.olpcfrance.TankOp": ["math","games"],
 	"org.sugarlabs.ChatPrototype": ["collaborate"],
 	"org.olpcfrance.Gridpaint": ["create"],
-	"org.olpc-france.LOLActivity": ["games"],
-	"org.olpcfrance.sharednotes": ["create","writing","collaborate"],
+	"org.olpc-france.LOLActivity": ["games", "collaborate"],
+	"org.olpcfrance.sharednotes": ["writing","collaborate"],
 	"org.sugarlabs.ColorMyWorldActivity": ["simulate"],
-	"com.homegrownapps.xoeditor": [],
+	"com.homegrownapps.xoeditor": ["tools"],
 	"com.homegrownapps.reflection": ["math","games"],
 	"com.homegrownapps.abacus": ["math"],
 	"org.sugarlabs.SprintMath": ["math","games"],
 	"org.sugarlabs.Blockrain": ["games"],
-	"org.sugarlabs.StopwatchActivity": [],
+	"org.sugarlabs.StopwatchActivity": ["tools"],
 	"com.homegrownapps.flip": ["games"],
 	"org.somosazucar.JappyActivity": ["programming"],
-	"org.olpcfrance.qrcode": [],
+	"org.olpcfrance.qrcode": ["tools"],
 	"org.sugarlabs.Markdown": ["writing"],
 	"org.sugarlabs.Scratch": ["programming"],
 	"org.sugarlabs.gameOfLife": ["simulate"],
 	"org.sugarlabs.FotoToonJs": ["create"],
-	"org.sugarlabs.GTDActivity": [],
+	"org.sugarlabs.GTDActivity": ["tools"],
 	"org.squeak.EtoysActivity": ["programming"],
-	"org.olpcfrance.EbookReader": ["reading"],
+	"org.olpcfrance.EbookReader": ["reading", "content"],
 	"org.olpcfrance.Calligra": ["writing"],
 	"org.olpcfrance.MediaViewerActivity": ["content"],
-	"org.sugarlabs.PomodoroActivity": [],
+	"org.sugarlabs.PomodoroActivity": ["tools"],
 	"org.sugarlabs.Constellation": ["simulate"],
 	"org.sugarlabs.Write": ["writing","collaborate"]
 };
@@ -70,11 +72,47 @@ requirejs.config({
 // Vue main app
 var app = new Vue({
 	el: '#app',
-	template: `<p>{{message}}</p>`,
-	components: {
-	},
+	vuetify: new Vuetify(),
+	template: `
+		<v-app>
+			<v-content>
+				<div class="filter-list">
+					<div v-for="(val, tag) in tags" class="filter-button">
+						<input id="filter" v-bind:value="tag" type="radio" v-on:click="onFilter(tag)" :checked="(tag==filter||(tag=='all'&&filter==''))"/>
+						<div class="tag-button" v-bind:style="'background-color:'+val">{{computeTagText(tag)}}</div>
+					</div>
+				</div>
+				<v-data-table :headers="headers" :items="filteredActivities()" :items-per-page="100" class="elevation-1"
+				:footer-props="{showFirstLastPage:false, disablePagination:true, disableItemsPerPage:true, showCurrentPage:false, showFirstLastPage:false}">
+					<template v-slot:item.icon="{item}">
+						<v-img v-bind:src="item.icon" height="50px" width="50px"></v-img>
+					</template>
+					<template v-slot:item.name="{item}">
+						<strong>{{item.name}}</strong>
+					</template>
+					<template v-slot:item.tags="{item}">
+						<div v-for="tag in item.tags">
+							<div class='tag-style' v-bind:style="'background-color:'+computeTagColor(tag)">{{computeTagText(tag)}}</div>
+						</div>
+					</template>
+					<template v-slot:item.video="{item}">
+						<a class="btn btn-red" v-bind:href="item.video">{{getDemoText()}}</a>
+					</template>
+				</v-data-table>
+			</v-content>
+		</v-app>`,
 	data: {
-		message: ""
+		message: "",
+		headers: [
+			{text: "", value: "icon", sortable: false},
+			{text: "", value: "name", width: 140},
+			{text: "", value: "description", sortable: false},
+			{text: "", value: "tags", sortable: false},
+			{text: "", value: "video", sortable: false}
+		],
+		activities: [],
+		filter: "",
+		tags: tagsProperties
 	},
 
 	created: function() {
@@ -119,12 +157,42 @@ var app = new Vue({
 					icon: sugarizerUrl+activity.directory+"/"+activity.icon,
 					description: document.webL10n.get("TutoActivity"+directory+"activity"),
 					video: "videos/"+directory.toLowerCase()+".gif",
-					tags: activitiesTags[activity.id].map(function(tag) {
-						return document.webL10n.get("category-"+tag);
-					})
+					tags: activitiesTags[activity.id]
 				});
 			}
+			activities.sort(function(a,b) {
+				return (a.name == b.name ? 0 : a.name > b.name ? 1 : -1);
+			});
 			return activities;
+		},
+
+		//
+		filteredActivities: function() {
+			var vm = this;
+			return vm.activities.filter(function(item) {
+				return vm.filter.length == 0 || item.tags.indexOf(vm.filter) != -1;
+			});
+		},
+
+		// Compute column styles
+		computeTagColor: function(tag) {
+			return tagsProperties[tag];
+		},
+		computeTagText: function(tag) {
+			return document.webL10n.get("category-"+tag);
+		},
+		getDemoText: function() {
+			return document.webL10n.get("button-demo");
+		},
+
+		// Filter
+		onFilter: function(tag) {
+			var vm = this;
+			if (tag == "all") {
+				vm.filter = "";
+			} else {
+				vm.filter = tag;
+			}
 		}
 	}
 });

@@ -1,0 +1,62 @@
+.tag-button {
+    display: inline;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-size: 14px;
+}
+
+.tag-style {
+    display: inline-block;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+.filter-list {
+    display: table;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.filter-button {
+    display: inline;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a:hover, a:focus, a:active, a:visited {
+    text-decoration: none;
+}
+
+.btn-red {
+    background-color: #dd5138;
+    color: #fff !important;
+    text-decoration: none !important
+}
+.btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
