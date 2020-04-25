@@ -76,8 +76,8 @@ var app = new Vue({
 	template: `
 		<v-app>
 			<v-content>
-				<a href="index.html#gallery" data-l10n-id="menu-home" title="Home" class="btn btn-lg btn-red btn-back">ACCUEIL</a>
-				<div class="filter-list">
+				<a href="index.html#gallery" data-l10n-id="menu-home" title="Home" class="btn btn-lg btn-red btn-back">Home</a>
+				<div v-if="activities.length>0" class="filter-list">
 					<div v-for="(val, tag) in tags" class="filter-button">
 						<input id="filter" v-bind:value="tag" type="radio" v-on:click="onFilter(tag)" :checked="(tag==filter||(tag=='all'&&filter==''))"/>
 						<div class="tag-button" v-bind:style="'background-color:'+val+(tag==filter||(tag=='all'&&filter=='')?';font-weight:bold':'')">{{computeTagText(tag)}}</div>
