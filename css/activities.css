@@ -22,7 +22,7 @@
 }
 
 .filter-button {
-    display: inline;
+    display: inline-block;
     margin-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -32,6 +32,10 @@ a:hover, a:focus, a:active, a:visited {
     text-decoration: none;
 }
 
+.btn-back {
+    margin-left: 20px;
+    margin-top: 20px;
+}
 .btn-red {
     background-color: #dd5138;
     color: #fff !important;

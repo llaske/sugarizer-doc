@@ -6,16 +6,16 @@ const tagsProperties = {
 	"reading": "#ffffd8",
 	"writing": "#eaebff",
 	"create": "#e0fefe",
+	"explore": "#CEC8E4",
 	"simulate": "#d3eeff",
 	"programming": "#D9FFDF",
 	"games": "#FDCFB3",
-	"content": "#CEC8E4",
 	"collaborate": "#F9F7E8",
 	"tools": "#d0d0d0"
 };
 const activitiesTags = {
 	"org.sugarlabs.Falabracman": ["games"],
-	"org.sugarlabs.Exerciser": ["collaborate"],
+	"org.sugarlabs.Exerciser": ["tools","collaborate"],
 	"org.sugarlabs.GearsActivity": ["simulate"],
 	"org.sugarlabs.MazeWebActivity": ["games","collaborate"],
 	"org.olpcfrance.PaintActivity": ["create","collaborate"],
@@ -24,20 +24,20 @@ const activitiesTags = {
 	"org.olpg-france.physicsjs": ["simulate"],
 	"org.sugarlabs.CalculateActivity": ["math"],
 	"org.sugarlabs.TurtleBlocksJS": ["programming"],
-	"org.sugarlabs.Clock": ["tools"],
+	"org.sugarlabs.Clock": ["explore"],
 	"org.sugarlabs.SpeakActivity": ["reading"],
-	"org.sugarlabs.moon": ["simulate"],
+	"org.sugarlabs.moon": ["explore"],
 	"org.olpcfrance.RecordActivity": ["create"],
-	"org.olpcfrance.Abecedarium": ["reading","content"],
-	"org.olpcfrance.videoviewer": ["content"],
+	"org.olpcfrance.Abecedarium": ["reading","explore"],
+	"org.olpcfrance.videoviewer": ["explore"],
 	"org.olpcfrance.FoodChain": ["games"],
 	"org.olpc-france.labyrinthjs": ["writing","collaborate"],
 	"org.olpcfrance.TankOp": ["math","games"],
-	"org.sugarlabs.ChatPrototype": ["collaborate"],
+	"org.sugarlabs.ChatPrototype": ["tools","collaborate"],
 	"org.olpcfrance.Gridpaint": ["create"],
 	"org.olpc-france.LOLActivity": ["games", "collaborate"],
 	"org.olpcfrance.sharednotes": ["writing","collaborate"],
-	"org.sugarlabs.ColorMyWorldActivity": ["simulate"],
+	"org.sugarlabs.ColorMyWorldActivity": ["explore"],
 	"com.homegrownapps.xoeditor": ["tools"],
 	"com.homegrownapps.reflection": ["math","games"],
 	"com.homegrownapps.abacus": ["math"],
@@ -53,11 +53,11 @@ const activitiesTags = {
 	"org.sugarlabs.FotoToonJs": ["create"],
 	"org.sugarlabs.GTDActivity": ["tools"],
 	"org.squeak.EtoysActivity": ["programming"],
-	"org.olpcfrance.EbookReader": ["reading", "content"],
+	"org.olpcfrance.EbookReader": ["reading", "explore"],
 	"org.olpcfrance.Calligra": ["writing"],
-	"org.olpcfrance.MediaViewerActivity": ["content"],
+	"org.olpcfrance.MediaViewerActivity": ["tools"],
 	"org.sugarlabs.PomodoroActivity": ["tools"],
-	"org.sugarlabs.Constellation": ["simulate"],
+	"org.sugarlabs.Constellation": ["explore"],
 	"org.sugarlabs.Write": ["writing","collaborate"]
 };
 
@@ -76,10 +76,11 @@ var app = new Vue({
 	template: `
 		<v-app>
 			<v-content>
+				<a href="index.html#gallery" data-l10n-id="menu-home" title="Home" class="btn btn-lg btn-red btn-back">ACCUEIL</a>
 				<div class="filter-list">
 					<div v-for="(val, tag) in tags" class="filter-button">
 						<input id="filter" v-bind:value="tag" type="radio" v-on:click="onFilter(tag)" :checked="(tag==filter||(tag=='all'&&filter==''))"/>
-						<div class="tag-button" v-bind:style="'background-color:'+val">{{computeTagText(tag)}}</div>
+						<div class="tag-button" v-bind:style="'background-color:'+val+(tag==filter||(tag=='all'&&filter=='')?';font-weight:bold':'')">{{computeTagText(tag)}}</div>
 					</div>
 				</div>
 				<v-data-table :headers="headers" :items="filteredActivities()" :items-per-page="100" class="elevation-1"
@@ -96,7 +97,7 @@ var app = new Vue({
 						</div>
 					</template>
 					<template v-slot:item.video="{item}">
-						<a class="btn btn-red" v-bind:href="item.video">{{getDemoText()}}</a>
+						<a class="btn btn-red" data-featherlight="image" v-bind:href="item.video">{{getDemoText()}}</a>
 					</template>
 				</v-data-table>
 			</v-content>
