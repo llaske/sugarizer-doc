@@ -41,7 +41,7 @@ const activitiesTags = {
 	"com.homegrownapps.xoeditor": ["tools"],
 	"com.homegrownapps.reflection": ["math","games"],
 	"com.homegrownapps.abacus": ["math"],
-	"org.sugarlabs.SprintMath": ["math","games"],
+	"org.sugarlabs.SprintMath": ["math","games","collaborate"],
 	"org.sugarlabs.Blockrain": ["games"],
 	"org.sugarlabs.StopwatchActivity": ["tools"],
 	"com.homegrownapps.flip": ["games"],
