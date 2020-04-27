@@ -14,7 +14,7 @@ const tagsProperties = {
 	"tools": "#d0d0d0"
 };
 const activitiesTags = {
-	"org.sugarlabs.Falabracman": ["games"],
+	"org.sugarlabs.Falabracman": ["games","reading"],
 	"org.sugarlabs.Exerciser": ["tools","collaborate"],
 	"org.sugarlabs.GearsActivity": ["simulate"],
 	"org.sugarlabs.MazeWebActivity": ["games","collaborate"],
@@ -30,7 +30,7 @@ const activitiesTags = {
 	"org.olpcfrance.RecordActivity": ["create"],
 	"org.olpcfrance.Abecedarium": ["reading","explore"],
 	"org.olpcfrance.videoviewer": ["explore"],
-	"org.olpcfrance.FoodChain": ["games"],
+	"org.olpcfrance.FoodChain": ["games","explore"],
 	"org.olpc-france.labyrinthjs": ["writing","collaborate"],
 	"org.olpcfrance.TankOp": ["math","games"],
 	"org.sugarlabs.ChatPrototype": ["tools","collaborate"],
