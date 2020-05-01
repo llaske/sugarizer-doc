@@ -79,8 +79,8 @@ var app = new Vue({
 				<a href="index.html#gallery" data-l10n-id="menu-home" title="Home" class="btn btn-lg btn-red btn-back">Home</a>
 				<div v-if="activities.length>0" class="filter-list">
 					<div v-for="(val, tag) in tags" class="filter-button">
-						<input id="filter" v-bind:value="tag" type="radio" v-on:click="onFilter(tag)" :checked="(tag==filter||(tag=='all'&&filter==''))"/>
-						<div class="tag-button" v-bind:style="'background-color:'+val+(tag==filter||(tag=='all'&&filter=='')?';font-weight:bold':'')">{{computeTagText(tag)}}</div>
+						<input id="filter" v-bind:value="tag" type="radio" v-on:click="onFilter(tag)" :checked="(tag==filterTag||(tag=='all'&&filterTag==''))"/>
+						<div class="tag-button" v-bind:style="'background-color:'+val+(tag==filterTag||(tag=='all'&&filterTag=='')?';font-weight:bold':'')">{{computeTagText(tag)}}</div>
 					</div>
 				</div>
 				<v-data-table :headers="headers" :items="filteredActivities()" :items-per-page="100" class="elevation-1"
@@ -112,7 +112,8 @@ var app = new Vue({
 			{text: "", value: "video", sortable: false}
 		],
 		activities: [],
-		filter: "",
+		filterTag: "",
+		filterName: "",
 		tags: tagsProperties
 	},
 
@@ -120,10 +121,26 @@ var app = new Vue({
 		var vm = this;
 		requirejs(["l10n"], function (webL10n) {
 			window.addEventListener("localized", function() {
+				// Wait for Sugarizer locale.ini loading
 				if (document.webL10n.get("TutoActivityAbecedariumactivity")=="{{TutoActivityAbecedariumactivity}}") {
 					return;
 				}
+
+				// Load activities details
 				vm.loadActivities();
+
+				// Filter on hash
+				let hash = window.location.hash.substr(1);
+				if (hash.length && tagsProperties[hash]) {
+					vm.filterTag = hash;
+				}
+
+				// Filter on activity name
+				let params = new URL(window.location).searchParams;
+				let name = params.get("name");
+				if (name) {
+					vm.filterName = name;
+				}
 			});
 		});
 	},
@@ -171,7 +188,8 @@ var app = new Vue({
 		filteredActivities: function() {
 			var vm = this;
 			return vm.activities.filter(function(item) {
-				return vm.filter.length == 0 || item.tags.indexOf(vm.filter) != -1;
+				return (vm.filterTag.length == 0 || item.tags.indexOf(vm.filterTag) != -1) &&
+					(vm.filterName.length == 0 || item.name.indexOf(vm.filterName) != -1);
 			});
 		},
 
@@ -190,9 +208,9 @@ var app = new Vue({
 		onFilter: function(tag) {
 			var vm = this;
 			if (tag == "all") {
-				vm.filter = "";
+				vm.filterTag = "";
 			} else {
-				vm.filter = tag;
+				vm.filterTag = tag;
 			}
 		}
 	}
