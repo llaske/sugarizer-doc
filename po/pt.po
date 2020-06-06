@@ -1,17 +1,19 @@
 #. extracted from ../locale.ini
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Fri Feb 21 2020 10:38:38 GMT+0100 (GMT+01:00)\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2020-06-06 03:15+0000\n"
+"Last-Translator: Paulo Francisco Slomp <slomp@ufrgs.br>\n"
+"Language-Team: Portuguese <http://translate.sugarizer.org/projects/sugarizer"
+"/sugarizer-website/pt/>\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: ini2po 0.0.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.16\n"
 
 #: menu-home
 msgctxt "menu-home"
@@ -21,7 +23,7 @@ msgstr "Início"
 #: menu-features
 msgctxt "menu-features"
 msgid "Features"
-msgstr "Features"
+msgstr "Funcionalidades"
 
 #: menu-apps
 msgctxt "menu-apps"
@@ -36,7 +38,7 @@ msgstr "Mais"
 #: head-taste
 msgctxt "head-taste"
 msgid "The leading learning platform for children"
-msgstr "The leading learning platform for children"
+msgstr "A plataforma líder para aprendizagem de crianças"
 
 #: head-children
 msgctxt "head-children"
@@ -131,7 +133,7 @@ msgstr "Snapcraft"
 #: content-desktop
 msgctxt "content-desktop"
 msgid "Desktop Installation"
-msgstr "Desktop Installation"
+msgstr "Instalação no computador"
 
 #: content-serverinstall
 msgctxt "content-serverinstall"
@@ -141,12 +143,12 @@ msgstr "Server Installation on"
 #: content-moreinfo
 msgctxt "content-moreinfo"
 msgid "More information"
-msgstr "More information"
+msgstr "Mais informação"
 
 #: content-here
 msgctxt "content-here"
 msgid "here"
-msgstr "here"
+msgstr "aqui"
 
 #: head-info
 msgctxt "head-info"
@@ -211,7 +213,9 @@ msgstr "aqui"
 #: activities
 msgctxt "activities"
 msgid "Most activities use this license too but some could use a different license, check the README file for more."
-msgstr "Most activities use this license too but some could use a different license, check the README file for more."
+msgstr ""
+"A maior parte das atividades utilizam esta licença mas algumas podem usar "
+"uma licença diferente. Verifique o arquivo README para mais informação."
 
 #: original
 msgctxt "original"
@@ -231,7 +235,7 @@ msgstr "Image credits (from the Noun Project): Play by P.J. Onori, Responsive De
 #: headfeat-children
 msgctxt "headfeat-children"
 msgid "Children focused"
-msgstr "Children focused"
+msgstr "Para as crianças"
 
 #: feature-children
 msgctxt "feature-children"
@@ -241,17 +245,20 @@ msgstr "Sugarizer was thought for children between 6 and 12. The unique Sugarize
 #: headfeat-school
 msgctxt "headfeat-school"
 msgid "Learn at school and beyond"
-msgstr "Learn at school and beyond"
+msgstr "Aprendizagem na escola e além"
 
 #: feature-school
 msgctxt "feature-school"
 msgid "Sugarizer provide a set of \"activities\", not a set of applications. This is more than a new naming convention"
-msgstr "Sugarizer provide a set of \"activities\", not a set of applications. This is more than a new naming convention"
+msgstr ""
+"Sugarizer disponibiliza um conjunto de \"atividades\", não um conjunto de \""
+"aplicativos\". Sugarizer coloca como central a qualidade da experiência de "
+"aprendizagem das crianças, na escola ou em casa"
 
 #: headfeat-collaborative
 msgctxt "headfeat-collaborative"
 msgid "Collaborative"
-msgstr "Collaborative"
+msgstr "Colaborativo"
 
 #: feature-collaborative
 msgctxt "feature-collaborative"
@@ -261,7 +268,7 @@ msgstr "Everyone has the potential for being both a learner and a teacher. Sugar
 #: headfeat-approved
 msgctxt "headfeat-approved"
 msgid "Field approved"
-msgstr "Field approved"
+msgstr "Testado e aprovado"
 
 #: feature-approved
 msgctxt "feature-approved"
@@ -271,22 +278,28 @@ msgstr "The Sugarizer UI use ergonomic principles from Sugar platform, developed
 #: headfeat-adblocker
 msgctxt "headfeat-adblocker"
 msgid "Ads Free"
-msgstr "Ads Free"
+msgstr "Sem anúncios publicitários"
 
 #: feature-adblocker
 msgctxt "feature-adblocker"
 msgid "95% of apps market for children in stores contain advertising! With Sugarizer you've got the guaranty to have 0% advertisement and 0% tracking tools included."
-msgstr "95% of apps market for children in stores contain advertising! With Sugarizer you've got the guaranty to have 0% advertisement and 0% tracking tools included."
+msgstr ""
+"95% dos aplicativos para crianças disponíveis nas lojas contêm anúncios "
+"publicitários! Sugarizer tem 0% de publicidade e 0% de rastreamento ou "
+"coleta de dados pessoais."
 
 #: headfeat-opensource
 msgctxt "headfeat-opensource"
 msgid "Free software"
-msgstr "Free software"
+msgstr "Software livre"
 
 #: feature-opensource
 msgctxt "feature-opensource"
 msgid "Sugarizer is a Free, Libre Software. We believe that source code transparency, simple customization and free contents, are absolute requirements for a tool in children's hands."
-msgstr "Sugarizer is a Free, Libre Software. We believe that source code transparency, simple customization and free contents, are absolute requirements for a tool in children's hands."
+msgstr ""
+"Sugarizer é software livre e gratuito. Acreditamos que a transparência do "
+"código fonte, a personalização simples e conteúdos livres são requisitos "
+"absolutos para uma ferramenta em mãos de crianças."
 
 #: demo
 msgctxt "demo"
@@ -296,7 +309,7 @@ msgstr "Demo"
 #: gallery-title
 msgctxt "gallery-title"
 msgid "Examples of activities:"
-msgstr "Examples of activities:"
+msgstr "Exemplos de atividades:"
 
 #: activity-gears-description
 msgctxt "activity-gears-description"
@@ -346,12 +359,16 @@ msgstr "Oops"
 #: data-502-sorry
 msgctxt "data-502-sorry"
 msgid "Sorry, it seems that your Sugarizer Server is currently offline :-("
-msgstr "Sorry, it seems that your Sugarizer Server is currently offline :-("
+msgstr ""
+"Desculpe, parece que o seu servidor Sugarizer está neste momento fora do ar "
+":-("
 
 #: data-502-maintenance
 msgctxt "data-502-maintenance"
 msgid "It's probably for maintenance reason. So, please retry in few minutes, it should be back."
-msgstr "It's probably for maintenance reason. So, please retry in few minutes, it should be back."
+msgstr ""
+"Isso é provavelmente por razão de uma manutenção. Então, tente novamente "
+"dentro de alguns minutos, pois poderá estar de volta."
 
 #: data-404-oops
 msgctxt "data-404-oops"
@@ -361,12 +378,12 @@ msgstr "Oops"
 #: data-404-sorry
 msgctxt "data-404-sorry"
 msgid "Sorry, this page doesn't exist in our Journal :-("
-msgstr "Sorry, this page doesn't exist in our Journal :-("
+msgstr "Desculpe, esta página não existe no nosso Jornal :-("
 
 #: data-404-maintenance
 msgctxt "data-404-maintenance"
 msgid "Please check the URL in your browser address bar."
-msgstr "Please check the URL in your browser address bar."
+msgstr "Por favor, verifique a URL na barra de endereços do seu navegador."
 
 #: data-403-oops
 msgctxt "data-403-oops"
@@ -376,10 +393,9 @@ msgstr "Oops"
 #: data-403-sorry
 msgctxt "data-403-sorry"
 msgid "Sorry, you're not authorized to display this content :-("
-msgstr "Sorry, you're not authorized to display this content :-("
+msgstr "Desculpe, você não tem permissão para acessar esse conteúdo :-("
 
 #: data-403-maintenance
 msgctxt "data-403-maintenance"
 msgid "Please check the URL in your browser address bar."
-msgstr "Please check the URL in your browser address bar."
-
+msgstr "Por favor, verifique a URL na barra de endereços do seu navegador."
