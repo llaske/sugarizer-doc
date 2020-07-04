@@ -40,8 +40,8 @@ msgstr "The leading learning platform for children"
 
 #: head-children
 msgctxt "head-children"
-msgid "Sugarizer is a free/libre learning platform. The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
-msgstr "Sugarizer is a free/libre learning platform. The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
+msgid "Sugarizer is a free/libre learning platform. The Sugarizer UI uses ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
+msgstr "Sugarizer is a free/libre learning platform. The Sugarizer UI uses ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
 
 #: head-try
 msgctxt "head-try"
@@ -60,8 +60,8 @@ msgstr "Source code"
 
 #: content-components
 msgctxt "content-components"
-msgid "Sugarizer is distributed in the form of 3 components:"
-msgstr "Sugarizer is distributed in the form of 3 components:"
+msgid "Sugarizer can be used 3 ways:"
+msgstr "Sugarizer can be used 3 ways:"
 
 #: head-web
 msgctxt "head-web"
@@ -70,7 +70,7 @@ msgstr "Web App"
 
 #: content-web
 msgctxt "content-web"
-msgid "It could work on any device with a recent browser version. Sugarizer Web App doesn't need any installation on the device but requires a permanent access to a Sugarizer Server."
+msgid "Sugarizer works on any device with a recent browser version. Sugarizer Web App doesn't need any installation on the device but requires a permanent access to a Sugarizer Server."
 msgstr "It could work on any device with a recent browser version. Sugarizer Web App doesn't need any installation on the device but requires a permanent access to a Sugarizer Server."
 
 #: head-app
@@ -90,8 +90,8 @@ msgstr "Server"
 
 #: content-server
 msgctxt "content-server"
-msgid "Sugarizer Server is the back-end for network features of Sugarizer. It expose locally Web App so allow deployment of Sugarizer on a local server, for example on a school server. Sugarizer Server can also be used to provide collaboration features for App and Web App on the network."
-msgstr "Sugarizer Server is the back-end for network features of Sugarizer. It expose locally Web App so allow deployment of Sugarizer on a local server, for example on a school server. Sugarizer Server can also be used to provide collaboration features for App and Web App on the network."
+msgid "Sugarizer Server is the back-end for network features of Sugarizer. It provides a Web App so Sugarizer can be accessed using web browser from any device across the network, whether at home, in school or, if preferred, across the web. Sugarizer Server also provides collaborative functions between devices using either the installed App or Web App on the network."
+msgstr "Sugarizer Server is the back-end for network features of Sugarizer. It provides a Web App so Sugarizer can be accessed using web browser from any device across the network, whether at home, in school or, if preferred, across the web. Sugarizer Server also provides collaborative functions between devices using either the installed App or Web App on the network."
 
 #: head-sugarizer
 msgctxt "head-sugarizer"
