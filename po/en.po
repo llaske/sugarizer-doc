@@ -235,8 +235,8 @@ msgstr "Children focused"
 
 #: feature-children
 msgctxt "feature-children"
-msgid "Sugarizer was thought for children between 6 and 12. The unique Sugarizer UI is discoverable, wholly intuitive, and use metaphors usable by children who don't know how to read."
-msgstr "Sugarizer was thought for children between 6 and 12. The unique Sugarizer UI is discoverable, wholly intuitive, and use metaphors usable by children who don't know how to read."
+msgid "Sugarizer was built for learners between 6 and 12. The unique Sugarizer UI is discoverable, wholly intuitive, and uses metaphors even non-readers can understand."
+msgstr "Sugarizer was built for learners between 6 and 12. The unique Sugarizer UI is discoverable, wholly intuitive, and uses metaphors even non-readers can understand."
 
 #: headfeat-school
 msgctxt "headfeat-school"
