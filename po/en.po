@@ -90,8 +90,8 @@ msgstr "Server"
 
 #: content-server
 msgctxt "content-server"
-msgid "Sugarizer Server is the back-end for network features of Sugarizer. It provides a Web App so Sugarizer can be accessed using web browser from any device across the network, whether at home, in school or, if preferred, across the web. Sugarizer Server also provides collaborative functions between devices using either the installed App or Web App on the network."
-msgstr "Sugarizer Server is the back-end for network features of Sugarizer. It provides a Web App so Sugarizer can be accessed using web browser from any device across the network, whether at home, in school or, if preferred, across the web. Sugarizer Server also provides collaborative functions between devices using either the installed App or Web App on the network."
+msgid "Sugarizer Server is the back-end for all network features of Sugarizer. It provides a Web App so Sugarizer can be accessed using web browser from any device across the network, whether at home, in school or, if preferred, across the web. Sugarizer Server also provides collaborative functions between devices using either the installed App or Web App on the network."
+msgstr "Sugarizer Server is the back-end for all network features of Sugarizer. It provides a Web App so Sugarizer can be accessed using web browser from any device across the network, whether at home, in school or, if preferred, across the web. Sugarizer Server also provides collaborative functions between devices using either the installed App or Web App on the network."
 
 #: head-sugarizer
 msgctxt "head-sugarizer"
@@ -265,8 +265,8 @@ msgstr "Field approved"
 
 #: feature-approved
 msgctxt "feature-approved"
-msgid "The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
-msgstr "The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
+msgid "The Sugarizer UI uses ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
+msgstr "The Sugarizer UI uses ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
 
 #: headfeat-adblocker
 msgctxt "headfeat-adblocker"
