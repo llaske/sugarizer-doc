@@ -1,17 +1,19 @@
 #. extracted from ../locale.ini
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Fri Feb 21 2020 10:38:38 GMT+0100 (GMT+01:00)\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2020-07-15 02:17+0000\n"
+"Last-Translator: joshuaalm <joshuaalm@gmail.com>\n"
+"Language-Team: English <http://translate.sugarizer.org/projects/sugarizer"
+"/sugarizer-website/en/>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: ini2po 0.0.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.16\n"
 
 #: menu-home
 msgctxt "menu-home"
@@ -61,7 +63,7 @@ msgstr "Source code"
 #: content-components
 msgctxt "content-components"
 msgid "Sugarizer is distributed in the form of 3 components:"
-msgstr "Sugarizer is distributed in the form of 3 components:"
+msgstr "Sugarizer can be used 3 ways:"
 
 #: head-web
 msgctxt "head-web"
@@ -71,7 +73,10 @@ msgstr "Web App"
 #: content-web
 msgctxt "content-web"
 msgid "It could work on any device with a recent browser version. Sugarizer Web App doesn't need any installation on the device but requires a permanent access to a Sugarizer Server."
-msgstr "It could work on any device with a recent browser version. Sugarizer Web App doesn't need any installation on the device but requires a permanent access to a Sugarizer Server."
+msgstr ""
+"Sugarizer Web App works on any device with a recent browser version. It "
+"doesn't need to be installed on the device but requires a permanent access "
+"to a Sugarizer Server."
 
 #: head-app
 msgctxt "head-app"
@@ -91,7 +96,12 @@ msgstr "Server"
 #: content-server
 msgctxt "content-server"
 msgid "Sugarizer Server is the back-end for network features of Sugarizer. It expose locally Web App so allow deployment of Sugarizer on a local server, for example on a school server. Sugarizer Server can also be used to provide collaboration features for App and Web App on the network."
-msgstr "Sugarizer Server is the back-end for network features of Sugarizer. It expose locally Web App so allow deployment of Sugarizer on a local server, for example on a school server. Sugarizer Server can also be used to provide collaboration features for App and Web App on the network."
+msgstr ""
+"Sugarizer Server is the back-end for all network features of Sugarizer. It "
+"provides a Web App so Sugarizer can be accessed using web browser from any "
+"device across the network, whether at home, in school or, if preferred, "
+"across the web. Sugarizer Server also provides collaborative functions "
+"between devices using either the installed App or Web App on the network."
 
 #: head-sugarizer
 msgctxt "head-sugarizer"
@@ -236,7 +246,10 @@ msgstr "Children focused"
 #: feature-children
 msgctxt "feature-children"
 msgid "Sugarizer was thought for children between 6 and 12. The unique Sugarizer UI is discoverable, wholly intuitive, and use metaphors usable by children who don't know how to read."
-msgstr "Sugarizer was thought for children between 6 and 12. The unique Sugarizer UI is discoverable, wholly intuitive, and use metaphors usable by children who don't know how to read."
+msgstr ""
+"Sugarizer was built for learners between 6 and 12. The unique Sugarizer UI "
+"is discoverable, wholly intuitive, and uses metaphors even non-readers can "
+"understand."
 
 #: headfeat-school
 msgctxt "headfeat-school"
@@ -266,7 +279,10 @@ msgstr "Field approved"
 #: feature-approved
 msgctxt "feature-approved"
 msgid "The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
-msgstr "The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
+msgstr ""
+"The Sugarizer UI uses ergonomic principles from Sugar platform, developed "
+"for the One Laptop per Child project and used every day by more than 2 "
+"million children around the world."
 
 #: headfeat-adblocker
 msgctxt "headfeat-adblocker"
@@ -276,7 +292,10 @@ msgstr "Ads Free"
 #: feature-adblocker
 msgctxt "feature-adblocker"
 msgid "95% of apps market for children in stores contain advertising! With Sugarizer you've got the guaranty to have 0% advertisement and 0% tracking tools included."
-msgstr "95% of apps market for children in stores contain advertising! With Sugarizer you've got the guaranty to have 0% advertisement and 0% tracking tools included."
+msgstr ""
+"95% of apps market for children in stores contain advertising! With "
+"Sugarizer you're guaranteed to have 0 advertisements and 0 tracking tools "
+"included."
 
 #: headfeat-opensource
 msgctxt "headfeat-opensource"
@@ -382,4 +401,3 @@ msgstr "Sorry, you're not authorized to display this content :-("
 msgctxt "data-403-maintenance"
 msgid "Please check the URL in your browser address bar."
 msgstr "Please check the URL in your browser address bar."
-
