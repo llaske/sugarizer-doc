@@ -13,52 +13,53 @@ const tagsProperties = {
 	"collaborate": "#F9F7E8",
 	"tools": "#d0d0d0"
 };
-const activitiesTags = {
-	"org.sugarlabs.Falabracman": ["games","reading"],
-	"org.sugarlabs.Exerciser": ["tools","collaborate"],
-	"org.sugarlabs.GearsActivity": ["simulate"],
-	"org.sugarlabs.MazeWebActivity": ["games","collaborate"],
-	"org.olpcfrance.PaintActivity": ["create","collaborate"],
-	"org.olpcfrance.TamTamMicro": ["create"],
-	"org.olpcfrance.MemorizeActivity": ["games","collaborate"],
-	"org.olpg-france.physicsjs": ["simulate"],
-	"org.sugarlabs.CalculateActivity": ["math"],
-	"org.sugarlabs.TurtleBlocksJS": ["programming"],
-	"org.sugarlabs.Clock": ["explore"],
-	"org.sugarlabs.SpeakActivity": ["reading"],
-	"org.sugarlabs.moon": ["explore"],
-	"org.olpcfrance.RecordActivity": ["create"],
-	"org.olpcfrance.Abecedarium": ["reading","explore"],
-	"org.olpcfrance.videoviewer": ["explore"],
-	"org.olpcfrance.FoodChain": ["games","explore"],
-	"org.olpc-france.labyrinthjs": ["writing","collaborate"],
-	"org.olpcfrance.TankOp": ["math","games"],
-	"org.sugarlabs.ChatPrototype": ["tools","collaborate"],
-	"org.olpcfrance.Gridpaint": ["create"],
-	"org.olpc-france.LOLActivity": ["games", "collaborate"],
-	"org.olpcfrance.sharednotes": ["writing","collaborate"],
-	"org.sugarlabs.ColorMyWorldActivity": ["explore"],
-	"com.homegrownapps.xoeditor": ["tools"],
-	"com.homegrownapps.reflection": ["math","games"],
-	"com.homegrownapps.abacus": ["math"],
-	"org.sugarlabs.SprintMath": ["math","games","collaborate"],
-	"org.sugarlabs.Blockrain": ["games"],
-	"org.sugarlabs.StopwatchActivity": ["tools"],
-	"com.homegrownapps.flip": ["games"],
-	"org.somosazucar.JappyActivity": ["programming"],
-	"org.olpcfrance.qrcode": ["tools"],
-	"org.sugarlabs.Markdown": ["writing"],
-	"org.sugarlabs.Scratch": ["programming"],
-	"org.sugarlabs.gameOfLife": ["simulate"],
-	"org.sugarlabs.FotoToonJs": ["create"],
-	"org.sugarlabs.GTDActivity": ["tools"],
-	"org.squeak.EtoysActivity": ["programming"],
-	"org.olpcfrance.EbookReader": ["reading", "explore"],
-	"org.olpcfrance.Calligra": ["writing"],
-	"org.olpcfrance.MediaViewerActivity": ["tools"],
-	"org.sugarlabs.PomodoroActivity": ["tools"],
-	"org.sugarlabs.Constellation": ["explore"],
-	"org.sugarlabs.Write": ["writing","collaborate"]
+const agesProperties = [4, 6, 8, 11];
+const activitiesInfo = {
+	"org.sugarlabs.Falabracman": {tags: ["games","reading"], age: 4},
+	"org.sugarlabs.Exerciser": {tags: ["tools","collaborate"], age: 8},
+	"org.sugarlabs.GearsActivity": {tags: ["simulate"], age: 4},
+	"org.sugarlabs.MazeWebActivity": {tags: ["games","collaborate"], age: 6},
+	"org.olpcfrance.PaintActivity": {tags: ["create","collaborate"], age: 4},
+	"org.olpcfrance.TamTamMicro": {tags: ["create"], age: 4},
+	"org.olpcfrance.MemorizeActivity": {tags: ["games","collaborate"], age: 4},
+	"org.olpg-france.physicsjs": {tags: ["simulate"], age: 11},
+	"org.sugarlabs.CalculateActivity": {tags: ["math"], age: 6},
+	"org.sugarlabs.TurtleBlocksJS": {tags: ["programming"], age: 6},
+	"org.sugarlabs.Clock": {tags: ["explore"], age: 6},
+	"org.sugarlabs.SpeakActivity": {tags: ["reading"], age: 4},
+	"org.sugarlabs.moon": {tags: ["explore"], age: 6},
+	"org.olpcfrance.RecordActivity": {tags: ["create"], age: 8},
+	"org.olpcfrance.Abecedarium": {tags: ["reading","explore"], age: 4},
+	"org.olpcfrance.videoviewer": {tags: ["explore"], age: 8},
+	"org.olpcfrance.FoodChain": {tags: ["games","explore"], age: 4},
+	"org.olpc-france.labyrinthjs": {tags: ["writing","collaborate"], age: 11},
+	"org.olpcfrance.TankOp": {tags: ["math","games"], age: 6},
+	"org.sugarlabs.ChatPrototype": {tags: ["tools","collaborate"], age: 8},
+	"org.olpcfrance.Gridpaint": {tags: ["create"], age: 4},
+	"org.olpc-france.LOLActivity": {tags: ["games", "collaborate"], age: 6},
+	"org.olpcfrance.sharednotes": {tags: ["writing","collaborate"], age: 8},
+	"org.sugarlabs.ColorMyWorldActivity": {tags: ["explore"], age: 4},
+	"com.homegrownapps.xoeditor": {tags: ["tools"], age: 4},
+	"com.homegrownapps.reflection": {tags: ["math","games"], age: 4},
+	"com.homegrownapps.abacus": {tags: ["math"], age: 4},
+	"org.sugarlabs.SprintMath": {tags: ["math","games","collaborate"], age: 6},
+	"org.sugarlabs.Blockrain": {tags: ["games"], age: 6},
+	"org.sugarlabs.StopwatchActivity": {tags: ["tools"], age: 8},
+	"com.homegrownapps.flip": {tags: ["games"], age: 4},
+	"org.somosazucar.JappyActivity": {tags: ["programming"], age: 11},
+	"org.olpcfrance.qrcode": {tags: ["tools"], age: 6},
+	"org.sugarlabs.Markdown": {tags: ["writing"], age: 11},
+	"org.sugarlabs.Scratch": {tags: ["programming"], age: 8},
+	"org.sugarlabs.gameOfLife": {tags: ["simulate"], age: 11},
+	"org.sugarlabs.FotoToonJs": {tags: ["create"], age: 6},
+	"org.sugarlabs.GTDActivity": {tags: ["tools"], age: 11},
+	"org.squeak.EtoysActivity": {tags: ["programming"], age: 8},
+	"org.olpcfrance.EbookReader": {tags: ["reading", "explore"], age: 8},
+	"org.olpcfrance.Calligra": {tags: ["writing"], age: 4},
+	"org.olpcfrance.MediaViewerActivity": {tags: ["tools"], age: 6},
+	"org.sugarlabs.PomodoroActivity": {tags: ["tools"], age: 11},
+	"org.sugarlabs.Constellation": {tags: ["explore"], age: 6},
+	"org.sugarlabs.Write": {tags: ["writing","collaborate"], age: 4}
 };
 
 // Rebase require directory
@@ -77,10 +78,16 @@ var app = new Vue({
 		<v-app>
 			<v-content>
 				<a href="index.html#gallery" data-l10n-id="menu-home" title="Home" class="btn btn-lg btn-red btn-back">Home</a>
-				<div v-if="activities.length>0" class="filter-list">
+				<div v-if="activities.length>0" class="filtertag-list">
 					<div v-for="(val, tag) in tags" class="filter-button">
-						<input id="filter" v-bind:value="tag" type="radio" v-on:click="onFilter(tag)" :checked="(tag==filterTag||(tag=='all'&&filterTag==''))"/>
+						<input id="filter" v-bind:value="tag" type="radio" v-on:click="onFilterTag(tag)" :checked="(tag==filterTag||(tag=='all'&&filterTag==''))"/>
 						<div class="tag-button" v-bind:style="'background-color:'+val+(tag==filterTag||(tag=='all'&&filterTag=='')?';font-weight:bold':'')">{{computeTagText(tag)}}</div>
+					</div>
+				</div>
+				<div v-if="activities.length>0" class="filterage-list">
+					<div v-for="(val, age) in ages" class="filter-button">
+					<input class="input-button" id="filter" v-bind:value="val" type="radio" v-on:click="onFilterAge(val)" :checked="(val==filterAge)"/>
+						<v-img class="age-button" v-bind:src="'./img/'+val+'year.svg'" height="50px" width="50px"></v-img>
 					</div>
 				</div>
 				<v-data-table :headers="headers" :items="filteredActivities()" :items-per-page="100" class="elevation-1"
@@ -96,6 +103,9 @@ var app = new Vue({
 							<div class='tag-style' v-bind:style="'background-color:'+computeTagColor(tag)">{{computeTagText(tag)}}</div>
 						</div>
 					</template>
+					<template v-slot:item.age="{item}">
+						<v-img v-bind:src="'./img/'+item.age+'year.svg'" height="50px" width="50px"></v-img>
+					</template>
 					<template v-slot:item.video="{item}">
 						<a class="btn btn-red" data-featherlight="image" v-bind:href="item.video">{{getDemoText()}}</a>
 					</template>
@@ -109,12 +119,15 @@ var app = new Vue({
 			{text: "", value: "name", width: 140},
 			{text: "", value: "description", sortable: false},
 			{text: "", value: "tags", sortable: false},
+			{text: "", value: "age", sortable: false},
 			{text: "", value: "video", sortable: false}
 		],
 		activities: [],
 		filterTag: "",
+		filterAge: 11,
 		filterName: "",
-		tags: tagsProperties
+		tags: tagsProperties,
+		ages: agesProperties
 	},
 
 	created: function() {
@@ -175,7 +188,8 @@ var app = new Vue({
 					icon: sugarizerUrl+activity.directory+"/"+activity.icon,
 					description: document.webL10n.get("TutoActivity"+directory+"activity"),
 					video: "videos/"+directory.toLowerCase()+".gif",
-					tags: activitiesTags[activity.id]
+					tags: activitiesInfo[activity.id].tags,
+					age: activitiesInfo[activity.id].age
 				});
 			}
 			activities.sort(function(a,b) {
@@ -189,7 +203,8 @@ var app = new Vue({
 			var vm = this;
 			return vm.activities.filter(function(item) {
 				return (vm.filterTag.length == 0 || item.tags.indexOf(vm.filterTag) != -1) &&
-					(vm.filterName.length == 0 || item.name.indexOf(vm.filterName) != -1);
+					(vm.filterName.length == 0 || item.name.indexOf(vm.filterName) != -1) &&
+					(item.age <= vm.filterAge);
 			});
 		},
 
@@ -205,13 +220,17 @@ var app = new Vue({
 		},
 
 		// Filter
-		onFilter: function(tag) {
+		onFilterTag: function(tag) {
 			var vm = this;
 			if (tag == "all") {
 				vm.filterTag = "";
 			} else {
 				vm.filterTag = tag;
 			}
+		},
+		onFilterAge: function(age) {
+			var vm = this;
+			vm.filterAge = age;
 		}
 	}
 });

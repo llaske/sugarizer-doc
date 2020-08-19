@@ -7,6 +7,11 @@
     font-size: 14px;
 }
 
+.age-button {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
 .tag-style {
     display: inline-block;
     padding-left: 7px;
@@ -15,10 +20,15 @@
     padding-top: 3px;
 }
 
-.filter-list {
+.filtertag-list {
     display: table;
     margin: 0 auto;
     margin-top: 30px;
+}
+
+.filterage-list {
+    display: table;
+    margin: 0 auto;
 }
 
 .filter-button {
@@ -26,6 +36,10 @@
     margin-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.input-button {
+    vertical-align: super;
 }
 
 a:hover, a:focus, a:active, a:visited {
