@@ -59,7 +59,15 @@ const activitiesInfo = {
 	"org.olpcfrance.MediaViewerActivity": {tags: ["tools"], age: 6},
 	"org.sugarlabs.PomodoroActivity": {tags: ["tools"], age: 11},
 	"org.sugarlabs.Constellation": {tags: ["explore"], age: 6},
-	"org.sugarlabs.Write": {tags: ["writing","collaborate"], age: 4}
+	"org.sugarlabs.Write": {tags: ["writing","collaborate"], age: 4},
+	"org.sugarlabs.Tangram": {tags: ["games","create","collaborate"], age: 4},
+	"org.sugarlabs.Vote": {tags: ["tools","collaborate"], age: 8},
+	"org.sugarlabs.MindMath": {tags: ["math","games","collaborate"], age: 8},
+	"org.sugarlabs.Curriculum": {tags: ["tools","collaborate"], age: 6},
+	"org.sugarlabs.ChessActivity": {tags: ["games","collaborate"], age: 8},
+	"org.sugarlabs.FractionBounce": {tags: ["math","games"], age: 8},
+	"org.sugarlabs.Planets": {tags: ["explore"], age: 4},
+	"org.sugarlabs.Implode": {tags: ["games"], age: 4}
 };
 
 // Rebase require directory
