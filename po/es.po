@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Fri Feb 21 2020 10:38:38 GMT+0100 (GMT+01:00)\n"
+"POT-Creation-Date: Tue Sep 22 2020 22:15:13 GMT+0200 (heure d’été d’Europe centrale)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,6 +22,11 @@ msgstr "Inicio"
 msgctxt "menu-features"
 msgid "Features"
 msgstr "Features"
+
+#: menu-examples
+msgctxt "menu-examples"
+msgid "Activities"
+msgstr "Activities"
 
 #: menu-apps
 msgctxt "menu-apps"
@@ -295,8 +300,8 @@ msgstr "Demo"
 
 #: gallery-title
 msgctxt "gallery-title"
-msgid "Examples of activities:"
-msgstr "Examples of activities:"
+msgid "Activity list:"
+msgstr "Activity list:"
 
 #: activity-gears-description
 msgctxt "activity-gears-description"
@@ -337,6 +342,11 @@ msgstr "Abecedarium is an abecedary activity to learn its alphabet using images,
 msgctxt "activity-tamtammicro-description"
 msgid "Tam Tam Micro is an activity to play instruments, sounds and noise of different type."
 msgstr "Tam Tam Micro is an activity to play instruments, sounds and noise of different type."
+
+#: activity-all-description
+msgctxt "activity-all-description"
+msgid "Sugarizer include about 50 activities to play, create, simulate, ... Find the one you need!"
+msgstr "Sugarizer include about 50 activities to play, create, simulate, ... Find the one you need!"
 
 #: data-502-oops
 msgctxt "data-502-oops"
@@ -382,4 +392,69 @@ msgstr "Sorry, you're not authorized to display this content :-("
 msgctxt "data-403-maintenance"
 msgid "Please check the URL in your browser address bar."
 msgstr "Please check the URL in your browser address bar."
+
+#: category-all
+msgctxt "category-all"
+msgid "All"
+msgstr "All"
+
+#: category-math
+msgctxt "category-math"
+msgid "Math"
+msgstr "Math"
+
+#: category-reading
+msgctxt "category-reading"
+msgid "Read"
+msgstr "Read"
+
+#: category-writing
+msgctxt "category-writing"
+msgid "Write"
+msgstr "Write"
+
+#: category-create
+msgctxt "category-create"
+msgid "Create"
+msgstr "Create"
+
+#: category-simulate
+msgctxt "category-simulate"
+msgid "Simulate"
+msgstr "Simulate"
+
+#: category-programming
+msgctxt "category-programming"
+msgid "Program"
+msgstr "Program"
+
+#: category-games
+msgctxt "category-games"
+msgid "Games"
+msgstr "Games"
+
+#: category-explore
+msgctxt "category-explore"
+msgid "Explore"
+msgstr "Explore"
+
+#: category-collaborate
+msgctxt "category-collaborate"
+msgid "Collaborate"
+msgstr "Collaborate"
+
+#: category-tools
+msgctxt "category-tools"
+msgid "Tools"
+msgstr "Tools"
+
+#: button-demo
+msgctxt "button-demo"
+msgid "Demo"
+msgstr "Demo"
+
+#: explore
+msgctxt "explore"
+msgid "Explore"
+msgstr "Explore"
 

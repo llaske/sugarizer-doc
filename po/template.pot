@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Fri Feb 21 2020 10:38:38 GMT+0100 (GMT+01:00)\n"
+"POT-Creation-Date: Tue Sep 22 2020 22:15:13 GMT+0200 (heure d’été d’Europe centrale)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,6 +21,11 @@ msgstr ""
 #: menu-features
 msgctxt "menu-features"
 msgid "Features"
+msgstr ""
+
+#: menu-examples
+msgctxt "menu-examples"
+msgid "Activities"
 msgstr ""
 
 #: menu-apps
@@ -295,7 +300,7 @@ msgstr ""
 
 #: gallery-title
 msgctxt "gallery-title"
-msgid "Examples of activities:"
+msgid "Activity list:"
 msgstr ""
 
 #: activity-gears-description
@@ -336,6 +341,11 @@ msgstr ""
 #: activity-tamtammicro-description
 msgctxt "activity-tamtammicro-description"
 msgid "Tam Tam Micro is an activity to play instruments, sounds and noise of different type."
+msgstr ""
+
+#: activity-all-description
+msgctxt "activity-all-description"
+msgid "Sugarizer include about 50 activities to play, create, simulate, ... Find the one you need!"
 msgstr ""
 
 #: data-502-oops
@@ -381,5 +391,70 @@ msgstr ""
 #: data-403-maintenance
 msgctxt "data-403-maintenance"
 msgid "Please check the URL in your browser address bar."
+msgstr ""
+
+#: category-all
+msgctxt "category-all"
+msgid "All"
+msgstr ""
+
+#: category-math
+msgctxt "category-math"
+msgid "Math"
+msgstr ""
+
+#: category-reading
+msgctxt "category-reading"
+msgid "Read"
+msgstr ""
+
+#: category-writing
+msgctxt "category-writing"
+msgid "Write"
+msgstr ""
+
+#: category-create
+msgctxt "category-create"
+msgid "Create"
+msgstr ""
+
+#: category-simulate
+msgctxt "category-simulate"
+msgid "Simulate"
+msgstr ""
+
+#: category-programming
+msgctxt "category-programming"
+msgid "Program"
+msgstr ""
+
+#: category-games
+msgctxt "category-games"
+msgid "Games"
+msgstr ""
+
+#: category-explore
+msgctxt "category-explore"
+msgid "Explore"
+msgstr ""
+
+#: category-collaborate
+msgctxt "category-collaborate"
+msgid "Collaborate"
+msgstr ""
+
+#: category-tools
+msgctxt "category-tools"
+msgid "Tools"
+msgstr ""
+
+#: button-demo
+msgctxt "button-demo"
+msgid "Demo"
+msgstr ""
+
+#: explore
+msgctxt "explore"
+msgid "Explore"
 msgstr ""
 
