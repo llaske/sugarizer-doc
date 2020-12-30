@@ -1,17 +1,20 @@
 #. extracted from ../locale.ini
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Sep 22 2020 22:15:13 GMT+0200 (heure d’été d’Europe centrale)\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: Tue Sep 22 2020 22:15:13 GMT+0200 (heure d’été d’Europe "
+"centrale)\n"
+"PO-Revision-Date: 2020-12-30 11:42+0000\n"
+"Last-Translator: Alberto Gómez Herrera <aghtranslation@gmail.com>\n"
+"Language-Team: Spanish <http://translate.sugarizer.org/projects/sugarizer"
+"/sugarizer-website/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: ini2po 0.0.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.16\n"
 
 #: menu-home
 msgctxt "menu-home"
@@ -21,12 +24,12 @@ msgstr "Inicio"
 #: menu-features
 msgctxt "menu-features"
 msgid "Features"
-msgstr "Features"
+msgstr "Características"
 
 #: menu-examples
 msgctxt "menu-examples"
 msgid "Activities"
-msgstr "Activities"
+msgstr "Actividades"
 
 #: menu-apps
 msgctxt "menu-apps"
@@ -41,12 +44,16 @@ msgstr "Más"
 #: head-taste
 msgctxt "head-taste"
 msgid "The leading learning platform for children"
-msgstr "The leading learning platform for children"
+msgstr "La mejor plataforma de aprendizaje para niños"
 
 #: head-children
 msgctxt "head-children"
 msgid "Sugarizer is a free/libre learning platform. The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
-msgstr "Sugarizer is a free/libre learning platform. The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
+msgstr ""
+"Sugarizer es una plataforma pedagógica libre y gratuita. La interfaz de "
+"Sugarizer emplea principios ergonómicos de la plataforma Sugar, desarrollada "
+"para el proyecto \"One Laptop per Child\" (\"Un portátil para cada niño\"), "
+"y cada día es usada por más de 2 millones de niños en todo el mundo."
 
 #: head-try
 msgctxt "head-try"
@@ -136,22 +143,22 @@ msgstr "Snapcraft"
 #: content-desktop
 msgctxt "content-desktop"
 msgid "Desktop Installation"
-msgstr "Desktop Installation"
+msgstr "Instalación para ordenador"
 
 #: content-serverinstall
 msgctxt "content-serverinstall"
 msgid "Server Installation on"
-msgstr "Server Installation on"
+msgstr "Instalación del servidor en"
 
 #: content-moreinfo
 msgctxt "content-moreinfo"
 msgid "More information"
-msgstr "More information"
+msgstr "Más información"
 
 #: content-here
 msgctxt "content-here"
 msgid "here"
-msgstr "here"
+msgstr "aquí"
 
 #: head-info
 msgctxt "head-info"
@@ -216,7 +223,10 @@ msgstr "aquí"
 #: activities
 msgctxt "activities"
 msgid "Most activities use this license too but some could use a different license, check the README file for more."
-msgstr "Most activities use this license too but some could use a different license, check the README file for more."
+msgstr ""
+"La mayoría de las actividades también usan esta licencia, pero algunas "
+"podrían necesitar una licencia diferente. Comprueba el archivo README para "
+"más información."
 
 #: original
 msgctxt "original"
@@ -231,67 +241,91 @@ msgstr "Piotr Antosz"
 #: credits
 msgctxt "credits"
 msgid "Image credits (from the Noun Project): Play by P.J. Onori, Responsive Design by Benni, Server image by aLf, Cloud by Dmitry Baranovskiy, Tablet by Konstantin Velichko, Children by Musmellow, School by Kevin, Group by Nicolas Mitchell, Approved by Gregor Cresnar, Ad Blocker by Setyo Ari Wibowo."
-msgstr "Image credits (from the Noun Project): Play by P.J. Onori, Responsive Design by Benni, Server image by aLf, Cloud by Dmitry Baranovskiy, Tablet by Konstantin Velichko, Children by Musmellow, School by Kevin, Group by Nicolas Mitchell, Approved by Gregor Cresnar, Ad Blocker by Setyo Ari Wibowo."
+msgstr ""
+"Imágenes (fuente: Noun Project): Jugabilidad - P.J. Onori, Diseño reactivo - "
+"Benni, Imagen del servidor - aLf, Servicios en la nube - Dmitry Baranovskiy, "
+"Servicios en tablet - Konstantin Velichko, Niños - Musmellow, Escuelas - "
+"Kevin, Grupo - Nicolas Mitchell, Aprobación -Gregor Cresnar, Bloqueador de "
+"publicidad - Setyo Ari Wibowo."
 
 #: headfeat-children
 msgctxt "headfeat-children"
 msgid "Children focused"
-msgstr "Children focused"
+msgstr "Enfocado en los niños"
 
 #: feature-children
 msgctxt "feature-children"
 msgid "Sugarizer was thought for children between 6 and 12. The unique Sugarizer UI is discoverable, wholly intuitive, and use metaphors usable by children who don't know how to read."
-msgstr "Sugarizer was thought for children between 6 and 12. The unique Sugarizer UI is discoverable, wholly intuitive, and use metaphors usable by children who don't know how to read."
+msgstr ""
+"Sugarizer ha sido creado especialmente para niños entre 6 y 12 años. La "
+"interfaz única de Sugarizer te permite descubrir de forma intuitiva, y usar "
+"conceptos usados por los niños, incluso si aún no saben leer."
 
 #: headfeat-school
 msgctxt "headfeat-school"
 msgid "Learn at school and beyond"
-msgstr "Learn at school and beyond"
+msgstr "Aprende en el colegio y en muchos más sitios"
 
 #: feature-school
 msgctxt "feature-school"
 msgid "Sugarizer provide a set of \"activities\", not a set of applications. This is more than a new naming convention"
-msgstr "Sugarizer provide a set of \"activities\", not a set of applications. This is more than a new naming convention"
+msgstr ""
+"Sugarizer proporciona un conjunto de actividades, y no solo un grupo de "
+"aplicaciones. Esto representa mucho más que un simple nombre"
 
 #: headfeat-collaborative
 msgctxt "headfeat-collaborative"
 msgid "Collaborative"
-msgstr "Collaborative"
+msgstr "Colaborativo"
 
 #: feature-collaborative
 msgctxt "feature-collaborative"
 msgid "Everyone has the potential for being both a learner and a teacher. Sugarizer has chosen to put collaboration at the core of the user experience in order to realize this potential."
-msgstr "Everyone has the potential for being both a learner and a teacher. Sugarizer has chosen to put collaboration at the core of the user experience in order to realize this potential."
+msgstr ""
+"Con estas actividades, todo el mundo puede ser un alumno o un profesor. "
+"Sugarizer ha elegido que la colaboración sea el núcleo central de la "
+"experiencia del usuario, expandiendo considerablemente su potencial "
+"educativo."
 
 #: headfeat-approved
 msgctxt "headfeat-approved"
 msgid "Field approved"
-msgstr "Field approved"
+msgstr "Campo aprobado"
 
 #: feature-approved
 msgctxt "feature-approved"
 msgid "The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
-msgstr "The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
+msgstr ""
+"La interfaz de Sugarizer emplea principios ergonómicos de la plataforma "
+"Sugar, desarrollada para el proyecto One Laptop per Child (\"Un portátil "
+"para cada niño\") y usada por más de 2 millones de niños alrededor de todo "
+"el mundo."
 
 #: headfeat-adblocker
 msgctxt "headfeat-adblocker"
 msgid "Ads Free"
-msgstr "Ads Free"
+msgstr "Sin publicidad"
 
 #: feature-adblocker
 msgctxt "feature-adblocker"
 msgid "95% of apps market for children in stores contain advertising! With Sugarizer you've got the guaranty to have 0% advertisement and 0% tracking tools included."
-msgstr "95% of apps market for children in stores contain advertising! With Sugarizer you've got the guaranty to have 0% advertisement and 0% tracking tools included."
+msgstr ""
+"¡El 95 % del mercado de apps para niños disponibles en las tiendas contienen "
+"anuncios! Sugarizer, en cambio, te garantiza un 0 % de publicidad y un 0 % "
+"de herramientas de rastreo."
 
 #: headfeat-opensource
 msgctxt "headfeat-opensource"
 msgid "Free software"
-msgstr "Free software"
+msgstr "Software libre"
 
 #: feature-opensource
 msgctxt "feature-opensource"
 msgid "Sugarizer is a Free, Libre Software. We believe that source code transparency, simple customization and free contents, are absolute requirements for a tool in children's hands."
-msgstr "Sugarizer is a Free, Libre Software. We believe that source code transparency, simple customization and free contents, are absolute requirements for a tool in children's hands."
+msgstr ""
+"Sugarizer es un software libre. Creemos que la transparencia en el código "
+"fuente, la personalización simple y los contenidos gratuitos son un "
+"requisito imprescindible para una herramienta para el uso de los niños."
 
 #: demo
 msgctxt "demo"
@@ -301,127 +335,154 @@ msgstr "Demo"
 #: gallery-title
 msgctxt "gallery-title"
 msgid "Activity list:"
-msgstr "Activity list:"
+msgstr "Lista de actividades:"
 
 #: activity-gears-description
 msgctxt "activity-gears-description"
 msgid "Gears is a tool to explore the ways in which gears and chains transmit motion. Draw your gears and see it coming to life."
-msgstr "Gears is a tool to explore the ways in which gears and chains transmit motion. Draw your gears and see it coming to life."
+msgstr ""
+"\"Engranajes\" es una herramienta para explorar las diferentes maneras en "
+"las que los engranajes y las cadenas transmiten el movimiento entre sí. "
+"Dibuja tus engranajes y observa cómo comienzan a funcionar."
 
 #: activity-abacus-description
 msgctxt "activity-abacus-description"
 msgid "Abacus lets the learner explore different representations of numbers using different mechanical counting systems developed by the ancient Romans and Chinese."
-msgstr "Abacus lets the learner explore different representations of numbers using different mechanical counting systems developed by the ancient Romans and Chinese."
+msgstr ""
+"\"Ábaco\" permite al estudiante explorar diferentes representaciones de "
+"números usando sistemas de recuento mecánicos en desuso, empleados por las "
+"antiguas civilizaciones romana y china."
 
 #: activity-reflection-description
 msgctxt "activity-reflection-description"
 msgid "Reflection is a game designed around reflective symmetry. The user modifies an image until it has reflective symmetry around either the horizontal or vertical axis."
-msgstr "Reflection is a game designed around reflective symmetry. The user modifies an image until it has reflective symmetry around either the horizontal or vertical axis."
+msgstr ""
+"\"Reflejo\" es un juego diseñado para educar en el concepto de simetría "
+"reflectiva. El alumno modificará una imagen hasta que tenga una simetría "
+"reflectiva alrededor del eje horizontal o vertical."
 
 #: activity-scratch-description
 msgctxt "activity-scratch-description"
 msgid "Scratch is a full environment where you can program your own interactive stories, games, and animations."
-msgstr "Scratch is a full environment where you can program your own interactive stories, games, and animations."
+msgstr ""
+"\"Borrador\" es una interfaz donde podrás programar tus propias historias "
+"interactivas, juegos y animaciones."
 
 #: activity-colormyworld-description
 msgctxt "activity-colormyworld-description"
 msgid "Color My World activity let you explore the world and its countries. Fill countries with color you like or use the interactive mode to find location of countries on the offline map."
-msgstr "Color My World activity let you explore the world and its countries. Fill countries with color you like or use the interactive mode to find location of countries on the offline map."
+msgstr ""
+"\"Colorea mi mundo\" es una actividad que te deja explorar el mundo y sus "
+"países. Rellena de color los países que quieras, o usa el modo interactivo "
+"para encontrar países mediante un mapa sin conexión a internet."
 
 #: activity-gridpaint-description
 msgctxt "activity-gridpaint-description"
 msgid "Grid Paint is a simple paint activity for kids to draw pictures using a grid of triangles. Never miss your drawing with Grid Paint activity!s"
-msgstr "Grid Paint is a simple paint activity for kids to draw pictures using a grid of triangles. Never miss your drawing with Grid Paint activity!s"
+msgstr ""
+"\"Cuadro de pintura\" es una actividad de pintura simple, en la que los "
+"niños pintaran lo que quieran usando un cuadro formado de triángulos. ¡No "
+"volverás a dibujar mal después de usar la actividad \"Cuadro de pintura\"!"
 
 #: activity-abecedarium-description
 msgctxt "activity-abecedarium-description"
 msgid "Abecedarium is an abecedary activity to learn its alphabet using images, sounds and words."
-msgstr "Abecedarium is an abecedary activity to learn its alphabet using images, sounds and words."
+msgstr ""
+"\"Abecedario\" es una actividad para aprender el abecedario usando imágenes, "
+"sonidos y palabras."
 
 #: activity-tamtammicro-description
 msgctxt "activity-tamtammicro-description"
 msgid "Tam Tam Micro is an activity to play instruments, sounds and noise of different type."
-msgstr "Tam Tam Micro is an activity to play instruments, sounds and noise of different type."
+msgstr ""
+"La actividad \"Tam Tam\" te permitirá reproducir instrumentos, sonidos y "
+"ruidos de diferentes tipos."
 
 #: activity-all-description
 msgctxt "activity-all-description"
 msgid "Sugarizer include about 50 activities to play, create, simulate, ... Find the one you need!"
-msgstr "Sugarizer include about 50 activities to play, create, simulate, ... Find the one you need!"
+msgstr ""
+"Sugarizer incluye alrededor de 50 actividades para jugar, crear, simular... ¡"
+"Encuentra y juega a la que más te guste!"
 
 #: data-502-oops
 msgctxt "data-502-oops"
 msgid "Oops"
-msgstr "Oops"
+msgstr "Ups"
 
 #: data-502-sorry
 msgctxt "data-502-sorry"
 msgid "Sorry, it seems that your Sugarizer Server is currently offline :-("
-msgstr "Sorry, it seems that your Sugarizer Server is currently offline :-("
+msgstr ""
+"Lo sentimos, parece que tu servidor de Sugarizer está actualmente fuera de "
+"línea"
 
 #: data-502-maintenance
 msgctxt "data-502-maintenance"
 msgid "It's probably for maintenance reason. So, please retry in few minutes, it should be back."
-msgstr "It's probably for maintenance reason. So, please retry in few minutes, it should be back."
+msgstr ""
+"Probablemente se deba a una sesión de mantenimiento. Por favor, prueba de "
+"nuevo en unos minutos, y ya debería funcionar."
 
 #: data-404-oops
 msgctxt "data-404-oops"
 msgid "Oops"
-msgstr "Oops"
+msgstr "Ups"
 
 #: data-404-sorry
 msgctxt "data-404-sorry"
 msgid "Sorry, this page doesn't exist in our Journal :-("
-msgstr "Sorry, this page doesn't exist in our Journal :-("
+msgstr "Lo sentimos, esta página no existe en nuestra biblioteca"
 
 #: data-404-maintenance
 msgctxt "data-404-maintenance"
 msgid "Please check the URL in your browser address bar."
-msgstr "Please check the URL in your browser address bar."
+msgstr "Por favor, comprueba su dirección URL en la barra de navegación."
 
 #: data-403-oops
 msgctxt "data-403-oops"
 msgid "Oops"
-msgstr "Oops"
+msgstr "Ups"
 
 #: data-403-sorry
 msgctxt "data-403-sorry"
 msgid "Sorry, you're not authorized to display this content :-("
-msgstr "Sorry, you're not authorized to display this content :-("
+msgstr "Lo sentimos, no tienes permiso para ver este contenido"
 
 #: data-403-maintenance
 msgctxt "data-403-maintenance"
 msgid "Please check the URL in your browser address bar."
-msgstr "Please check the URL in your browser address bar."
+msgstr "Por favor, comprueba la dirección URL en la barra de navegación."
 
 #: category-all
 msgctxt "category-all"
 msgid "All"
-msgstr "All"
+msgstr "Todos"
 
 #: category-math
 msgctxt "category-math"
 msgid "Math"
-msgstr "Math"
+msgstr "Matemáticas"
 
 #: category-reading
 msgctxt "category-reading"
 msgid "Read"
-msgstr "Read"
+msgstr "Lectura"
 
 #: category-writing
 msgctxt "category-writing"
 msgid "Write"
-msgstr "Write"
+msgstr "Escritura"
 
 #: category-create
 msgctxt "category-create"
 msgid "Create"
-msgstr "Create"
+msgstr "Creatividad"
 
 #: category-simulate
 msgctxt "category-simulate"
 msgid "Simulate"
-msgstr "Simulate"
+msgstr "Simulación"
 
 #: category-programming
 msgctxt "category-programming"
@@ -431,7 +492,7 @@ msgstr "Program"
 #: category-games
 msgctxt "category-games"
 msgid "Games"
-msgstr "Games"
+msgstr "Juegos"
 
 #: category-explore
 msgctxt "category-explore"
@@ -441,12 +502,12 @@ msgstr "Explore"
 #: category-collaborate
 msgctxt "category-collaborate"
 msgid "Collaborate"
-msgstr "Collaborate"
+msgstr "Colaboración"
 
 #: category-tools
 msgctxt "category-tools"
 msgid "Tools"
-msgstr "Tools"
+msgstr "Herramientas"
 
 #: button-demo
 msgctxt "button-demo"
@@ -457,4 +518,3 @@ msgstr "Demo"
 msgctxt "explore"
 msgid "Explore"
 msgstr "Explore"
-
