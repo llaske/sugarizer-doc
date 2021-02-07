@@ -141,79 +141,10 @@
 	<div class="row me-row content-ct">
 		<h2 class="row-title" data-l10n-id="gallery-title">Activity list:</h2>
 	</div>
-	<div class="card-deck activity-gallery">
-		<div class="card activity-gallery-item">
-			<img class="card-img-top" src="img/gears.png" width="200px" alt="Gears">
-			<div class="card-body">
-				<h3 class="card-title">Gears</h3>
-				<p class="card-text" data-l10n-id="activity-gears-description">Gears is a tool to explore the ways in which gears and chains transmit motion. Draw your gears and see it coming to life.</p>
-				<a href="videos/gears.gif" data-featherlight="image" class="btn btn-red" data-l10n-id="demo">Demo</a>
-			</div>
-		</div>
-		<div class="card activity-gallery-item">
-			<img class="card-img-top" src="img/abacus.png" width="200px" alt="Gears">
-			<div class="card-body">
-				<h3 class="card-title">Abacus</h3>
-				<p class="card-text" data-l10n-id="activity-abacus-description">Abacus lets the learner explore different representations of numbers using different mechanical counting systems developed by the ancient Romans and Chinese.</p>
-				<a href="videos/abacus.gif" data-featherlight="image" class="btn btn-red" data-l10n-id="demo">Demo</a>
-			</div>
-		</div>
-		<div class="card activity-gallery-item">
-			<img class="card-img-top" src="img/reflection.png" width="200px" alt="Gears">
-			<div class="card-body">
-				<h3 class="card-title">Reflection</h3>
-				<p class="card-text" data-l10n-id="activity-reflection-description">Reflection is a game designed around reflective symmetry. The user modifies an image until it has reflective symmetry around either the horizontal or vertical axis.</p>
-				<a href="videos/reflection.gif" data-featherlight="image" class="btn btn-red" data-l10n-id="demo">Demo</a>
-			</div>
-		</div>
-		<div class="card activity-gallery-item">
-			<img class="card-img-top" src="img/scratch.png" width="200px" alt="Gears">
-			<div class="card-body">
-				<h3 class="card-title">Scratch</h3>
-				<p class="card-text" data-l10n-id="activity-scratch-description">Scratch is a full environment where you can program your own interactive stories, games, and animations.</p>
-				<a href="videos/scratch.gif" data-featherlight="image" class="btn btn-red" data-l10n-id="demo">Demo</a>
-			</div>
-		</div>
-		<div class="card activity-gallery-item">
-			<img class="card-img-top" src="img/colormyworld.png" width="200px" alt="Gears">
-			<div class="card-body">
-				<h3 class="card-title">Color My World</h3>
-				<p class="card-text" data-l10n-id="activity-colormyworld-description">Color My World activity let you explore the world and its countries. Fill countries with color you like or use the interactive mode to find location of countries on the offline map.</p>
-				<a href="videos/colormyworld.gif" data-featherlight="image" class="btn btn-red" data-l10n-id="demo">Demo</a>
-			</div>
-		</div>
-		<div class="card activity-gallery-item">
-			<img class="card-img-top" src="img/gridpaint.png" width="200px" alt="Gears">
-			<div class="card-body">
-				<h3 class="card-title">Grid Paint</h3>
-				<p class="card-text" data-l10n-id="activity-gridpaint-description">Grid Paint is a simple paint activity for kids to draw pictures using a grid of triangles. Never miss your drawing with Grid Paint activity!</p>
-				<a href="videos/gridpaint.gif" data-featherlight="image" class="btn btn-red" data-l10n-id="demo">Demo</a>
-			</div>
-		</div>
-		<div class="card activity-gallery-item">
-			<img class="card-img-top" src="img/abecedarium.png" width="200px" alt="Gears">
-			<div class="card-body">
-				<h3 class="card-title">Abecedarium</h3>
-				<p class="card-text" data-l10n-id="activity-abecedarium-description">Abecedarium is an abecedary activity to learn its alphabet using images, sounds and words.</p>
-				<a href="videos/abecedarium.gif" data-featherlight="image" class="btn btn-red" data-l10n-id="demo">Demo</a>
-			</div>
-		</div>
-		<div class="card activity-gallery-item">
-			<img class="card-img-top" src="img/tamtammicro.png" width="200px" alt="Gears">
-			<div class="card-body">
-				<h3 class="card-title">Tam Tam Micro</h3>
-				<p class="card-text" data-l10n-id="activity-tamtammicro-description">Tam Tam Micro is an activity to play instruments, sounds and noise of different type.</p>
-				<a href="videos/tamtammicro.gif" data-featherlight="image" class="btn btn-red" data-l10n-id="demo">Demo</a>
-			</div>
-		</div>
-		<div class="card activity-gallery-item">
-			<img class="card-img-top" src="img/allactivities.png" width="200px" alt="All">
-			<div class="card-body">
-				<h3 class="card-title"></h3>
-				<p class="card-text" data-l10n-id="activity-all-description">Sugarizer include about 50 activities to play, create, simulate, ... Find the one you need!</p>
-				<a href="activities.html" class="btn btn-red" data-l10n-id="explore">Explore</a>
-			</div>
-		</div>
+	<div class="activities-list">
+		<h3 class="card-text" data-l10n-id="activity-all-description">Sugarizer include about 50 activities to play, create, simulate, ...</h3>
+		<h3 class="card-text" data-l10n-id="activity-all-find">Find the one you need!</h3>
+		<a href="activities.html" data-l10n-id="explore" title="Explore" class="btn btn-lg btn-red">Explore</a>
 	</div>
 	<br/>
 </div>
@@ -406,7 +337,7 @@ docker-compose up -d
 			<p><span data-l10n-id="oss">Sugarizer is a free software under</span> <a href="http://www.apache.org/licenses/LICENSE-2.0" title="Apache License" target="_blank"><span data-l10n-id="licence">Apache 2 licence</span></a>, <span data-l10n-id="code">source code is available on GitHub</span> <a href="https://github.com/llaske/sugarizer" title="GitHub" target="_blank"><span data-l10n-id="here">here</span></a>.
 				<span data-l10n-id="activities">Most activities use this license too but some could use a different license, check the README file for more.</span>
 			</p><br/>
-			<p>&copy; 2013-2020, Lionel Laské, <a href="http://sugarlabs.org" title="Sugar Labs" target="_blank">Sugar Labs Inc.</a> and <a href="https://github.com/llaske/sugarizer/blob/dev/docs/credits.md" target="_blank">Contributors</a>.</p><br/>
+			<p>&copy; 2013-2021, Lionel Laské, <a href="http://sugarlabs.org" title="Sugar Labs" target="_blank">Sugar Labs Inc.</a> and <a href="https://github.com/llaske/sugarizer/blob/dev/docs/credits.md" target="_blank">Contributors</a>.</p><br/>
 			<a href="https://github.com/llaske/sugarizer" target="_blank"><i class="fab fa-github-square fa-3x" style="margin-left:8px;margin-top:5px;color:#ffffff;"></i></a>
 			<a href="https://twitter.com/sugarizerapp" target="_blank"><i class="fab fa-twitter-square fa-3x" style="margin-left:8px;margin-top:5px;color:#ffffff;"></i></a>
 			<a href="https://www.facebook.com/Sugarizer" target="_blank"><i class="fab fa-facebook-square fa-3x" style="margin-left:8px;margin-top:5px;color:#ffffff;"></i></a>
