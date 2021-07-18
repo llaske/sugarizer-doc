@@ -13,15 +13,15 @@ Quand vous l'utilisez depuis un navigateur ou que Sugarizer est connecté à un 
 Pour fournir les services proposés par la plateforme, nous collectons:
 
 - Identifiant Utilisateur (pseudo), mot de passe et préférences de l'utilisateur (langue, couleurs, activités préférées, ...)
-- Contenu créés dans les activités créatives (dessins, documents, images, sons, ...)
+- Contenus créés dans les activités créatives (dessins, documents, images, sons, ...)
 - Scores obtenus dans les activités pédagogiques ou ludiques
-- Elément favoris (livres, vidéos, ...) et préférences des activités
+- Eléments favoris (livres, vidéos, ...) et préférences des activités
 
 Pour calculer les statistiques d'usage de la plateforme, nous collectons:
 
 - Navigateur et type de la machine, adresse IP
 - Utilisation des activités (nombre d'utilisation, méthode de lancement, ...)
-- Utilisation de la platforme (vues et fonctionnalités utilisées)
+- Utilisation de la plateforme (vues et fonctionnalités utilisées)
 
 ## Comment nous collectons les données ?
 

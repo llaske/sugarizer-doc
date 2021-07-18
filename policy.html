@@ -13,7 +13,10 @@ function getParam(param) {
 	return qString ? qString[1] : null;
 };
 
-let lang = getParam("lang") || "en";
+let lang = getParam("lang");
+if (lang != 'fr' && lang != 'en') {
+	lang = 'en';
+};
 window.location.href = "policy_"+lang+".html";
 
 </script>
