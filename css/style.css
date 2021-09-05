@@ -221,6 +221,10 @@ a span.ti-twitter-alt {
 	background-color: #fcd93b;
 }
 
+.join {
+	display: inline-block;
+}
+
 .activity-gallery {
 	display: flex;
 	flex-flow: row wrap;
