@@ -69,7 +69,9 @@ const activitiesInfo = {
 	"org.sugarlabs.Planets": {tags: ["explore"], age: 4},
 	"org.sugarlabs.Implode": {tags: ["games"], age: 4},
 	"org.olpcfrance.DollarStreet": {tags: ["explore"], age: 6},
-	"org.olpcfrance.XmasLights": {tags: ["create","collaborate"], age: 6}
+	"org.olpcfrance.XmasLights": {tags: ["create","collaborate"], age: 6},
+	"org.sugarlabs.Measure": {tags: ["explore","collaborate"], age: 6},
+	"org.sugarlabs.Story": {tags: ["writing","collaborate"], age: 8}
 };
 
 // Rebase require directory
