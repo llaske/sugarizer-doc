@@ -43,7 +43,7 @@ Sugarizer at school is usually connected to a Sugarizer server which can be in t
 
 ![](images/dashboard.png)
 
-With a Sugarizer server, it is possible to access usage statistics by child, by class and by activity. It is also possible for a teacher to review the productions of his students and even assign homework.
+With a Sugarizer server, it is possible to access usage statistics by child, by class and by activity. It is also possible for a teacher to review the productions of his students and even assign homework. If the server is connected to the Internet, the children can continue the work started in class from home.
 
 Sugarizer server is free and requires no subscription. It can be self-hosted and is fully compliant with GPDR regulations and data privacy.
 

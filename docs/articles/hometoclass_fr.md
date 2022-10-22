@@ -12,7 +12,7 @@ Chaque activité propose un type de travail: lire, écrire, explorer, créer, si
 ![](images/activitieslist.png)
 
 La plateforme Sugarizer fait le lien entre ces activités. Elle permet de lancer les activités, journalise l'historique d'exécution, permet de les combiner et de les partager. 
-Chaque utilisateur peut personnaliser la plateforme Sugarizer (nom, couleurs, favoris, ...) afin de bénéficier d'une expérience individuelle.
+Chaque utilisateur peut personnaliser la plateforme Sugarizer (nom, couleurs, favoris, ...) afin de bénéficier d'une expérience unique.
 
 ![](images/homeview.png)
 
@@ -40,7 +40,7 @@ En classe, l'utilisation de Sugarizer est généralement dirigée par un profess
 ![](images/teachers.png)
 
 
-Sugarizer à l'école s'est généralement connecté à un serveur Sugarizer qui peut être dans l'école ou sur Internet. Ce serveur permet de sauvegarder le travail des enfants, d'exécuter des activités à plusieurs et de suivre l'utilisation de Sugarizer par les enfants.
+Sugarizer à l'école s'utilise généralement connecté à un serveur Sugarizer qui peut être dans l'école ou sur Internet. Ce serveur permet de sauvegarder le travail des enfants, d'exécuter des activités à plusieurs et de suivre l'utilisation de Sugarizer par les enfants. Si le serveur est connecté à Internet, les enfants peuvent continuer depuis chez eux les travaux démarrés en classe.
 
 ![](images/dashboard.png)
 
