@@ -9,12 +9,12 @@ Sugarizer is a learning platform for children.
 More precisely Sugarizer is an application including a set of pedagogic activities (more than 50) for children.
 Each activity propose a type of work: read, write, explore, create, simulate or play.
 
-![](images/activitieslist.png)
+![The Sugarizer activities list](images/activitieslist.png)
 
 The platform is the link between activities. It provide a way to launch activities, log the history of running activities, link activities together and allow to share it. 
 Each user can customize the Sugarizer platform (name, colors, favorites, ...) to benefit of an unique experience.
 
-![](images/homeview.png)
+![The Sugarizer home view](images/homeview.png)
 
 Sugarizer was built for learners between 6 and 12. The unique Sugarizer UI is discoverable, wholly intuitive, and uses metaphors even non-readers can understand.
 
@@ -25,7 +25,7 @@ It can be installed on a computer, a tablet or a smartphone.
 
 At home, the child usually uses Sugarizer alone: he discovers the activities and spends time on those he prefers.
 
-![](images/useralone.png)
+![Using Sugarizer at home](images/useralone.png)
 
 Sugarizer activities do not require Internet access to function, except for those accessing content (videos, audios, books).
 
@@ -37,11 +37,11 @@ Sugarizer can be used in the classroom. It can be installed on tablets in mobile
 
 In the classroom, the use of Sugarizer is usually directed by a teacher. The teacher integrates Sugarizer activities into curriculum-driven lessons. These sequences use Sugarizer as a tool but can also integrate other classroom tools, books, observation of the environment or physical phenomena.
 
-![](images/teachers.png)
+![Sugarizer in the classroom](images/teachers.png)
 
 Sugarizer at school is usually connected to a Sugarizer server which can be in the school or on the Internet. This server is used to save the children's work, run multi-user activities and track the children's use of Sugarizer.
 
-![](images/dashboard.png)
+![The Sugarizer Server Dashboard](images/dashboard.png)
 
 With a Sugarizer server, it is possible to access usage statistics by child, by class and by activity. It is also possible for a teacher to review the productions of his students and even assign homework. If the server is connected to the Internet, the children can continue the work started in class from home.
 
