@@ -37,7 +37,7 @@ Sugarizer can be used in the classroom. It can be installed on tablets in mobile
 
 In the classroom, the use of Sugarizer is usually directed by a teacher. The teacher integrates Sugarizer activities into curriculum-driven lessons. These sequences use Sugarizer as a tool but can also integrate other classroom tools, books, observation of the environment or physical phenomena.
 
-![Sugarizer in the classroom](images/teachers.png)
+![thumbnail!!Sugarizer in the classroom](images/teachers.png)
 
 Sugarizer at school is usually connected to a Sugarizer server which can be in the school or on the Internet. This server is used to save the children's work, run multi-user activities and track the children's use of Sugarizer.
 

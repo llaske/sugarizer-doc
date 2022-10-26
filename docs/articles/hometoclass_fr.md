@@ -37,7 +37,7 @@ Sugarizer peut être utilisé en classe. Il peut être installé sur des tablets
 
 En classe, l'utilisation de Sugarizer est généralement dirigée par un professeur. Le professeur intègre les activités de Sugarizer dans des séquences pédagogiques adaptées au programme scolaire. Ces séquences utilisent Sugarizer comme outil mais peuvent aussi intégrer d'autres outils de la classe, des livres, l'observation de l'environnement ou des phénomènes physiques.
 
-![Sugarizer à l'école](images/teachers.png)
+![thumbnail!!Sugarizer à l'école](images/teachers.png)
 
 
 Sugarizer à l'école s'utilise généralement connecté à un serveur Sugarizer qui peut être dans l'école ou sur Internet. Ce serveur permet de sauvegarder le travail des enfants, d'exécuter des activités à plusieurs et de suivre l'utilisation de Sugarizer par les enfants. Si le serveur est connecté à Internet, les enfants peuvent continuer depuis chez eux les travaux démarrés en classe.
@@ -53,6 +53,3 @@ Sugarizer serveur est gratuit et ne nécessite aucun abonnement. Il peut être a
 * Une liste des activités de Sugarizer avec une démonstration de leur utilisation est accessible [ici](https://sugarizer.org/activities.html).
 * Vous pouvez tester en ligne Sugarizer [ici](https://try.sugarizer.org) ou le télécharger [ici](https://sugarizer.org/index.html#apps).
 * Un mini-tutorial vidéo est disponible [ici](https://youtu.be/PD_uanV7r2I).
-
-
-
