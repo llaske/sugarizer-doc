@@ -12,6 +12,7 @@ if (parser == null) {
 	console.log("Usage: mdtohtml <mdfile_lang>");
 	return 1;
 }
+var fileprefix = parser[1];
 
 // Load file 
 var	fs = require('fs');
@@ -40,6 +41,7 @@ if (filename) {
 			.replaceAll("{{title}}", title)
 			.replaceAll("{{description}}", description)
 			.replaceAll("{{language}}", language)
+			.replaceAll("{{fileprefix}}", fileprefix)
 			.replaceAll("{{en_selected}}", enSelected)
 			.replaceAll("{{fr_selected}}", frSelected);
 
