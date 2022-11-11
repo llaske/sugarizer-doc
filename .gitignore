@@ -216,3 +216,5 @@ pip-log.txt
 
 
 /scripts/node_modules
+
+/.vscode
