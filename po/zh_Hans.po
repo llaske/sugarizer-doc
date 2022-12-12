@@ -1,0 +1,460 @@
+#. extracted from ../locale.ini
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Tue Sep 22 2020 22:15:13 GMT+0200 (heure d’été d’Europe "
+"centrale)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: zh_Hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: ini2po 0.0.1\n"
+
+#: menu-home
+msgctxt "menu-home"
+msgid "Home"
+msgstr ""
+
+#: menu-features
+msgctxt "menu-features"
+msgid "Features"
+msgstr ""
+
+#: menu-examples
+msgctxt "menu-examples"
+msgid "Activities"
+msgstr ""
+
+#: menu-apps
+msgctxt "menu-apps"
+msgid "Download"
+msgstr ""
+
+#: menu-more
+msgctxt "menu-more"
+msgid "More"
+msgstr ""
+
+#: head-taste
+msgctxt "head-taste"
+msgid "The leading learning platform for children"
+msgstr ""
+
+#: head-children
+msgctxt "head-children"
+msgid "Sugarizer is a free/libre learning platform. The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
+msgstr ""
+
+#: head-try
+msgctxt "head-try"
+msgid "Try now"
+msgstr ""
+
+#: head-download
+msgctxt "head-download"
+msgid "Install"
+msgstr ""
+
+#: head-source
+msgctxt "head-source"
+msgid "Source code"
+msgstr ""
+
+#: content-components
+msgctxt "content-components"
+msgid "Sugarizer is distributed in the form of 3 components:"
+msgstr ""
+
+#: head-web
+msgctxt "head-web"
+msgid "Web App"
+msgstr ""
+
+#: content-web
+msgctxt "content-web"
+msgid "It could work on any device with a recent browser version. Sugarizer Web App doesn't need any installation on the device but requires a permanent access to a Sugarizer Server."
+msgstr ""
+
+#: head-app
+msgctxt "head-app"
+msgid "App"
+msgstr ""
+
+#: content-app
+msgctxt "content-app"
+msgid "Sugarizer installed locally on the device so it does not require any access to the Server - it works stand-alone. Sugarizer App is available for Windows/GNU-Linux/MacOS, for Android and iOS."
+msgstr ""
+
+#: head-server
+msgctxt "head-server"
+msgid "Server"
+msgstr ""
+
+#: content-server
+msgctxt "content-server"
+msgid "Sugarizer Server is the back-end for network features of Sugarizer. It expose locally Web App so allow deployment of Sugarizer on a local server, for example on a school server. Sugarizer Server can also be used to provide collaboration features for App and Web App on the network."
+msgstr ""
+
+#: head-sugarizer
+msgctxt "head-sugarizer"
+msgid "Download Sugarizer app on..."
+msgstr ""
+
+#: google-play
+msgctxt "google-play"
+msgid "Google Play"
+msgstr ""
+
+#: app-store
+msgctxt "app-store"
+msgid "App Store"
+msgstr ""
+
+#: chrome-web-store
+msgctxt "chrome-web-store"
+msgid "Chrome Web Store"
+msgstr ""
+
+#: amazon-apps
+msgctxt "amazon-apps"
+msgid "Amazon Apps"
+msgstr ""
+
+#: f-droid
+msgctxt "f-droid"
+msgid "F-Droid"
+msgstr ""
+
+#: snapcraft
+msgctxt "snapcraft"
+msgid "Snapcraft"
+msgstr ""
+
+#: content-desktop
+msgctxt "content-desktop"
+msgid "Desktop Installation"
+msgstr ""
+
+#: content-serverinstall
+msgctxt "content-serverinstall"
+msgid "Server Installation on"
+msgstr ""
+
+#: content-moreinfo
+msgctxt "content-moreinfo"
+msgid "More information"
+msgstr ""
+
+#: content-here
+msgctxt "content-here"
+msgid "here"
+msgstr ""
+
+#: head-info
+msgctxt "head-info"
+msgid "More information on..."
+msgstr ""
+
+#: gh
+msgctxt "gh"
+msgid "GitHub"
+msgstr ""
+
+#: gh-content
+msgctxt "gh-content"
+msgid "Sugarizer project on GitHub."
+msgstr ""
+
+#: open
+msgctxt "open"
+msgid "Open"
+msgstr ""
+
+#: wiki
+msgctxt "wiki"
+msgid "Wiki"
+msgstr ""
+
+#: wiki-content
+msgctxt "wiki-content"
+msgid "Find anwsers for questions."
+msgstr ""
+
+#: mailing
+msgctxt "mailing"
+msgid "Mailing List"
+msgstr ""
+
+#: mailing-content
+msgctxt "mailing-content"
+msgid "Sugar devel mailing list."
+msgstr ""
+
+#: oss
+msgctxt "oss"
+msgid "Sugarizer is a free software under"
+msgstr ""
+
+#: licence
+msgctxt "licence"
+msgid "Apache 2 licence"
+msgstr ""
+
+#: code
+msgctxt "code"
+msgid "source code is available on GitHub"
+msgstr ""
+
+#: here
+msgctxt "here"
+msgid "here"
+msgstr ""
+
+#: activities
+msgctxt "activities"
+msgid "Most activities use this license too but some could use a different license, check the README file for more."
+msgstr ""
+
+#: original
+msgctxt "original"
+msgid "Original page design by:"
+msgstr ""
+
+#: antosz
+msgctxt "antosz"
+msgid "Piotr Antosz"
+msgstr ""
+
+#: credits
+msgctxt "credits"
+msgid "Image credits (from the Noun Project): Play by P.J. Onori, Responsive Design by Benni, Server image by aLf, Cloud by Dmitry Baranovskiy, Tablet by Konstantin Velichko, Children by Musmellow, School by Kevin, Group by Nicolas Mitchell, Approved by Gregor Cresnar, Ad Blocker by Setyo Ari Wibowo."
+msgstr ""
+
+#: headfeat-children
+msgctxt "headfeat-children"
+msgid "Children focused"
+msgstr ""
+
+#: feature-children
+msgctxt "feature-children"
+msgid "Sugarizer was thought for children between 6 and 12. The unique Sugarizer UI is discoverable, wholly intuitive, and use metaphors usable by children who don't know how to read."
+msgstr ""
+
+#: headfeat-school
+msgctxt "headfeat-school"
+msgid "Learn at school and beyond"
+msgstr ""
+
+#: feature-school
+msgctxt "feature-school"
+msgid "Sugarizer provide a set of \"activities\", not a set of applications. This is more than a new naming convention"
+msgstr ""
+
+#: headfeat-collaborative
+msgctxt "headfeat-collaborative"
+msgid "Collaborative"
+msgstr ""
+
+#: feature-collaborative
+msgctxt "feature-collaborative"
+msgid "Everyone has the potential for being both a learner and a teacher. Sugarizer has chosen to put collaboration at the core of the user experience in order to realize this potential."
+msgstr ""
+
+#: headfeat-approved
+msgctxt "headfeat-approved"
+msgid "Field approved"
+msgstr ""
+
+#: feature-approved
+msgctxt "feature-approved"
+msgid "The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
+msgstr ""
+
+#: headfeat-adblocker
+msgctxt "headfeat-adblocker"
+msgid "Ads Free"
+msgstr ""
+
+#: feature-adblocker
+msgctxt "feature-adblocker"
+msgid "95% of apps market for children in stores contain advertising! With Sugarizer you've got the guaranty to have 0% advertisement and 0% tracking tools included."
+msgstr ""
+
+#: headfeat-opensource
+msgctxt "headfeat-opensource"
+msgid "Free software"
+msgstr ""
+
+#: feature-opensource
+msgctxt "feature-opensource"
+msgid "Sugarizer is a Free, Libre Software. We believe that source code transparency, simple customization and free contents, are absolute requirements for a tool in children's hands."
+msgstr ""
+
+#: demo
+msgctxt "demo"
+msgid "Demo"
+msgstr ""
+
+#: gallery-title
+msgctxt "gallery-title"
+msgid "Activity list:"
+msgstr ""
+
+#: activity-gears-description
+msgctxt "activity-gears-description"
+msgid "Gears is a tool to explore the ways in which gears and chains transmit motion. Draw your gears and see it coming to life."
+msgstr ""
+
+#: activity-abacus-description
+msgctxt "activity-abacus-description"
+msgid "Abacus lets the learner explore different representations of numbers using different mechanical counting systems developed by the ancient Romans and Chinese."
+msgstr ""
+
+#: activity-reflection-description
+msgctxt "activity-reflection-description"
+msgid "Reflection is a game designed around reflective symmetry. The user modifies an image until it has reflective symmetry around either the horizontal or vertical axis."
+msgstr ""
+
+#: activity-scratch-description
+msgctxt "activity-scratch-description"
+msgid "Scratch is a full environment where you can program your own interactive stories, games, and animations."
+msgstr ""
+
+#: activity-colormyworld-description
+msgctxt "activity-colormyworld-description"
+msgid "Color My World activity let you explore the world and its countries. Fill countries with color you like or use the interactive mode to find location of countries on the offline map."
+msgstr ""
+
+#: activity-gridpaint-description
+msgctxt "activity-gridpaint-description"
+msgid "Grid Paint is a simple paint activity for kids to draw pictures using a grid of triangles. Never miss your drawing with Grid Paint activity!s"
+msgstr ""
+
+#: activity-abecedarium-description
+msgctxt "activity-abecedarium-description"
+msgid "Abecedarium is an abecedary activity to learn its alphabet using images, sounds and words."
+msgstr ""
+
+#: activity-tamtammicro-description
+msgctxt "activity-tamtammicro-description"
+msgid "Tam Tam Micro is an activity to play instruments, sounds and noise of different type."
+msgstr ""
+
+#: activity-all-description
+msgctxt "activity-all-description"
+msgid "Sugarizer include about 50 activities to play, create, simulate, ... Find the one you need!"
+msgstr ""
+
+#: data-502-oops
+msgctxt "data-502-oops"
+msgid "Oops"
+msgstr ""
+
+#: data-502-sorry
+msgctxt "data-502-sorry"
+msgid "Sorry, it seems that your Sugarizer Server is currently offline :-("
+msgstr ""
+
+#: data-502-maintenance
+msgctxt "data-502-maintenance"
+msgid "It's probably for maintenance reason. So, please retry in few minutes, it should be back."
+msgstr ""
+
+#: data-404-oops
+msgctxt "data-404-oops"
+msgid "Oops"
+msgstr ""
+
+#: data-404-sorry
+msgctxt "data-404-sorry"
+msgid "Sorry, this page doesn't exist in our Journal :-("
+msgstr ""
+
+#: data-404-maintenance
+msgctxt "data-404-maintenance"
+msgid "Please check the URL in your browser address bar."
+msgstr ""
+
+#: data-403-oops
+msgctxt "data-403-oops"
+msgid "Oops"
+msgstr ""
+
+#: data-403-sorry
+msgctxt "data-403-sorry"
+msgid "Sorry, you're not authorized to display this content :-("
+msgstr ""
+
+#: data-403-maintenance
+msgctxt "data-403-maintenance"
+msgid "Please check the URL in your browser address bar."
+msgstr ""
+
+#: category-all
+msgctxt "category-all"
+msgid "All"
+msgstr ""
+
+#: category-math
+msgctxt "category-math"
+msgid "Math"
+msgstr ""
+
+#: category-reading
+msgctxt "category-reading"
+msgid "Read"
+msgstr ""
+
+#: category-writing
+msgctxt "category-writing"
+msgid "Write"
+msgstr ""
+
+#: category-create
+msgctxt "category-create"
+msgid "Create"
+msgstr ""
+
+#: category-simulate
+msgctxt "category-simulate"
+msgid "Simulate"
+msgstr ""
+
+#: category-programming
+msgctxt "category-programming"
+msgid "Program"
+msgstr ""
+
+#: category-games
+msgctxt "category-games"
+msgid "Games"
+msgstr ""
+
+#: category-explore
+msgctxt "category-explore"
+msgid "Explore"
+msgstr ""
+
+#: category-collaborate
+msgctxt "category-collaborate"
+msgid "Collaborate"
+msgstr ""
+
+#: category-tools
+msgctxt "category-tools"
+msgid "Tools"
+msgstr ""
+
+#: button-demo
+msgctxt "button-demo"
+msgid "Demo"
+msgstr ""
+
+#: explore
+msgctxt "explore"
+msgid "Explore"
+msgstr ""
