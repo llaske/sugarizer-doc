@@ -5,94 +5,101 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Tue Sep 22 2020 22:15:13 GMT+0200 (heure d’été d’Europe "
 "centrale)\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-12-12 15:28+0000\n"
+"Last-Translator: cccczl <z.cccczl@gmail.com>\n"
+"Language-Team: Chinese (Simplified) "
+"<http://translate.sugarizer.org/projects/sugarizer/sugarizer-"
+"website/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: ini2po 0.0.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.16\n"
 
 #: menu-home
 msgctxt "menu-home"
 msgid "Home"
-msgstr ""
+msgstr "首页"
 
 #: menu-features
 msgctxt "menu-features"
 msgid "Features"
-msgstr ""
+msgstr "特性"
 
 #: menu-examples
 msgctxt "menu-examples"
 msgid "Activities"
-msgstr ""
+msgstr "活动"
 
 #: menu-apps
 msgctxt "menu-apps"
 msgid "Download"
-msgstr ""
+msgstr "下载"
 
 #: menu-more
 msgctxt "menu-more"
 msgid "More"
-msgstr ""
+msgstr "更多"
 
 #: head-taste
 msgctxt "head-taste"
 msgid "The leading learning platform for children"
-msgstr ""
+msgstr "领先的儿童学习平台"
 
 #: head-children
 msgctxt "head-children"
 msgid "Sugarizer is a free/libre learning platform. The Sugarizer UI use ergonomic principles from Sugar platform, developed for the One Laptop per Child project and used every day by more than 2 million children around the world."
 msgstr ""
+"Sugarizer是一个免费/Libre学习平台。Sugarizer UI使用Sugar "
+"Platform的符合人体工程学原理，该原理是为每个孩子项目开发的，每天都有超过200万儿童在全球使用。"
 
 #: head-try
 msgctxt "head-try"
 msgid "Try now"
-msgstr ""
+msgstr "试用"
 
 #: head-download
 msgctxt "head-download"
 msgid "Install"
-msgstr ""
+msgstr "安装"
 
 #: head-source
 msgctxt "head-source"
 msgid "Source code"
-msgstr ""
+msgstr "源代码"
 
 #: content-components
 msgctxt "content-components"
 msgid "Sugarizer is distributed in the form of 3 components:"
-msgstr ""
+msgstr "Sugarizer是由三个不同组件构成的:"
 
 #: head-web
 msgctxt "head-web"
 msgid "Web App"
-msgstr ""
+msgstr "网页应用"
 
 #: content-web
 msgctxt "content-web"
 msgid "It could work on any device with a recent browser version. Sugarizer Web App doesn't need any installation on the device but requires a permanent access to a Sugarizer Server."
-msgstr ""
+msgstr "它可以通过不同的浏览器访问并使用Sugarizer Web不需要在设备上安装，但需要保持网络连接到Sugarizer Server。"
 
 #: head-app
 msgctxt "head-app"
 msgid "App"
-msgstr ""
+msgstr "应用"
 
 #: content-app
 msgctxt "content-app"
 msgid "Sugarizer installed locally on the device so it does not require any access to the Server - it works stand-alone. Sugarizer App is available for Windows/GNU-Linux/MacOS, for Android and iOS."
 msgstr ""
+"Sugarizer安装到本地计算机时，因此它不需要访问互联网服务器 - 它可以独立。Sugarizer App可用于Android和iOS的Windows"
+"/GNU-Linux/MacOS。"
 
 #: head-server
 msgctxt "head-server"
 msgid "Server"
-msgstr ""
+msgstr "服务器"
 
 #: content-server
 msgctxt "content-server"
