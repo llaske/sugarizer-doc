@@ -16,9 +16,15 @@ a {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
+	text-decoration: none;
+	color: #337ab7;
+	background-color: transparent;
 }
 a:hover, a:focus, a:active, a:visited {
 	text-decoration: none;
+}
+a:hover {
+	color: #333;
 }
 
 /* Buttons override */
@@ -37,6 +43,9 @@ a:hover, a:focus, a:active, a:visited {
 .btn-red {
 	background-color: #dd5138;
 	color: #fff;
+}
+.btn-red:hover {
+	background-color: #dd5138;
 }
 .btn-yellow {
 	background-color: #fcd93b;
@@ -232,6 +241,15 @@ a span.ti-twitter-alt {
 	align-items: stretch;
 }
 
+.card-article {
+	height: 100%;
+}
+
+.col-article {
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
 .header-area {
 	background-size: cover;
 	height: 100vh;
@@ -414,8 +432,7 @@ ul.footer-menu li a:hover {
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	width: 12rem;
-	height: 3.3rem;
+	width: 8.5rem;
 	align-items: center;
   }
   .sponsor-link {

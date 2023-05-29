@@ -55,6 +55,9 @@ a:hover, a:focus, a:active, a:visited {
     color: #fff !important;
     text-decoration: none !important
 }
+.btn-red:hover {
+	background-color: #dd5138;
+}
 .btn {
     text-transform: uppercase;
     font-weight: 600;

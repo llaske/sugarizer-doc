@@ -47,8 +47,8 @@
 				</a>
 			</li>
 			<li>
-				<a href="#gallery" class="page-scroll">
-					<span data-l10n-id="menu-examples" class="menu-title">Activities</span>
+				<a href="#getstarted" class="page-scroll">
+					<span data-l10n-id="menu-started" class="menu-title">Get started</span>
 					<span class="dot"></span>
 				</a>
 			</li>
@@ -93,9 +93,9 @@
 			<h4><i style="color:white;line-height:24px" data-l10n-id="head-children">Used every day by nearly 3 million children around the world, Sugar is a leading learning platform developed for the One Laptop per Child project. With Sugarizer, it's now accessible to any children.</i></h4>
 			<br/>
 			<a href="http://try.sugarizer.org/" data-l10n-id="head-try" target="_blank" title="Try now" class="btn btn-lg btn-red">Try now</a>
+			<a href="#getstarted" data-l10n-id="get-started" title="Get started" class="btn btn-lg btn-red">Get started</a>
 			<a href="#apps" data-l10n-id="head-download" title="Install" class="btn btn-lg btn-red page-scroll">Download</a>
-			<a href="https://github.com/llaske/sugarizer/tree/v1.7.0" data-l10n-id="head-source" title="Source code" class="btn btn-lg btn-red">Source</a>
-	</div>
+		</div>
 </section>
 <!-- End: Header -->
 </div>
@@ -140,13 +140,58 @@
 	<!-- End: Desc -->
 </div>
 
-<div class="container" id="gallery">
+<div class="container-fluid" id="getstarted">
 	<div class="row me-row content-ct">
-		<h2 class="row-title" data-l10n-id="gallery-title">Activity list:</h2>
+		<h2 class="row-title" data-l10n-id="get-started-title">Activity list:</h2>
 	</div>
+	<div class="row">
+		<div class="col-md-3 col-xs-6 col-article">
+			<div class="card card-article">
+				<img src="docs/articles/images/teachers.png" alt="Sugarizer from home to the classroom">
+				<div class="card-body">
+					<h3 class="card-title" data-l10n-id="article-hometoclass-title">Sugarizer from home to the classroom</h3>
+					<p class="card-text" data-l10n-id="article-hometoclass-text">What is Sugarizer? How to use it? That's what we'll find out in this article.</p>
+					<a id="hometoclass" data-l10n-id="article-read" href="docs/articles/hometoclass" class="btn btn-red btn-article" role="button">READ</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-xs-6 col-article">
+			<div class="card card-article">
+				<img src="docs/articles/images/clicktolist.png" alt="First steps with Sugarizer">
+				<div class="card-body">
+					<h3 class="card-title" data-l10n-id="article-firststep-title">First steps with Sugarizer</h3>
+					<p class="card-text" data-l10n-id="article-firststep-text">Never used Sugarizer before? Let's find out.</p>
+					<a id="firststep" data-l10n-id="article-read" href="docs/articles/firststep" class="btn btn-red btn-article" role="button">READ</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-xs-6 col-article">
+			<div class="card card-article">
+				<img src="docs/articles/images/journalview.png" alt="...">
+				<div class="card-body">
+					<h3 class="card-title" data-l10n-id="article-journal-title">The Journal</h3>
+					<p class="card-text" data-l10n-id="article-journal-text">In Sugarizer, there is no need to save your work, the Journal is the place that automatically keeps a history of everything you do. Let's explore it together.</p>
+					<a id="journal" data-l10n-id="article-read" href="docs/articles/journal" class="btn btn-red btn-article" role="button">READ</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-xs-6 col-article">
+			<div class="card card-article">
+				<img src="docs/articles/images/neighborhood.png" alt="Share an activity">
+				<div class="card-body">
+					<h3 class="card-title" data-l10n-id="article-shareactivities-title">Share an activity</h3>
+					<p class="card-text" data-l10n-id="article-shareactivities-text">When connected to a server, Sugarizer makes it very easy to share activities with other users. Here's how.</p>
+					<a id="shareactivities" data-l10n-id="article-read" href="docs/articles/shareactivities" class="btn btn-red btn-article" role="button">READ</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container" id="gallery">
 	<div class="activities-list">
-		<h3 class="card-text" data-l10n-id="activity-all-description">Sugarizer include about 50 activities to play, create, simulate, ...</h3>
-		<h3 class="card-text" data-l10n-id="activity-all-find">Find the one you need!</h3>
+		<h3 data-l10n-id="activity-all-description">Sugarizer include about 50 activities to play, create, simulate, ...</h3>
+		<h3 data-l10n-id="activity-all-find">Find the one you need!</h3>
 		<a href="activities.html" data-l10n-id="explore" title="Explore" class="btn btn-lg btn-red">Explore</a>
 	</div>
 	<br/>
@@ -357,13 +402,23 @@ docker-compose up -d
 		lang = langs[c];
 		document.webL10n.setLanguage(lang) ;
 		document.getElementById('flag').src = "img/" + lang + ".svg";
+		changeArticlesUrl();
 	}
 	window.addEventListener('localized', function() {
 		lang = document.webL10n.getLanguage();
 		lang = lang[0] + lang[1];
 		document.getElementById("Lang").value = langs.indexOf(lang);
 		document.getElementById('flag').src = "img/" + lang + ".svg";
+		changeArticlesUrl();
 	}, false);
+	function changeArticlesUrl() {
+		let articles = document.getElementsByClassName("btn-article");
+		for(let i = 0; i < articles.length; i++){
+			let lang = document.webL10n.getLanguage();
+			lang = lang == 'fr' ? 'fr' : 'en'; // Only French and English is available for articles
+			articles[i].href = "docs/articles/"+articles[i].id + "_" + lang + ".html";
+		}
+	}
 </script>
 </body>
 </html>
