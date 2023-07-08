@@ -15,6 +15,8 @@
 	<link href="css/themify-icons.css" rel="stylesheet">
 	<link href='css/dosis-font.css' rel='stylesheet' type='text/css'>
 	<link href='css/fontawesome.min.css' rel='stylesheet' type='text/css'>
+	<link href='css/brands.min.css' rel='stylesheet' type='text/css'>
+	<link href='css/solid.min.css' rel='stylesheet' type='text/css'>
 	<link href="css/featherlight.min.css" type="text/css" rel="stylesheet"/>
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -45,8 +47,8 @@
 				</a>
 			</li>
 			<li>
-				<a href="#gallery" class="page-scroll">
-					<span data-l10n-id="menu-examples" class="menu-title">Activities</span>
+				<a href="#getstarted" class="page-scroll">
+					<span data-l10n-id="menu-started" class="menu-title">Get started</span>
 					<span class="dot"></span>
 				</a>
 			</li>
@@ -91,9 +93,9 @@
 			<h4><i style="color:white;line-height:24px" data-l10n-id="head-children">Used every day by nearly 3 million children around the world, Sugar is a leading learning platform developed for the One Laptop per Child project. With Sugarizer, it's now accessible to any children.</i></h4>
 			<br/>
 			<a href="http://try.sugarizer.org/" data-l10n-id="head-try" target="_blank" title="Try now" class="btn btn-lg btn-red">Try now</a>
+			<a href="#getstarted" data-l10n-id="get-started" title="Get started" class="btn btn-lg btn-red">Get started</a>
 			<a href="#apps" data-l10n-id="head-download" title="Install" class="btn btn-lg btn-red page-scroll">Download</a>
-			<a href="https://github.com/llaske/sugarizer/tree/v1.4.0" data-l10n-id="head-source" title="Source code" class="btn btn-lg btn-red">Source</a>
-	</div>
+		</div>
 </section>
 <!-- End: Header -->
 </div>
@@ -125,8 +127,9 @@
 		</div>
 		<div class="col-md-4 feature">
 			<img src="img/adblocker.svg" height="60" class="architecture-image"/>
-			<h3 data-l10n-id="headfeat-adblocker">Ads Free</h3>
-			<p data-l10n-id="feature-adblocker">95% of apps market for children in stores contain advertising! With Sugarizer you've got the guaranty to have 0% advertisement and 0% tracking tools included.</p>
+			<h3 data-l10n-id="headfeat-adblocker">Ads Free and privacy respectful</h3>
+			<div class="join" data-l10n-id="feature-adblocker">95% of apps market for children in stores contain advertising! With Sugarizer you're guaranteed to have 0 advertisements and 0 tracking tools included. We are RGPD compliant and extremely serious about data privacy.</div>
+			<div class="join" data-l10n-id="content-moreinfo">More information</div>&nbsp;<a href="policy.html" onclick="location.href='policy.html?lang='+document.webL10n.getLanguage();return false;"><div class="join" data-l10n-id="content-here">here</div></a>.
 		</div>
 		<div class="col-md-4 feature">
 			<img src="img/copyleft.svg" height="40" class="architecture-image"/>
@@ -137,13 +140,58 @@
 	<!-- End: Desc -->
 </div>
 
-<div class="container" id="gallery">
+<div class="container-fluid" id="getstarted">
 	<div class="row me-row content-ct">
-		<h2 class="row-title" data-l10n-id="gallery-title">Activity list:</h2>
+		<h2 class="row-title" data-l10n-id="get-started-title">Activity list:</h2>
 	</div>
+	<div class="row">
+		<div class="col-md-3 col-xs-6 col-article">
+			<div class="card card-article">
+				<img src="docs/articles/images/teachers.png" alt="Sugarizer from home to the classroom">
+				<div class="card-body">
+					<h3 class="card-title" data-l10n-id="article-hometoclass-title">Sugarizer from home to the classroom</h3>
+					<p class="card-text" data-l10n-id="article-hometoclass-text">What is Sugarizer? How to use it? That's what we'll find out in this article.</p>
+					<a id="hometoclass" data-l10n-id="article-read" href="docs/articles/hometoclass" class="btn btn-red btn-article" role="button">READ</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-xs-6 col-article">
+			<div class="card card-article">
+				<img src="docs/articles/images/clicktolist.png" alt="First steps with Sugarizer">
+				<div class="card-body">
+					<h3 class="card-title" data-l10n-id="article-firststep-title">First steps with Sugarizer</h3>
+					<p class="card-text" data-l10n-id="article-firststep-text">Never used Sugarizer before? Let's find out.</p>
+					<a id="firststep" data-l10n-id="article-read" href="docs/articles/firststep" class="btn btn-red btn-article" role="button">READ</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-xs-6 col-article">
+			<div class="card card-article">
+				<img src="docs/articles/images/journalview.png" alt="...">
+				<div class="card-body">
+					<h3 class="card-title" data-l10n-id="article-journal-title">The Journal</h3>
+					<p class="card-text" data-l10n-id="article-journal-text">In Sugarizer, there is no need to save your work, the Journal is the place that automatically keeps a history of everything you do. Let's explore it together.</p>
+					<a id="journal" data-l10n-id="article-read" href="docs/articles/journal" class="btn btn-red btn-article" role="button">READ</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3 col-xs-6 col-article">
+			<div class="card card-article">
+				<img src="docs/articles/images/neighborhood.png" alt="Share an activity">
+				<div class="card-body">
+					<h3 class="card-title" data-l10n-id="article-shareactivities-title">Share an activity</h3>
+					<p class="card-text" data-l10n-id="article-shareactivities-text">When connected to a server, Sugarizer makes it very easy to share activities with other users. Here's how.</p>
+					<a id="shareactivities" data-l10n-id="article-read" href="docs/articles/shareactivities" class="btn btn-red btn-article" role="button">READ</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container" id="gallery">
 	<div class="activities-list">
-		<h3 class="card-text" data-l10n-id="activity-all-description">Sugarizer include about 50 activities to play, create, simulate, ...</h3>
-		<h3 class="card-text" data-l10n-id="activity-all-find">Find the one you need!</h3>
+		<h3 data-l10n-id="activity-all-description">Sugarizer include about 50 activities to play, create, simulate, ...</h3>
+		<h3 data-l10n-id="activity-all-find">Find the one you need!</h3>
 		<a href="activities.html" data-l10n-id="explore" title="Explore" class="btn btn-lg btn-red">Explore</a>
 	</div>
 	<br/>
@@ -154,14 +202,14 @@
 	<div class="row me-row content-ct">
 		<h2 class="row-title" data-l10n-id="content-components">Sugarizer is distributed in the form of 3 components:</h2>
 		<div class="col-md-4 feature">
-			<img src="img/sugarizer_thinclient.svg" height="90" class="architecture-image"/>
-			<h3 data-l10n-id="head-web">Web App</h3>
-			<p data-l10n-id="content-web">It could work on any device with a recent browser version. Sugarizer Web App doesn't need any installation on the device but requires a permanent access to a Sugarizer Server.</p>
-		</div>
-		<div class="col-md-4 feature">
 			<img src="img/sugarizer_client.svg" height="90" class="architecture-image"/>
 			<h3 data-l10n-id="head-app">App</h3>
 			<p data-l10n-id="content-app">Sugarizer installed locally on the device so it does not require any access to the Server - it works stand-alone. Sugarizer App is available for Window/GNU-Linux/MacOS, for Android and iOS.</p>
+		</div>
+		<div class="col-md-4 feature">
+			<img src="img/sugarizer_thinclient.svg" height="90" class="architecture-image"/>
+			<h3 data-l10n-id="head-web">Web App</h3>
+			<p data-l10n-id="content-web">It could work on any device with a recent browser version. Sugarizer Web App doesn't need any installation on the device but requires a permanent access to a Sugarizer Server.</p>
 		</div>
 		<div class="col-md-4 feature">
 			<img src="img/sugarizer_server.svg" height="90" class="architecture-image"/>
@@ -212,7 +260,7 @@
 	<a name="desktop"></a>
 
 	<h3>
-		<i class="fa fa-lg fa-desktop fa-fw"></i> <span  data-l10n-id="content-desktop">Desktop Installation</span>
+		<i class="fa fa-lg fa-solid fa-laptop fa-fw"></i> <span  data-l10n-id="content-desktop">Desktop Installation</span>
 	</h3>
 	<hr/>
 
@@ -223,8 +271,8 @@
 		<li>
 			<i class="fa-li fa fa-arrow-right"></i>
 			<small>
-				<a href="https://sugarizer.org/download/Sugarizer-Setup-1.4.0.exe">
-					<i class="fa fa-download"></i> Sugarizer-Setup-1.4.0.exe
+				<a href="https://sugarizer.org/download/Sugarizer-Setup-1.7.0.exe">
+					<i class="fa fa-download"></i> Sugarizer-Setup-1.7.0.exe
 				</a>
 			</small>
 		</li>
@@ -238,8 +286,8 @@
 		<li>
 			<i class="fa-li fa fa-arrow-right"></i>
 			<small>
-				<a href="https://sugarizer.org/download/Sugarizer-1.4.0.dmg">
-					<i class="fa fa-download"></i> Sugarizer-1.4.0.dmg
+				<a href="https://sugarizer.org/download/Sugarizer-1.7.0.dmg">
+					<i class="fa fa-download"></i> Sugarizer-1.7.0.dmg
 				</a>
 			</small>
 		</li>
@@ -253,32 +301,16 @@
 		<li>
 			<i class="fa-li fa fa-arrow-right"></i>
 			<small>
-				<a href="https://sugarizer.org/download/Sugarizer_1.4.0_i386.deb">
-					<i class="fa fa-download"></i> Sugarizer_1.4.0_i386.deb
+				<a href="https://sugarizer.org/download/Sugarizer_1.7.0_amd64.deb">
+					<i class="fa fa-download"></i> Sugarizer_1.7.0_amd64.deb
 				</a>
 			</small>
 		</li>
 		<li>
 			<i class="fa-li fa fa-arrow-right"></i>
 			<small>
-				<a href="https://sugarizer.org/download/Sugarizer_1.4.0_amd64.deb">
-					<i class="fa fa-download"></i> Sugarizer_1.4.0_amd64.deb
-				</a>
-			</small>
-		</li>
-		<li>
-			<i class="fa-li fa fa-arrow-right"></i>
-			<small>
-				<a href="https://sugarizer.org/download/Sugarizer-1.4.0-i386.AppImage">
-					<i class="fa fa-download"></i> Sugarizer-1.4.0-i386.AppImage
-				</a>
-			</small>
-		</li>
-		<li>
-			<i class="fa-li fa fa-arrow-right"></i>
-			<small>
-				<a href="https://sugarizer.org/download/Sugarizer-1.4.0-amd64.AppImage">
-					<i class="fa fa-download"></i> Sugarizer-1.4.0-amd64.AppImage
+				<a href="https://sugarizer.org/download/Sugarizer-1.7.0.AppImage">
+					<i class="fa fa-download"></i> Sugarizer-1.7.0.AppImage
 				</a>
 			</small>
 		</li>
@@ -317,17 +349,17 @@ docker-compose up -d
 			<a data-l10n-id="open" href="https://github.com/llaske/sugarizer" title="Sugarizer GitHub" class="btn btn-lg btn-red">Open</a>
 		</div>
 		<div class="col-md-4 col-sm-4">
-			<p data-l10n-id="wiki" class="web">Mailing List</p>
-			<p data-l10n-id="wiki-content">Ask any question you have on our mailing list.</p>
-			<a data-l10n-id="open" href="http://lists.sugarlabs.org/listinfo/sugar-devel" title="Sugar mailing list" class="btn btn-lg btn-red">Open</a>
+			<p data-l10n-id="wiki" class="web">Chat</p>
+			<p data-l10n-id="wiki-content">Ask any question you have on our Discord.</p>
+			<a data-l10n-id="open" href="https://discord.gg/Djeqr8xAdM" title="Sugarizer Discord" class="btn btn-lg btn-red">Open</a>
 		</div>
 		<div class="col-md-4 col-sm-4">
 			<p data-l10n-id="mailing" class="web">Donate</p>
 			<p data-l10n-id="mailing-content">Do you like Sugarizer? Donate to help us make it accessible to more users.</p>
 			<div style="margin: 0 auto; width: 116px;">
 				<table>
-					<tr><td><iframe src="https://github.com/sponsors/llaske/button" title="Sponsor llaske" height="35" width="116" style="border: 0;"></iframe></td></tr>
-					<tr><td><script src="https://liberapay.com/llaske/widgets/button.js"></script><noscript><a href="https://liberapay.com/llaske/donate" style="width:116px;"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript></td></tr>
+					<tr><td><a class="sponsor-btn" href="https://github.com/sponsors/llaske?o=esb"><i  class="far fa-heart sponsor-icon"></i><div class="sponsor-link">Sponsor</div></a></td></tr>
+					<tr><td><a href="https://liberapay.com/llaske/donate" style="width:116px;"><img alt="Donate using Liberapay" src="img/liberapay.svg"></a></td></tr>
 				</table>
 			</div>
 		</div>
@@ -342,10 +374,11 @@ docker-compose up -d
 			<p><span data-l10n-id="oss">Sugarizer is a free software under</span> <a href="http://www.apache.org/licenses/LICENSE-2.0" title="Apache License" target="_blank"><span data-l10n-id="licence">Apache 2 licence</span></a>, <span data-l10n-id="code">source code is available on GitHub</span> <a href="https://github.com/llaske/sugarizer" title="GitHub" target="_blank"><span data-l10n-id="here">here</span></a>.
 				<span data-l10n-id="activities">Most activities use this license too but some could use a different license, check the README file for more.</span>
 			</p><br/>
-			<p>&copy; 2013-2021, Lionel Laské, <a href="http://sugarlabs.org" title="Sugar Labs" target="_blank">Sugar Labs Inc.</a> and <a href="https://github.com/llaske/sugarizer/blob/dev/docs/credits.md" target="_blank">Contributors</a>.</p><br/>
+			<p>&copy; 2013-2023, Lionel Laské, <a href="http://sugarlabs.org" title="Sugar Labs" target="_blank">Sugar Labs Inc.</a> and <a href="https://github.com/llaske/sugarizer/blob/dev/docs/credits.md" target="_blank">Contributors</a>.</p><br/>
 			<a href="https://github.com/llaske/sugarizer" target="_blank"><i class="fab fa-github-square fa-3x" style="margin-left:8px;margin-top:5px;color:#ffffff;"></i></a>
 			<a href="https://twitter.com/sugarizerapp" target="_blank"><i class="fab fa-twitter-square fa-3x" style="margin-left:8px;margin-top:5px;color:#ffffff;"></i></a>
 			<a href="https://www.facebook.com/Sugarizer" target="_blank"><i class="fab fa-facebook-square fa-3x" style="margin-left:8px;margin-top:5px;color:#ffffff;"></i></a>
+			<a href="https://discord.gg/Djeqr8xAdM" target="_blank"><i class="fa-brands fa-discord fa-3x" style="margin-left:8px;margin-top:5px;color:#ffffff;transform: translateY(3px);"></i></a>
 		</div>
 		<div class="col-md-6 col-sm-6">
 			<p><span data-l10n-id="original">Original page design by:</span> <a href="https://piotr-antosz.pl" title="Piotr Antosz website"><span data-l10n-id="antosz">Piotr Antosz</span></a>.</p><br/>
@@ -369,13 +402,23 @@ docker-compose up -d
 		lang = langs[c];
 		document.webL10n.setLanguage(lang) ;
 		document.getElementById('flag').src = "img/" + lang + ".svg";
+		changeArticlesUrl();
 	}
 	window.addEventListener('localized', function() {
 		lang = document.webL10n.getLanguage();
 		lang = lang[0] + lang[1];
 		document.getElementById("Lang").value = langs.indexOf(lang);
 		document.getElementById('flag').src = "img/" + lang + ".svg";
+		changeArticlesUrl();
 	}, false);
+	function changeArticlesUrl() {
+		let articles = document.getElementsByClassName("btn-article");
+		for(let i = 0; i < articles.length; i++){
+			let lang = document.webL10n.getLanguage();
+			lang = lang == 'fr' ? 'fr' : 'en'; // Only French and English is available for articles
+			articles[i].href = "docs/articles/"+articles[i].id + "_" + lang + ".html";
+		}
+	}
 </script>
 </body>
 </html>

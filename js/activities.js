@@ -67,7 +67,11 @@ const activitiesInfo = {
 	"org.sugarlabs.ChessActivity": {tags: ["games","collaborate"], age: 8},
 	"org.sugarlabs.FractionBounce": {tags: ["math","games"], age: 8},
 	"org.sugarlabs.Planets": {tags: ["explore"], age: 4},
-	"org.sugarlabs.Implode": {tags: ["games"], age: 4}
+	"org.sugarlabs.Implode": {tags: ["games"], age: 4},
+	"org.olpcfrance.DollarStreet": {tags: ["explore"], age: 6},
+	"org.olpcfrance.XmasLights": {tags: ["create","collaborate"], age: 6},
+	"org.sugarlabs.Measure": {tags: ["explore","collaborate"], age: 6},
+	"org.sugarlabs.Story": {tags: ["writing","collaborate"], age: 8}
 };
 
 // Rebase require directory
@@ -84,7 +88,7 @@ var app = new Vue({
 	vuetify: new Vuetify(),
 	template: `
 		<v-app>
-			<v-content>
+			<v-main>
 				<a href="index.html#gallery" data-l10n-id="menu-home" title="Home" class="btn btn-lg btn-red btn-back">Home</a>
 				<div v-if="activities.length>0" class="filtertag-list">
 					<div v-for="(val, tag) in tags" class="filter-button">
@@ -118,7 +122,7 @@ var app = new Vue({
 						<a class="btn btn-red" data-featherlight="image" v-bind:href="item.video">{{getDemoText()}}</a>
 					</template>
 				</v-data-table>
-			</v-content>
+			</v-main>
 		</v-app>`,
 	data: {
 		message: "",
