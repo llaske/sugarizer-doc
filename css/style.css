@@ -349,8 +349,13 @@ ul.footer-menu li a:hover {
 	width: 150px;
 	border: 0px;
 	padding:  3px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 }
 .styleSelect select {
+	border-radius: 10px;
 	background: #404142;
 	width: 100%;
 	padding: 5px 10px;
@@ -358,6 +363,10 @@ ul.footer-menu li a:hover {
 	border: none;
 	-webkit-appearance: none;
 	color: white;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 }
 
 .styleSelect {
@@ -500,7 +509,7 @@ Custom Media Queries
 		display: none !important;
 	}
 	.styleSelect {
-		display: none !important;
+		display: contents !important;
 	}
 }
 
