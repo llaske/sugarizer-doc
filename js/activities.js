@@ -102,8 +102,8 @@ var app = new Vue({
 						<v-img class="age-button" v-bind:src="'./img/'+val+'year.svg'" height="50px" width="50px"></v-img>
 					</div>
 				</div>
-				<v-data-table :headers="headers" :items="filteredActivities()" :items-per-page="100" class="elevation-1"
-				:footer-props="{showFirstLastPage:false, disablePagination:true, disableItemsPerPage:true, showCurrentPage:false, showFirstLastPage:false}">
+				<v-data-table :headers="headers" :items="filteredActivities()" class="elevation-1"
+				:footer-props="{showFirstLastPage:false, disablePagination:false, disableItemsPerPage:false, showCurrentPage:false, showFirstLastPage:false}" :items-per-page="pagination.rowsPerPage" :items-per-page-options="pagination.rowsPerPageItems">
 					<template v-slot:item.icon="{item}">
 						<v-img v-bind:src="item.icon" height="50px" width="50px"></v-img>
 					</template>
@@ -139,7 +139,11 @@ var app = new Vue({
 		filterAge: 11,
 		filterName: "",
 		tags: tagsProperties,
-		ages: agesProperties
+		ages: agesProperties,
+		pagination: {
+			rowsPerPage: 5,
+			rowsPerPageItems: [5, 10, 15],
+		},
 	},
 
 	created: function() {
