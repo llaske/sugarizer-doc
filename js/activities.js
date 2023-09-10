@@ -141,7 +141,7 @@ var app = new Vue({
 		tags: tagsProperties,
 		ages: agesProperties,
 		pagination: {
-			rowsPerPage: 5,
+			rowsPerPage: 100,
 			rowsPerPageItems: [5, 10, 15],
 		},
 	},
