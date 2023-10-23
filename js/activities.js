@@ -1,5 +1,5 @@
 // Constants
-const sugarizerUrl = "https://try.sugarizer.org/";
+const sugarizerUrl = "https://dev.sugarizer.org/";
 const tagsProperties = {
 	"all": "#fffff",
 	"math": "#febcc8",
@@ -34,7 +34,7 @@ const activitiesInfo = {
 	"org.olpcfrance.FoodChain": {tags: ["games","explore"], age: 4},
 	"org.olpc-france.labyrinthjs": {tags: ["writing","collaborate"], age: 11},
 	"org.olpcfrance.TankOp": {tags: ["math","games"], age: 6},
-	"org.sugarlabs.ChatPrototype": {tags: ["tools","collaborate"], age: 8},
+	"org.sugarlabs.Chat": {tags: ["tools","collaborate"], age: 8},
 	"org.olpcfrance.Gridpaint": {tags: ["create"], age: 4},
 	"org.olpc-france.LOLActivity": {tags: ["games", "collaborate"], age: 6},
 	"org.olpcfrance.sharednotes": {tags: ["writing","collaborate"], age: 8},
@@ -71,7 +71,8 @@ const activitiesInfo = {
 	"org.olpcfrance.DollarStreet": {tags: ["explore"], age: 6},
 	"org.olpcfrance.XmasLights": {tags: ["create","collaborate"], age: 6},
 	"org.sugarlabs.Measure": {tags: ["explore","collaborate"], age: 6},
-	"org.sugarlabs.Story": {tags: ["writing","collaborate"], age: 8}
+	"org.sugarlabs.Story": {tags: ["writing","collaborate"], age: 8},
+	"org.sugarlabs.ChartActivity": {tags: ["math","collaborate"], age: 11}
 };
 
 // Rebase require directory
@@ -89,7 +90,7 @@ var app = new Vue({
 	template: `
 		<v-app>
 			<v-main>
-				<a href="index.html#gallery" data-l10n-id="menu-home" title="Home" class="btn btn-lg btn-red btn-back">Home</a>
+				<a href="index.html#gallery" data-i18n="menu-home" title="Home" class="btn btn-lg btn-red btn-back">Home</a>
 				<div v-if="activities.length>0" class="filtertag-list">
 					<div v-for="(val, tag) in tags" class="filter-button">
 						<input id="filter" v-bind:value="tag" type="radio" v-on:click="onFilterTag(tag)" :checked="(tag==filterTag||(tag=='all'&&filterTag==''))"/>
@@ -144,32 +145,36 @@ var app = new Vue({
 			rowsPerPage: 100,
 			rowsPerPageItems: [5, 10, 15],
 		},
+		l10n: null
 	},
 
 	created: function() {
 		var vm = this;
-		requirejs(["l10n"], function (webL10n) {
+		requirejs(["l10n"], function (l10n) {
+			vm.l10n = l10n;
+			let defaultLanguage = (typeof chrome != 'undefined' && chrome.app && chrome.app.runtime) ? chrome.i18n.getUILanguage() : navigator.language;
+			vm.l10n.init(defaultLanguage.split('-')[0]);
 			window.addEventListener("localized", function() {
-				// Wait for Sugarizer locale.ini loading
-				if (document.webL10n.get("TutoActivityAbecedariumactivity")=="{{TutoActivityAbecedariumactivity}}") {
-					return;
-				}
+				vm.l10n.loadExternalResource("activities", sugarizerUrl+"locales").then(function() {
+					// Load activities details
+					vm.loadActivities();
 
-				// Load activities details
-				vm.loadActivities();
+					// Filter on hash
+					let hash = window.location.hash.substr(1);
+					if (hash.length && tagsProperties[hash]) {
+						vm.filterTag = hash;
+					}
 
-				// Filter on hash
-				let hash = window.location.hash.substr(1);
-				if (hash.length && tagsProperties[hash]) {
-					vm.filterTag = hash;
-				}
+					// Filter on activity name
+					let params = new URL(window.location).searchParams;
+					let name = params.get("name");
+					if (name) {
+						vm.filterName = name;
+					}
 
-				// Filter on activity name
-				let params = new URL(window.location).searchParams;
-				let name = params.get("name");
-				if (name) {
-					vm.filterName = name;
-				}
+					// Set button
+					vm.l10n.updateDocument()
+				});
 			});
 		});
 	},
@@ -187,14 +192,15 @@ var app = new Vue({
 					vm.activities = vm.parseActivities(response.data);
 					vm.message = vm.activities;
 				})
-				.catch(function(error) {
+				/*.catch(function(error) {
 					console.log(error)
-				});
+				});*/
 		},
 
 		// Parse activities.json file to create an array of Activities
 		parseActivities: function(data) {
 			let activities = [];
+			var vm = this;
 			for (let i = 0 ; i < data.length ; i++) {
 				let activity = data[i];
 				let directory = activity.directory.replace(".activity","").replace("activities/","");
@@ -202,7 +208,7 @@ var app = new Vue({
 					id: activity.id,
 					name: activity.name,
 					icon: sugarizerUrl+activity.directory+"/"+activity.icon,
-					description: document.webL10n.get("TutoActivity"+directory+"activity"),
+					description: vm.l10n.get("TutoActivity"+directory+"activity", {}, "activities"),
 					video: "videos/"+directory.toLowerCase()+".gif",
 					tags: activitiesInfo[activity.id].tags,
 					age: activitiesInfo[activity.id].age
@@ -229,10 +235,12 @@ var app = new Vue({
 			return tagsProperties[tag];
 		},
 		computeTagText: function(tag) {
-			return document.webL10n.get("category-"+tag);
+			var vm = this;
+			return vm.l10n.get("category-"+tag);
 		},
 		getDemoText: function() {
-			return document.webL10n.get("button-demo");
+			var vm = this;
+			return vm.l10n.get("button-demo");
 		},
 
 		// Filter
