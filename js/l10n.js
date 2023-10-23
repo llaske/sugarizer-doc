@@ -5,7 +5,6 @@ define(['i18next.min', 'axios.min'], function (i18next, axios) {
 		await i18next.init({
 			lng: lang,
 			fallbackLng: "en",
-			debug: true, // TO REMOVE
 			resources: {}
 		}).then(() => {
 			l10n.language.direction = i18next.dir();
