@@ -1,4 +1,4 @@
-define(['i18next.min', 'axios.min'], function (i18next, axios) {
+define(['https://sugarizer.org/js/i18next.min.js', 'https://sugarizer.org/js/axios.min.js'], function (i18next, axios) {
 	const l10n = {language: {direction: "ltr"}};
 
 	l10n.init = async (lang) => {
