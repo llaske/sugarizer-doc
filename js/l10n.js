@@ -23,7 +23,7 @@ define(['https://sugarizer.org/js/i18next.min.js', 'https://sugarizer.org/js/axi
 
 	l10n.loadLanguageResource = (lang) => {
 		return new Promise((resolve, reject) => {
-			axios.get("./locales/" + lang + ".json").then((response) => {
+			axios.get("https://sugarizer.org/locales/" + lang + ".json").then((response) => {
 				resolve(response.data);
 			}).catch((error) => {
 				console.log("Failed to load " + lang + " language: " + error);
