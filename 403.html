@@ -9,7 +9,6 @@
     <script src="https://sugarizer.org/js/require.js"></script>
     <link href="https://sugarizer.org/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://sugarizer.org/css/style.css" rel="stylesheet">
-	<link rel="prefetch" type="application/l10n" href="https://sugarizer.org/locale.ini" />
 	<link rel="shortcut icon" href="https://sugarizer.org/img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="https://sugarizer.org/img/favicon.ico" type="image/x-icon">
 </head>
@@ -36,7 +35,7 @@
 		}
 	});
 	var l10n = null;
-	requirejs(["l10n"], function (il10n) {
+	requirejs(["https://sugarizer.org/js/l10n.js"], function (il10n) {
 		l10n = il10n;
 		let defaultLanguage = (typeof chrome != 'undefined' && chrome.app && chrome.app.runtime) ? chrome.i18n.getUILanguage() : navigator.language;
 		l10n.init(defaultLanguage.split('-')[0]);
