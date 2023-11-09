@@ -103,19 +103,8 @@ var app = new Vue({
 						<v-img class="age-button" v-bind:src="'./img/'+val+'year.svg'" height="50px" width="50px"></v-img>
 					</div>
 				</div>
-				<v-menu offset-y>
-					<template v-slot:activator="{ on }">
-						<v-btn text v-on="on">
-						<v-text-field v-model="filterName" label="Sort By" single-line hide-details></v-text-field>
-						<v-icon>mdi-menu-down</v-icon>
-						</v-btn>
-					</template>
-					<v-list>
-				  	<v-list-item @click="changeSort('name')">Name</v-list-item>
-					</v-list>
-				</v-menu>
-				<v-data-table :headers="headers" :items="filteredActivities()" :items-per-page="100" class="elevation-1"
-				:footer-props="{showFirstLastPage:false, disablePagination:true, disableItemsPerPage:true, showCurrentPage:false, showFirstLastPage:false}">
+				<v-data-table :headers="headers" :items="filteredActivities()" class="elevation-1"
+				:footer-props="{showFirstLastPage:false, disablePagination:false, disableItemsPerPage:false, showCurrentPage:false, showFirstLastPage:false}" :items-per-page="pagination.rowsPerPage" :items-per-page-options="pagination.rowsPerPageItems">
 					<template v-slot:item.icon="{item}">
 						<v-img v-bind:src="item.icon" height="50px" width="50px"></v-img>
 					</template>
@@ -150,10 +139,13 @@ var app = new Vue({
 		filterTag: "",
 		filterAge: 11,
 		filterName: "",
-		sortBy: 'name',
-		sortDesc: false,
 		tags: tagsProperties,
-		ages: agesProperties
+		ages: agesProperties,
+		pagination: {
+			rowsPerPage: 100,
+			rowsPerPageItems: [5, 10, 15],
+		},
+		l10n: null
 	},
 
 	created: function() {
@@ -227,15 +219,6 @@ var app = new Vue({
 			});
 			return activities;
 		},
-		changeSort(sortBy) {
-			if (this.sortBy === sortBy) {
-			  this.sortDesc = !this.sortDesc;
-			} else {
-			  this.sortBy = sortBy;
-			  this.sortDesc = false;
-			}
-		},
-		
 
 		//
 		filteredActivities: function() {
@@ -244,11 +227,6 @@ var app = new Vue({
 				return (vm.filterTag.length == 0 || item.tags.indexOf(vm.filterTag) != -1) &&
 					(vm.filterName.length == 0 || item.name.indexOf(vm.filterName) != -1) &&
 					(item.age <= vm.filterAge);
-			})
-			.sort(function(a, b) {
-				const nameA = a[vm.sortBy].toLowerCase();
-				const nameB = b[vm.sortBy].toLowerCase();
-				return vm.sortDesc ? nameB.localeCompare(nameA) : nameA.localeCompare(nameB);
 			});
 		},
 
