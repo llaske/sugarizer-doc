@@ -38,20 +38,6 @@
     padding-right: 10px;
 }
 
-.v-btn:not(.v-btn--round).v-size--default {
-    height: 36px;
-    min-width: 100%;
-    padding: 0 16px;
-}
-
-.v-data-table-header {
-    display: none;
-}
-
-.v-data-table {
-    padding-top: 16px;
-}
-
 .input-button {
     vertical-align: super;
 }
