@@ -615,3 +615,48 @@ Custom Media Queries
 		font-size: 22px;
 	}
 }
+
+/* ------------------
+Get Started
+------------------ */
+.left {
+	left: 22px;
+}
+
+.right {
+	right: 22px;
+}
+@media screen and (min-width: 768px) {
+	.col-md-3 {
+		min-width: 33% !important;
+	}
+}
+@media screen and (min-width: 410px) and (max-width: 767px) {
+	.col-md-3.col-xs-6.col-article {
+		width: 50% !important; 
+	}
+}
+@media screen and (max-width: 409px) {
+	.col-md-3 {
+		width: 100% !important;
+	}
+}
+
+.carousel-control-prev, .carousel-control-next {
+	width: auto;
+	height: auto;
+	background-color: transparent;
+	border: none;
+}
+
+.btn-red {
+	background-color: #dd5138;
+	color: #fff
+}
+.app .feature {
+	margin-right: 0px;
+}
+
+.carousel-inner {
+	padding: 0 40px;
+}
