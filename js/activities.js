@@ -99,12 +99,15 @@ var app = new Vue({
 				</div>
 				<div v-if="activities.length>0" class="filterage-list">
 					<div v-for="(val, age) in ages" class="filter-button">
-					<input class="input-button" id="filter" v-bind:value="val" type="radio" v-on:click="onFilterAge(val)" :checked="(val==filterAge)"/>
+						<input class="input-button" id="filter" v-bind:value="val" type="radio" v-on:click="onFilterAge(val)" :checked="(val==filterAge)"/>
 						<v-img class="age-button" v-bind:src="'./img/'+val+'year.svg'" height="50px" width="50px"></v-img>
 					</div>
 				</div>
-				<v-data-table :headers="headers" :items="filteredActivities()" class="elevation-1"
-				:footer-props="{showFirstLastPage:false, disablePagination:false, disableItemsPerPage:false, showCurrentPage:false, showFirstLastPage:false}" :items-per-page="pagination.rowsPerPage" :items-per-page-options="pagination.rowsPerPageItems">
+				<v-btn @click="toggleSort" style="justify-left:center; margin-left:22px; min-width: 0">
+					<v-icon>{{ sortAsc ? 'mdi-arrow-up' : 'mdi-arrow-down' }}</v-icon>
+				</v-btn>
+				<v-data-table :headers="headers" :items="filteredActivities()" :items-per-page="100" class="elevation-1"
+				:footer-props="{showFirstLastPage:false, disablePagination:true, disableItemsPerPage:true, showCurrentPage:false, showFirstLastPage:false}">
 					<template v-slot:item.icon="{item}">
 						<v-img v-bind:src="item.icon" height="50px" width="50px"></v-img>
 					</template>
@@ -139,13 +142,11 @@ var app = new Vue({
 		filterTag: "",
 		filterAge: 11,
 		filterName: "",
+		sortBy: 'name',
+		sortAsc: true,
+		sortDesc: false,
 		tags: tagsProperties,
-		ages: agesProperties,
-		pagination: {
-			rowsPerPage: 100,
-			rowsPerPageItems: [5, 10, 15],
-		},
-		l10n: null
+		ages: agesProperties
 	},
 
 	created: function() {
@@ -183,6 +184,10 @@ var app = new Vue({
 	},
 
 	methods: {
+		toggleSort() {
+			this.sortAsc = !this.sortAsc;
+			this.changeSort('name');
+		  },
 		// Load activities list from web site
 		loadActivities: function() {
 			var vm = this;
@@ -219,6 +224,15 @@ var app = new Vue({
 			});
 			return activities;
 		},
+		changeSort(sortBy) {
+			if (this.sortBy === sortBy) {
+			  this.sortDesc = !this.sortDesc;
+			} else {
+			  this.sortBy = sortBy;
+			  this.sortDesc = false;
+			}
+		},
+		
 
 		//
 		filteredActivities: function() {
@@ -227,6 +241,11 @@ var app = new Vue({
 				return (vm.filterTag.length == 0 || item.tags.indexOf(vm.filterTag) != -1) &&
 					(vm.filterName.length == 0 || item.name.indexOf(vm.filterName) != -1) &&
 					(item.age <= vm.filterAge);
+			})
+			.sort(function(a, b) {
+				const nameA = a[vm.sortBy].toLowerCase();
+				const nameB = b[vm.sortBy].toLowerCase();
+				return vm.sortDesc ? nameB.localeCompare(nameA) : nameA.localeCompare(nameB);
 			});
 		},
 
