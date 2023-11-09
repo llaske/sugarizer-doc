@@ -6,10 +6,9 @@
 	<meta name="description" content=".">
 	<meta name="author" content="Lionel Laské">
 	<title>Sugarizer | Oops</title>
-	<script type="text/javascript" src="https://sugarizer.org/js/l10n.js"></script>
+    <script src="https://sugarizer.org/js/require.js"></script>
     <link href="https://sugarizer.org/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://sugarizer.org/css/style.css" rel="stylesheet">
-	<link rel="prefetch" type="application/l10n" href="https://sugarizer.org/locale.ini" />
 	<link rel="shortcut icon" href="https://sugarizer.org/img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="https://sugarizer.org/img/favicon.ico" type="image/x-icon">
 </head>
@@ -19,13 +18,30 @@
             <div class="col-sm-3 left-502"><img src="https://sugarizer.org/img/sugarizer.png" class="logo-502"/></div>
             <div class="col-sm-9 right-502">
                 <img src="https://sugarizer.org/img/login.svg" class="warning-502"/>
-                <h1 class="title-502" data-l10n-id="data-403-oops">Oops</h1>
-                <p data-l10n-id="data-403-sorry">Sorry, you're not authorized to display this content :-(</p>
-                <p data-l10n-id="data-403-maintenance">Please check the URL in your browser address bar.</p>
+                <h1 class="title-502" data-i18n="data-403-oops">Oops</h1>
+                <p data-i18n="data-403-sorry">Sorry, you're not authorized to display this content :-(</p>
+                <p data-i18n="data-403-maintenance">Please check the URL in your browser address bar.</p>
                 <p class="errorcode-502">403</p>
             </div>
         </div>
     </div>
 
 </body>
+<script type="text/javascript">
+	requirejs.config({
+		baseUrl: "js",
+		paths: {
+			activity: "../js"
+		}
+	});
+	var l10n = null;
+	requirejs(["https://sugarizer.org/js/l10n.js"], function (il10n) {
+		l10n = il10n;
+		let defaultLanguage = (typeof chrome != 'undefined' && chrome.app && chrome.app.runtime) ? chrome.i18n.getUILanguage() : navigator.language;
+		l10n.init(defaultLanguage.split('-')[0]);
+	});
+	window.addEventListener('localized', function() {
+		l10n.updateDocument();
+	}, false);
+</script>
 </html>
