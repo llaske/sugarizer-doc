@@ -103,11 +103,12 @@ var app = new Vue({
 						<v-img class="age-button" v-bind:src="'./img/'+val+'year.svg'" height="50px" width="50px"></v-img>
 					</div>
 				</div>
-				<v-btn @click="toggleSort" style="justify-left:center; margin-left:22px; min-width: 0">
+				<v-btn @click="toggleSort" style="justify-left:center; margin :0.5rem 0 0.5rem 22px; min-width: 0">
 					<v-icon>{{ sortAsc ? 'mdi-arrow-up' : 'mdi-arrow-down' }}</v-icon>
 				</v-btn>
 				<v-data-table :headers="headers" :items="filteredActivities()" :items-per-page="100" class="elevation-1"
-				:footer-props="{showFirstLastPage:false, disablePagination:true, disableItemsPerPage:true, showCurrentPage:false, showFirstLastPage:false}">
+				:footer-props="{showFirstLastPage:false, disablePagination:true, disableItemsPerPage:true, showCurrentPage:false, showFirstLastPage:false}"
+				:disable-sort="true">
 					<template v-slot:item.icon="{item}">
 						<v-img v-bind:src="item.icon" height="50px" width="50px"></v-img>
 					</template>
