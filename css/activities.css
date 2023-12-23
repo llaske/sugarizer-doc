@@ -81,3 +81,9 @@ a:hover, a:focus, a:active, a:visited {
     border: 1px solid transparent;
     border-radius: 4px;
 }
+
+.v-data-table>.v-data-table__wrapper .v-data-table__mobile-row {
+    height: auto;
+    min-height: 48px;
+    justify-content: center;
+}
