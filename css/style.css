@@ -355,6 +355,7 @@ ul.footer-menu li a:hover {
 	-o-border-radius: 10px;
 }
 .styleSelect select {
+	cursor: pointer;
 	border-radius: 10px;
 	background: #404142;
 	width: 100%;
