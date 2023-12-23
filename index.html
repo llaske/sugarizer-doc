@@ -7,7 +7,6 @@
 	<meta name="description" content="The Sugar Learning Platform is a leading learning platform developed for the One Laptop per Child project and used every day by nearly 3 million children around the world. With Sugarizer, you could discover the Sugar Learning Platform on any device: from the tiny Raspberry PI to the small Android/iOS tablet or the bigger PC/Mac. Enjoy the experience and help us reach every children on every device in every country.">
 	<meta name="author" content="Sugar Labs community">
 	<title>Sugarizer | The leading learning platform for children</title>
-	<script src="js/require.js"></script>
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -19,6 +18,12 @@
 	<link href="css/featherlight.min.css" type="text/css" rel="stylesheet"/>
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -143,49 +148,90 @@
 	<div class="row me-row content-ct">
 		<h2 class="row-title" data-i18n="get-started-title">Activity list:</h2>
 	</div>
-	<div class="row">
-		<div class="col-md-3 col-xs-6 col-article">
-			<div class="card card-article">
-				<img src="docs/articles/images/teachers.png" alt="Sugarizer from home to the classroom">
-				<div class="card-body">
-					<h3 class="card-title" data-i18n="article-hometoclass-title">Sugarizer from home to the classroom</h3>
-					<p class="card-text" data-i18n="article-hometoclass-text">What is Sugarizer? How to use it? That's what we'll find out in this article.</p>
-					<a id="hometoclass" data-i18n="article-read" href="docs/articles/hometoclass" class="btn btn-red btn-article" role="button">READ</a>
+	<div id="carouselExample" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="row">
+					<div class="col-md-3 col-xs-6 col-article">
+						<div class="card card-article">
+							<img src="docs/articles/images/teachers.png" alt="Sugarizer from home to the classroom">
+							<div class="card-body">
+								<h3 class="card-title" data-l10n-id="article-hometoclass-title">Sugarizer from home to the classroom</h3>
+								<p class="card-text" data-l10n-id="article-hometoclass-text">What is Sugarizer? How to use it? That's what we'll find out in this article.</p>
+								<a id="hometoclass" data-l10n-id="article-read" href="docs/articles/hometoclass" class="btn btn-red btn-article" role="button">READ</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-md-3 col-xs-6 col-article">
-			<div class="card card-article">
-				<img src="docs/articles/images/clicktolist.png" alt="First steps with Sugarizer">
-				<div class="card-body">
-					<h3 class="card-title" data-i18n="article-firststep-title">First steps with Sugarizer</h3>
-					<p class="card-text" data-i18n="article-firststep-text">Never used Sugarizer before? Let's find out.</p>
-					<a id="firststep" data-i18n="article-read" href="docs/articles/firststep" class="btn btn-red btn-article" role="button">READ</a>
+			<div class="carousel-item">
+				<div class="row">
+					<div class="col-md-3 col-xs-6 col-article">
+						<div class="card card-article">
+							<img src="docs/articles/images/clicktolist.png" alt="First steps with Sugarizer">
+							<div class="card-body">
+								<h3 class="card-title" data-l10n-id="article-firststep-title">First steps with Sugarizer</h3>
+								<p class="card-text" data-l10n-id="article-firststep-text">Never used Sugarizer before? Let's find out.</p>
+								<a id="firststep" data-l10n-id="article-read" href="docs/articles/firststep" class="btn btn-red btn-article" role="button">READ</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-md-3 col-xs-6 col-article">
-			<div class="card card-article">
-				<img src="docs/articles/images/journalview.png" alt="...">
-				<div class="card-body">
-					<h3 class="card-title" data-i18n="article-journal-title">The Journal</h3>
-					<p class="card-text" data-i18n="article-journal-text">In Sugarizer, there is no need to save your work, the Journal is the place that automatically keeps a history of everything you do. Let's explore it together.</p>
-					<a id="journal" data-i18n="article-read" href="docs/articles/journal" class="btn btn-red btn-article" role="button">READ</a>
+			<div class="carousel-item">
+				<div class="row">
+					<div class="col-md-3 col-xs-6 col-article">
+						<div class="card card-article">
+							<img src="docs/articles/images/journalview.png" alt="...">
+							<div class="card-body">
+								<h3 class="card-title" data-l10n-id="article-journal-title">The Journal</h3>
+								<p class="card-text" data-l10n-id="article-journal-text">In Sugarizer, there is no need to save your work, the Journal is the place that automatically keeps a history of everything you do. Let's explore it together.</p>
+								<a id="journal" data-l10n-id="article-read" href="docs/articles/journal" class="btn btn-red btn-article" role="button">READ</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-md-3 col-xs-6 col-article">
-			<div class="card card-article">
-				<img src="docs/articles/images/neighborhood.png" alt="Share an activity">
-				<div class="card-body">
-					<h3 class="card-title" data-i18n="article-shareactivities-title">Share an activity</h3>
-					<p class="card-text" data-i18n="article-shareactivities-text">When connected to a server, Sugarizer makes it very easy to share activities with other users. Here's how.</p>
-					<a id="shareactivities" data-i18n="article-read" href="docs/articles/shareactivities" class="btn btn-red btn-article" role="button">READ</a>
+			<div class="carousel-item">
+				<div class="row">
+					<div class="col-md-3 col-xs-6 col-article">
+						<div class="card card-article">
+							<img src="docs/articles/images/neighborhood.png" alt="Share an activity">
+							<div class="card-body">
+								<h3 class="card-title" data-l10n-id="article-shareactivities-title">Share an activity</h3>
+								<p class="card-text" data-l10n-id="article-shareactivities-text">When connected to a server, Sugarizer makes it very easy to share activities with other users. Here's how.</p>
+								<a id="shareactivities" data-l10n-id="article-read" href="docs/articles/shareactivities" class="btn btn-red btn-article" role="button">READ</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
+			<!-- Add more slides as needed -->
 		</div>
+		<a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+			<i class="fas fa-circle-chevron-left fa-xl" style="color: #dd5138" aria-hidden="true"></i>
+			<span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+			<i class="fas fa-circle-chevron-right fa-xl " style="color: #dd5138" aria-hidden="true"></i>
+			<span class="sr-only">Next</span>
+		  </a>
+		
 	</div>
-</div>
+ </div>
+
+ <style>
+	.carousel-control-prev, .carousel-control-next {
+		width: auto;
+		height: auto;
+		background-color: transparent;
+		border: none;
+	}
+	.btn-red {
+		background-color: #dd5138;
+		color: #fff
+	}
+</style>
 
 <div class="container" id="gallery">
 	<div class="activities-list">
@@ -395,20 +441,7 @@ docker-compose up -d
 <script src="js/scrolling-nav.js"></script>
 <script src="js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-	requirejs.config({
-		baseUrl: "js",
-		paths: {
-			activity: "../js"
-		}
-	});
 	var langs = ["en", "es", "pl", "fr", "pt"];
-	var l10n = null;
-
-	requirejs(["l10n"], function (il10n) {
-		l10n = il10n;
-		let defaultLanguage = (typeof chrome != 'undefined' && chrome.app && chrome.app.runtime) ? chrome.i18n.getUILanguage() : navigator.language;
-		l10n.init(defaultLanguage.split('-')[0]);
-	});
 	function changeflag(c){
 		if (c == -1) return;
 		lang = langs[c];
@@ -432,6 +465,47 @@ docker-compose up -d
 			articles[i].href = "docs/articles/"+articles[i].id + "_" + lang + ".html";
 		}
 	}
+
+	function adjustCarouselCards() {
+		var viewportWidth = $(window).width();
+		var itemsPerSlide = 3; // Default for large screens
+
+		if ((viewportWidth < 1440) && (viewportWidth >= 768)) {
+			itemsPerSlide = 3; // 2 cards for screens between 768px and 1440px
+		}
+
+		if ((viewportWidth < 768) && (viewportWidth >= 450)) {
+			itemsPerSlide = 2; // 1 card for screens below 768px
+		}
+
+		if (viewportWidth < 450) {
+			itemsPerSlide = 1; // 1 card for screens below 450px
+		}
+
+		var $cards = $('.carousel-item .col-md-3');
+		$('.carousel-inner').empty();
+
+		for (var i = 0; i < $cards.length; i += itemsPerSlide) {
+			var $slide = $('<div class="carousel-item"></div>');
+			var $row = $('<div class="row"></div>');
+			
+			for (var j = 0; j < itemsPerSlide; j++) {
+				if (i + j < $cards.length) {
+					$row.append($cards.eq(i + j));
+				}
+		  	}
+			$slide.append($row);
+			$('.carousel-inner').append($slide);
+		}
+
+		// Set the first slide as active
+		$('.carousel-item:first').addClass('active');
+	}
+
+	// Call the adjustCarouselCards function when the page loads and on window resize
+	$(document).ready(adjustCarouselCards);
+	$(window).on('resize', adjustCarouselCards);
+	
 </script>
 </body>
 </html>
