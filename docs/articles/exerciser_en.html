@@ -90,7 +90,7 @@
 			<p><span data-l10n-id="oss">Sugarizer is a free software under</span> <a href="http://www.apache.org/licenses/LICENSE-2.0" title="Apache License" target="_blank"><span data-l10n-id="licence">Apache 2 licence</span></a>, <span data-l10n-id="code">source code is available on GitHub</span> <a href="https://github.com/llaske/sugarizer" title="GitHub" target="_blank"><span data-l10n-id="here">here</span></a>.
 				<span data-l10n-id="activities">Most activities use this license too but some could use a different license, check the README file for more.</span>
 			</p><br/>
-			<p>&copy; 2013-2023, Lionel Laské, <a href="http://sugarlabs.org" title="Sugar Labs" target="_blank">Sugar Labs Inc.</a> and <a href="https://github.com/llaske/sugarizer/blob/dev/docs/credits.md" target="_blank">Contributors</a>.</p><br/>
+            <p>&copy; 2013-<span id="currentYear"></span>, Lionel Laské, <a href="http://sugarlabs.org" title="Sugar Labs" target="_blank">Sugar Labs Inc.</a> and <a href="https://github.com/llaske/sugarizer/blob/dev/docs/credits.md" target="_blank">Contributors</a>.</p><br/>
 			<a href="https://github.com/llaske/sugarizer" target="_blank"><i class="fab fa-github-square fa-3x" style="margin-left:8px;margin-top:5px;color:#ffffff;"></i></a>
 			<a href="https://twitter.com/sugarizerapp" target="_blank"><i class="fab fa-twitter-square fa-3x" style="margin-left:8px;margin-top:5px;color:#ffffff;"></i></a>
 			<a href="https://www.facebook.com/Sugarizer" target="_blank"><i class="fab fa-facebook-square fa-3x" style="margin-left:8px;margin-top:5px;color:#ffffff;"></i></a>
@@ -99,4 +99,7 @@
 </div>
 <!-- End: Footer -->
 </body>
+<script>
+	document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
 </html>
