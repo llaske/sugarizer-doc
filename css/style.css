@@ -243,6 +243,13 @@ a span.ti-twitter-alt {
 
 .card-article {
 	height: 100%;
+	flex-direction: unset !important;
+}
+
+.carousel-color {
+	background-color: #dd5138 !important;
+	width: 40px !important;
+    height: 7px !important;
 }
 
 .col-article {
