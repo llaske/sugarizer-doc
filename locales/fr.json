@@ -102,5 +102,7 @@
 	"article-exerciser-title": "Exerciser: l'outil de création d'exercices de Sugarizer",
 	"article-exerciser-text": "Parmi les outils que la plate-forme Sugarizer met à la disposition des enseignants, il y a Exerciser, une activité  pour créer simplement des exercices interactifs, suivre la progression des élèves et favoriser un apprentissage actif.",
 	"article-basicskills-title": "Les apprentissages fondamentaux avec Sugarizer",
-	"article-basicskills-text": "La force de la plateforme Sugarizer est qu'elle permet de faciliter l'enseignement des apprentissages fondamentaux de l'école primaire. Découvrons comment."
+	"article-basicskills-text": "La force de la plateforme Sugarizer est qu'elle permet de faciliter l'enseignement des apprentissages fondamentaux de l'école primaire. Découvrons comment.",
+	"article-dashboard-title": "Présentation du tableau de bord Sugarizer Server",
+	"article-dashboard-text": "Quand il est déployé en classe, Sugarizer s'appuie sur un serveur d'école pour permettre aux enseignants de suivre les progrès des élèves, de leur assigner des devoirs et de gérer les activités. Le tableau de bord de Sugarizer Server est un outil puissant qui permet aux enseignants et aux administrateurs de gérer les apprenants et suivre l'activité de la plateforme Sugarizer dans l'école. Partons à sa découverte."
 }

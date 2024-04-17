@@ -47,6 +47,10 @@ if (filename) {
 
 		// Convert to HTML
 		var md = require('markdown-it')();
+		var markdownStyle = require('markdown-it-style');
+		md.use(markdownStyle, {
+			'ul': "list-style-type: disc; padding-left: 2rem;"
+		});
 		var defaultImageRender = md.renderer.rules.image;
 		md.renderer.rules.image = function (tokens, idx, options, env, self) {
 			var token = tokens[idx], aIndex = token.attrIndex('src');

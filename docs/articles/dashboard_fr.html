@@ -1,0 +1,166 @@
+<!-- DO NOT UPDATE THIS FILE - Generated from dashboard_fr.md -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Quand il est déployé en classe, Sugarizer s'appuie sur un serveur d'école pour permettre aux enseignants de suivre les progrès des élèves, de leur assigner des devoirs et de gérer les activités. Le tableau de bord de Sugarizer Server est un outil puissant qui permet aux enseignants et aux administrateurs de gérer les apprenants et suivre l'activité de la plateforme Sugarizer dans l'école. Partons à sa découverte.">
+	<meta name="author" content="Lionel Laské">
+	<title>Sugarizer | Présentation du tableau de bord Sugarizer Server</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+	<link href="../../css/style.css" rel="stylesheet">
+	<link href='../../css/dosis-font.css' rel='stylesheet' type='text/css'>
+	<link href="../../css/themify-icons.css" rel="stylesheet">
+	<link href='../../css/fontawesome.min.css' rel='stylesheet' type='text/css'>
+	<link href="../../css/featherlight.min.css" type="text/css" rel="stylesheet"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+	<meta property="og:title" content="Présentation du tableau de bord Sugarizer Server">
+	<meta name="twitter:title" content="Présentation du tableau de bord Sugarizer Server">
+	<meta property="og:description" content="Quand il est déployé en classe, Sugarizer s'appuie sur un serveur d'école pour permettre aux enseignants de suivre les progrès des élèves, de leur assigner des devoirs et de gérer les activités. Le tableau de bord de Sugarizer Server est un outil puissant qui permet aux enseignants et aux administrateurs de gérer les apprenants et suivre l'activité de la plateforme Sugarizer dans l'école. Partons à sa découverte.">
+	<meta name="twitter:description" content="Quand il est déployé en classe, Sugarizer s'appuie sur un serveur d'école pour permettre aux enseignants de suivre les progrès des élèves, de leur assigner des devoirs et de gérer les activités. Le tableau de bord de Sugarizer Server est un outil puissant qui permet aux enseignants et aux administrateurs de gérer les apprenants et suivre l'activité de la plateforme Sugarizer dans l'école. Partons à sa découverte.">
+	<meta property="og:type" content="article">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image" content="https://sugarizer.org/docs/articles/images/dashboard_home.png">
+	<meta name="twitter:image" content="https://sugarizer.org/docs/articles/images/dashboard_home.png">
+</head>
+<body>
+
+<!-- Start: Header -->
+<script type="text/javascript">
+	var langs = ["en", "fr"];
+	function changeflag(c){
+		lang = langs[c];
+		document.location = "dashboard_"+lang+".html";
+	}
+</script>
+<div style="background-color: #fcd93b;height: 60px;">
+	<a title="Retour" class="btn btn-red btn-back" onclick="history.back()" style="margin: 12px">Retour</a>
+	<div class="language" align="right">
+		<div class="styleSelect" style="display: inline-block;" >
+			<select id="Lang" class="units" onclick="changeflag(this.selectedIndex)"  onchange="changeflag(this.selectedIndex)">
+				<option value ="0">English</option>
+				<option value ="1" selected>Français</option>
+			</select>
+		</div>
+	</div>
+</div>
+
+<div class="flagLoc">
+	<img class="flag" id="flag" src="../../img/fr.svg">
+</div>
+<!-- End: Header -->
+
+<!-- Start: Begin content -->
+<div style="margin: 1rem">
+<!-- End: Begin content -->
+<h1>Présentation du tableau de bord Sugarizer Server</h1>
+<p>Quand il est déployé en classe, Sugarizer s'appuie sur un serveur d'école pour permettre aux enseignants de suivre les progrès des élèves, de leur assigner des devoirs et de gérer les activités. Le tableau de bord de Sugarizer Server est un outil puissant qui permet aux enseignants et aux administrateurs de gérer les apprenants et suivre l'activité de la plateforme Sugarizer dans l'école. Partons à sa découverte.</p>
+<h2>Pour quels usages ?</h2>
+<p>Le tableau de bord de Sugarizer Server est conçu pour répondre à 3 usages importants d'un déploiement:</p>
+<ul style="list-style-type: disc; padding-left: 2rem;">
+<li>Organiser le déploiement</li>
+<li>Suivre l'activité</li>
+<li>Suivre le déploiement</li>
+</ul>
+<h2>Organiser le déploiement</h2>
+<p>Plusieurs fonctionnalités du tableau de bord vous permettent facilement d'organiser le déploiement de Sugarizer dans une école, même si vous avez des centaines d'utilisateurs à gérer:</p>
+<ol>
+<li>
+<p><strong>Créer les utilisateurs: étudiants et enseignants</strong></p>
+<ul style="list-style-type: disc; padding-left: 2rem;">
+<li>Permet aux administrateurs de créer des comptes au préalable (pas besoin d'inscription) pour les étudiants et les enseignants sur la plateforme.</li>
+<li>Création individuelle des comptes ou en masse via un fichier CSV.</li>
+<li>Affectation des mots de passe et de la personnalisation (langue, couleurs, etc)</li>
+</ul>
+<p><div class="text-center"><img src="images/dashboard_users.png" class="ms-3 img-fluid p-2 bg-light border" width="800px" alt="Organiser les utilisateurs"></div><figcaption class="ms-3 figure-caption text-center">Organiser les utilisateurs</figcaption></p>
+</li>
+<li>
+<p><strong>Créer les classes et y affecter les étudiants et les enseignants</strong></p>
+<ul style="list-style-type: disc; padding-left: 2rem;">
+<li>Permet de créer des classes afin de regrouper les élèves.</li>
+<li>Assigner un ou plusieurs enseignants à chaque classe.</li>
+<li>Création de classes unitaires ou en masse via un fichier CSV.</li>
+</ul>
+<p><div class="text-center"><img src="images/dashboard_classrooms.png" class="ms-3 img-fluid p-2 bg-light border" width="800px" alt="Organiser les classes"></div><figcaption class="ms-3 figure-caption text-center">Organiser les classes</figcaption></p>
+</li>
+<li>
+<p><strong>Choisir les activités</strong></p>
+<ul style="list-style-type: disc; padding-left: 2rem;">
+<li>Permet aux administrateurs de sélectionner et de personnaliser les activités de Sugarizer disponibles sur la plateforme en fonction des besoins pédagogiques.</li>
+<li>Personnalisation de l'ordre et de l'apparence des activités dans la vue favorite.</li>
+</ul>
+<p><div class="text-center"><img src="images/dashboard_activities.png" class="ms-3 img-fluid p-2 bg-light border" width="800px" alt="Choisir les activités"></div><figcaption class="ms-3 figure-caption text-center">Choisir les activités</figcaption></p>
+</li>
+</ol>
+<h2>Suivre l'activité</h2>
+<p>Suivre l'activité des étudiants est essentiel pour évaluer les progrès et l'engagement. Le tableau de bord de Sugarizer Server offre aux enseignants un aperçu des activités et des progrès des étudiants grâce au suivi des entrées dans le journal. Voici quelques fonctionnalités clés:</p>
+<ol>
+<li>
+<p><strong>Visualiser le Journal des étudiants pour suivre leur progrès</strong></p>
+<ul style="list-style-type: disc; padding-left: 2rem;">
+<li>Offre aux enseignants un aperçu des activités et des progrès des étudiants grâce au suivi des entrées dans le journal.</li>
+<li>Possibilité de réouvrir les activités dans l'état où elles ont été laissées par les étudiants.</li>
+</ul>
+<p><div class="text-center"><img src="images/dashboard_journals.png" class="ms-3 img-fluid p-2 bg-light border" width="800px" alt="Visualiser un Journal"></div><figcaption class="ms-3 figure-caption text-center">Visualiser un Journal</figcaption></p>
+</li>
+<li>
+<p><strong>Affecter et suivre les devoirs</strong></p>
+<ul style="list-style-type: disc; padding-left: 2rem;">
+<li>Permet aux enseignants de créer des devoirs et de suivre leur avancement, offrant ainsi un suivi personnalisé aux étudiants.</li>
+<li>Organisation des devoirs par classe et par étudiant.</li>
+<li>Suivi individuel ou collectif des devoirs.</li>
+<li>Récupération des notes obtenus aux exercices.</li>
+<li>Possibilité d'exporter les devoirs en CSV.</li>
+</ul>
+<p><div class="text-center"><img src="images/dashboard_assignments.png" class="ms-3 img-fluid p-2 bg-light border" width="800px" alt="Gestion des devoirs"></div><figcaption class="ms-3 figure-caption text-center">Gestion des devoirs</figcaption></p>
+</li>
+</ol>
+<p><strong>Suivre le déploiement</strong></p>
+<ol>
+<li>
+<p><strong>Tableau de bord des usages</strong></p>
+<ul style="list-style-type: disc; padding-left: 2rem;">
+<li>Fournit aux administrateurs des données détaillées sur l'utilisation de la plateforme, y compris le nombre d'utilisateurs, les activités les plus populaires, le nombre de journaux et d'entrées, etc</li>
+<li>Fournit aux enseignants des informations sur l'engagement des étudiants (les plus actifs et les plus productifs) et l'utilisation des activités dans leurs classes.</li>
+</ul>
+<p><div class="text-center"><img src="images/dashboard_home.png" class="ms-3 img-fluid p-2 bg-light border" width="800px" alt="Synthèse des usages"></div><figcaption class="ms-3 figure-caption text-center">Synthèse des usages</figcaption></p>
+</li>
+<li>
+<p><strong>Graphiques personnalisés</strong></p>
+<ul style="list-style-type: disc; padding-left: 2rem;">
+<li>Permet aux administrateurs de générer des graphiques personnalisés basés sur les données du serveur, offrant ainsi une analyse approfondie de l'activité sur la plateforme.</li>
+</ul>
+<p><div class="text-center"><img src="images/dashboard_stats.png" class="ms-3 img-fluid p-2 bg-light border" width="800px" alt="Graphiques personnalisés"></div><figcaption class="ms-3 figure-caption text-center">Graphiques personnalisés</figcaption></p>
+</li>
+</ol>
+<h2>Synthèse</h2>
+<p>En conclusion, avec le tableau de bord Sugarizer Server Dashboard, Sugarizer est bien plus qu'une simple application éducative. Il se transforme en une véritable plateforme de suivi au sein de la classe et de l'école. Grâce à ses fonctionnalités avancées de gestion des utilisateurs, de suivi des activités et de génération de rapports, Sugarizer offre aux enseignants et aux administrateurs les outils nécessaires pour optimiser l'expérience éducative.</p>
+<h2>En savoir plus</h2>
+<ul style="list-style-type: disc; padding-left: 2rem;">
+<li>La procédure d'installation de Sugarizer Server est disponible <a href="https://github.com/llaske/sugarizer-server">ici</a>.</li>
+<li>Vous pouvez tester en ligne Sugarizer <a href="https://try.sugarizer.org">ici</a> ou le télécharger <a href="https://sugarizer.org/index.html#apps">ici</a>.</li>
+</ul>
+
+<!-- Start: End content -->
+</div>
+<!-- End: End content -->
+
+<!-- Start: Footer -->
+<div class="container-fluid footer">
+	<div class="row footer-credit">
+		<div class="col-md-12 col-sm-12">
+			<p><span data-l10n-id="oss">Sugarizer est un logiciel libre basé sur la</span> <a href="http://www.apache.org/licenses/LICENSE-2.0" title="Apache License" target="_blank"><span data-l10n-id="licence">licence Apache 2</span></a>, <span data-l10n-id="code">le code source est disponible sur GitHub</span> <a href="https://github.com/llaske/sugarizer" title="GitHub" target="_blank"><span data-l10n-id="here">ici</span></a>.
+				<span data-l10n-id="activities">La plupart des activités utilisent cette licence également mais certaines peuvent utiliser une licence différente, vérifiez le fichier README pour plus d'information.</span>
+			</p><br/>
+			<p>&copy; 2013-2024, Lionel Laské, <a href="http://sugarlabs.org" title="Sugar Labs" target="_blank">Sugar Labs Inc.</a> et <a href="https://github.com/llaske/sugarizer/blob/dev/docs/credits.md" target="_blank">Contributeurs</a>.</p><br/>
+			<a href="https://github.com/llaske/sugarizer" target="_blank"><i class="fab fa-github-square fa-3x" style="margin-left:8px;margin-top:5px;color:#ffffff;"></i></a>
+			<a href="https://twitter.com/sugarizerapp" target="_blank"><i class="fab fa-twitter-square fa-3x" style="margin-left:8px;margin-top:5px;color:#ffffff;"></i></a>
+			<a href="https://www.facebook.com/Sugarizer" target="_blank"><i class="fab fa-facebook-square fa-3x" style="margin-left:8px;margin-top:5px;color:#ffffff;"></i></a>
+		</div>
+	</div>
+</div>
+<!-- End: Footer -->
+</body>
+</html>
