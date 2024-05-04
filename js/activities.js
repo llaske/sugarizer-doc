@@ -126,6 +126,9 @@ var app = new Vue({
 					<template v-slot:item.video="{item}">
 						<a class="btn btn-red" data-featherlight="image" v-bind:href="item.video">{{getDemoText()}}</a>
 					</template>
+					<template v-slot:item.tryurl="{item}">
+						<a class="btn btn-red" v-bind:href="item.tryurl" target="_new">{{getTryText()}}</a>
+					</template>
 				</v-data-table>
 			</v-main>
 		</v-app>`,
@@ -137,7 +140,8 @@ var app = new Vue({
 			{text: "", value: "description", sortable: false},
 			{text: "", value: "tags", sortable: false},
 			{text: "", value: "age", sortable: false},
-			{text: "", value: "video", sortable: false}
+			{text: "", value: "video", sortable: false},
+			{text: "", value: "tryurl", sortable: false}
 		],
 		activities: [],
 		filterTag: "",
@@ -198,9 +202,9 @@ var app = new Vue({
 					vm.activities = vm.parseActivities(response.data);
 					vm.message = vm.activities;
 				})
-				/*.catch(function(error) {
+				.catch(function(error) {
 					console.log(error)
-				});*/
+				});
 		},
 
 		// Parse activities.json file to create an array of Activities
@@ -216,6 +220,7 @@ var app = new Vue({
 					icon: sugarizerUrl+activity.directory+"/"+activity.icon,
 					description: vm.l10n.get("TutoActivity"+directory+"activity", {}, "activities"),
 					video: "videos/"+directory.toLowerCase()+".gif",
+					tryurl: sugarizerUrl+activity.directory+"/index.html?a="+activity.id+"&n="+activity.name+"&sa=1",
 					tags: activitiesInfo[activity.id].tags,
 					age: activitiesInfo[activity.id].age
 				});
@@ -261,6 +266,10 @@ var app = new Vue({
 		getDemoText: function() {
 			var vm = this;
 			return vm.l10n.get("button-demo");
+		},
+		getTryText: function() {
+			var vm = this;
+			return vm.l10n.get("button-try");
 		},
 
 		// Filter

@@ -14,9 +14,22 @@
 	<link href="css/featherlight.min.css" type="text/css" rel="stylesheet"/>
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+	<script>
+		if (typeof module === 'object') {
+			window.module = module;
+			module = undefined;
+		}
+	</script>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		if (window.module) module = window.module;
+	</script>
 	<script src="js/require.js"></script>
 </head>
 
@@ -25,10 +38,6 @@
 	</div>
 
 	<script src="js/activities.js"></script>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.min.js"></script>
-	<script src="js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>
