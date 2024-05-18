@@ -51,7 +51,6 @@ if (filename) {
 		md.use(markdownStyle, {
 			'ul': "list-style-type: disc; padding-left: 2rem;"
 		});
-		var defaultImageRender = md.renderer.rules.image;
 		md.renderer.rules.image = function (tokens, idx, options, env, self) {
 			var token = tokens[idx], aIndex = token.attrIndex('src');
 			var caption = token.content;
@@ -60,6 +59,14 @@ if (filename) {
 				thumbnail = token.attrs[aIndex][1];
 			}
 			return '<div class="text-center"><img src="'+token.attrs[aIndex][1]+'" class="ms-3 img-fluid p-2 bg-light border" width="800px" alt="'+caption+'"></div><figcaption class="ms-3 figure-caption text-center">'+caption+'</figcaption>';
+		};
+		md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
+			var token = tokens[idx];
+			const hrefIndex = token.attrIndex('href');
+			if (hrefIndex >= 0) {
+				token.attrs[hrefIndex][1] = token.attrs[hrefIndex][1].replace('.md', '.html');
+			}
+			return self.renderToken(tokens, idx, options);
 		};
 		var result = md.render(read);
 		header = header.replaceAll("{{thumbnail}}", thumbnail);

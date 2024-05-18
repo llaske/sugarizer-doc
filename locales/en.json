@@ -27,7 +27,7 @@
 	"content-serverinstall": "Server Installation on",
 	"content-moreinfo": "More information",
 	"content-here": "here",
-	"head-info": "More information on...",
+	"head-info": "More information to...",
 	"gh": "Contribute",
 	"open": "Open",
 	"gh-content": "Contribute to the Sugarizer project on GitHub.",
@@ -105,5 +105,7 @@
 	"article-basicskills-title": "Fundamental learning with Sugarizer",
 	"article-basicskills-text": "The strength of the Sugarizer platform lies in its ability to facilitate the teaching of basic skills in elementary school. Let's find out how.",
 	"article-dashboard-title": "Sugarizer Server dashboard overview",
-	"article-dashboard-text": "When deployed in the classroom, Sugarizer relies on a school server to enable teachers to track student progress, assign homework and manage activities. The Sugarizer Server dashboard is a powerful tool that enables teachers and administrators to manage learners and monitor Sugarizer platform activity in the school. Let's find out more."
+	"article-dashboard-text": "When deployed in the classroom, Sugarizer relies on a school server to enable teachers to track student progress, assign homework and manage activities. The Sugarizer Server dashboard is a powerful tool that enables teachers and administrators to manage learners and monitor Sugarizer platform activity in the school. Let's find out more.",
+	"article-connectedmode-title": "Connected or not",
+	"article-connectedmode-text": "Sugarizer can be installed on your machine or used through a browser. And once installed, the application can be used in both connected and disconnected modes. This flexibility allows everyone to use Sugarizer according to their needs and technical constraints. Let's take a closer look."
 }

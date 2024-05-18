@@ -105,5 +105,7 @@
 	"article-basicskills-title": "Les apprentissages fondamentaux avec Sugarizer",
 	"article-basicskills-text": "La force de la plateforme Sugarizer est qu'elle permet de faciliter l'enseignement des apprentissages fondamentaux de l'école primaire. Découvrons comment.",
 	"article-dashboard-title": "Présentation du tableau de bord Sugarizer Server",
-	"article-dashboard-text": "Quand il est déployé en classe, Sugarizer s'appuie sur un serveur d'école pour permettre aux enseignants de suivre les progrès des élèves, de leur assigner des devoirs et de gérer les activités. Le tableau de bord de Sugarizer Server est un outil puissant qui permet aux enseignants et aux administrateurs de gérer les apprenants et suivre l'activité de la plateforme Sugarizer dans l'école. Partons à sa découverte."
+	"article-dashboard-text": "Quand il est déployé en classe, Sugarizer s'appuie sur un serveur d'école pour permettre aux enseignants de suivre les progrès des élèves, de leur assigner des devoirs et de gérer les activités. Le tableau de bord de Sugarizer Server est un outil puissant qui permet aux enseignants et aux administrateurs de gérer les apprenants et suivre l'activité de la plateforme Sugarizer dans l'école. Partons à sa découverte.",
+	"article-connectedmode-title": "Connecté ou déconnecté",
+	"article-connectedmode-text": "Sugarizer peut être installé sur votre machine ou utilisé à travers un navigateur. Et une fois installée, l'application peut être utilisée aussi bien en mode connecté qu'en mode déconnecté. Cette flexibilité permet à chacun d'utiliser Sugarizer selon ses besoins et ses contraintes techniques. Découvrons cela de plus près."
 }
