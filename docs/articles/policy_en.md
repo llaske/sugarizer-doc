@@ -50,6 +50,8 @@ We securely stores your data by:
 - Limiting access to some specific profiles (owner, teacher, administrator)
 - Using a secure web channel (HTTPS)
 
+Plus, as Sugarizer is an open source project, everyone can check how we handle your data.
+
 
 ## What are your data protection rights?
 

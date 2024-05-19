@@ -51,6 +51,7 @@ Nous stockons vos données de manière sécurisée:
 - En limitant leur accès à des profils cibles (propriétaire, enseignant, administrateur)
 - En utilisant un canal sécurisé sur le web (HTTPS)
 
+De plus, comme Sugarizer est un projet open source, tout le monde peut vérifier la manière dont vos données sont gérées.
 
 ## Quels sont vos droits pour gérer et protéger vos données ?
 

@@ -120,7 +120,7 @@
 			<img src="img/adblocker.svg" height="60" class="architecture-image"/>
 			<h3 data-i18n="headfeat-adblocker">Ads Free and privacy respectful</h3>
 			<div class="join" data-i18n="feature-adblocker">95% of apps market for children in stores contain advertising! With Sugarizer you're guaranteed to have 0 advertisements and 0 tracking tools included. We are RGPD compliant and extremely serious about data privacy.</div>
-			<div class="join" data-i18n="content-moreinfo">More information</div>&nbsp;<a href="policy.html" onclick="location.href='policy.html?lang='+document.webL10n.getLanguage();return false;"><div class="join" data-i18n="content-here">here</div></a>.
+			<div class="join" data-i18n="content-moreinfo">More information</div>&nbsp;<a id="policyurl" href="docs/articles/policy_en.html"><div class="join" data-i18n="content-here">here</div></a>.
 		</div>
 		<div class="col-md-4 feature">
 			<img src="img/copyleft.svg" height="40" class="architecture-image"/>
@@ -145,6 +145,7 @@
 			<button type="button" data-bs-target="#carousel" data-bs-slide-to="5" class="carousel-color" aria-label="Slide 5"></button>
 			<button type="button" data-bs-target="#carousel" data-bs-slide-to="6" class="carousel-color" aria-label="Slide 6"></button>
 			<button type="button" data-bs-target="#carousel" data-bs-slide-to="7" class="carousel-color" aria-label="Slide 7"></button>
+			<button type="button" data-bs-target="#carousel" data-bs-slide-to="8" class="carousel-color" aria-label="Slide 8"></button>
 		</div>
 
 		<div class="carousel-inner">
@@ -228,6 +229,16 @@
 					</div>
 				</div>
 			</div>
+			<div class="carousel-item">
+				<div class="card card-article">
+					<img src="docs/articles/images/privacy_settings.png" class="carousel-image d-block w-50"alt="Your privacy matters">
+					<div class="card-body">
+						<h3 class="card-title" data-i18n="article-privacy-title">Your privacy matters</h3>
+						<p class="card-text" data-i18n="article-privacy-text">In today's digital world, privacy is more important than ever, especially for children using educational platforms. Sugarizer, a learning platform designed for kids, is deeply committed to protecting user privacy and personal data. Here's an easy guide to understand how much privacy matters and how you can control it with Sugarizer.</p>
+						<a id="privacy" data-i18n="article-read" href="docs/articles/privacy" class="btn btn-red btn-article" role="button">READ</a>
+					</div>
+				</div>
+			</div>	
 		</div>	
 	</div>
 </div>
@@ -477,11 +488,12 @@ docker-compose up -d
 	}, false);
 	function changeArticlesUrl() {
 		let articles = document.getElementsByClassName("btn-article");
+		let lang = l10n.getLanguage();
+		lang = lang == 'fr' ? 'fr' : 'en'; // Only French and English is available for articles
 		for(let i = 0; i < articles.length; i++){
-			let lang = l10n.getLanguage();
-			lang = lang == 'fr' ? 'fr' : 'en'; // Only French and English is available for articles
 			articles[i].href = "docs/articles/"+articles[i].id + "_" + lang + ".html";
 		}
+		document.getElementById("policyurl").href = "docs/articles/policy_" + lang + ".html";
 	}
 </script>
 </body>
