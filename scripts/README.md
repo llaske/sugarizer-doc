@@ -10,4 +10,4 @@ Should be launched from the scripts directory to be able to retrieve the footer 
 
 ## Example
 
-```node mdtohtml.js ../docs/articles/firststep_fr.md > ../docs/articles/firststep_fr.html```
+```node mdtohtml.js ../docs/articles/src/firststep_fr.md > ../docs/articles/firststep_fr.html```
