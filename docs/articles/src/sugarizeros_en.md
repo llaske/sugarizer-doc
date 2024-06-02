@@ -42,5 +42,5 @@ SugarizerOS allows for a complete transformation of your Android tablet, making 
 
 ## Learn more
 
-* Download SugarizerOS from the [Play Store](https://sugarizer.org/index.html#apps).
+* Download SugarizerOS from the [Play Store](https://play.google.com/store/apps/details?id=org.olpc_france.sugarizeros).
 * You can try Sugarizer online [here](https://try.sugarizer.org).
