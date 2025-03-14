@@ -424,13 +424,45 @@
 		<i class="fa fa-lg fa-server fa-fw"></i> <span  data-i18n="content-serverinstall">Server Installation on</span> <font color="#2496ed">Docker <i class="fab fa-docker"></i></font>
 	</h3>
 	<hr/>
-	<pre class="command-line language-bash">
-git clone https://github.com/llaske/sugarizer
-git clone https://github.com/llaske/sugarizer-server
-cd sugarizer-server
-sh generate-docker-compose.sh
-docker-compose up -d
-	</pre>
+	<div>
+		<div class="command-line">
+			<div class="command-container">
+			  <div class="command">git clone <a href="https://github.com/llaske/sugarizer">https://github.com/llaske/sugarizer</a></div>
+			  <button class="copy-button" onclick="copyToClipboard(this, 'git clone https://github.com/llaske/sugarizer')">
+				<i class="fa-solid fa-copy"></i>
+			  </button>
+			</div>
+			
+			<div class="command-container">
+			  <div class="command">git clone <a href="https://github.com/llaske/sugarizer-server">https://github.com/llaske/sugarizer-server</a></div>
+			  <button class="copy-button" onclick="copyToClipboard(this, 'git clone https://github.com/llaske/sugarizer-server')">
+				<i class="fa-solid fa-copy"></i>
+			  </button>
+			</div>
+			
+			<div class="command-container">
+			  <div class="command">cd sugarizer-server</div>
+			  <button class="copy-button" onclick="copyToClipboard(this, 'cd sugarizer-server')">
+				<i class="fa-solid fa-copy"></i>
+			  </button>
+			</div>
+			
+			<div class="command-container">
+			  <div class="command">sh generate-docker-compose.sh</div>
+			  <button class="copy-button" onclick="copyToClipboard(this, 'sh generate-docker-compose.sh')">
+				<i class="fa-solid fa-copy"></i>
+			  </button>
+			</div>
+			
+			<div class="command-container">
+			  <div class="command">docker-compose up -d</div>
+			  <button class="copy-button" onclick="copyToClipboard(this, 'docker-compose up -d')">
+				<i class="fa-solid fa-copy"></i>
+			  </button>
+			</div>
+		  </div>
+		
+	</div>
 	<span  data-i18n="content-moreinfo">More information</span> <a href="https://github.com/llaske/sugarizer-server"><span  data-i18n="content-here">here</span></a>.
 	<br/>
 	<br/>
@@ -540,5 +572,31 @@ docker-compose up -d
 		document.getElementById("policyurl").href = "docs/articles/policy_" + lang + ".html";
 	}
 </script>
+/* Copy to clipboard */
+<script>
+    function copyToClipboard(button, text) {
+      navigator.clipboard.writeText(text).then(function() {
+        // Visual feedback
+        button.classList.add('copied');
+        
+        // Change SVG to checkmark
+        button.innerHTML = `
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+          </svg>
+        `;
+        
+        // Reset after 2 seconds
+        setTimeout(function() {
+          button.classList.remove('copied');
+          button.innerHTML = `
+		  <i class="fa-solid fa-copy"></i>
+          `;
+        }, 2000);
+      }).catch(function(err) {
+        console.error('Could not copy text: ', err);
+      });
+    }
+  </script>
 </body>
 </html>
