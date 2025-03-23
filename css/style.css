@@ -476,6 +476,64 @@ ul.footer-menu li a:hover {
   .sponsor-btn:hover .sponsor-icon {
 	font-size: 1.8rem;
   }
+
+  /* ------------------
+  commands design
+------------------*/
+.command-line {
+	background-color: #ffffff;
+	padding-bottom: 24px;
+	overflow: auto;
+	font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  }
+  
+  .command-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	position: relative;
+	flex-wrap: nowrap; /* Prevents wrapping */
+  }
+  
+  .command-container:hover {
+	background-color: #f8f9fa;
+  }
+  
+  .command {
+	flex-grow: 1;
+	color: #000000;
+	font-weight: 500;
+	font-size: 14px;
+	white-space: nowrap; /* Prevents text from wrapping */
+	overflow: hidden;
+	text-overflow: ellipsis;
+  }
+  
+  .copy-button {
+	visibility: hidden;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 4px 8px;
+	margin-right: 28px;
+	border-radius: 4px;
+	transition: background-color 0.2s;
+  }
+  
+  .command-container:hover .copy-button {
+	visibility: visible;
+  }
+  
+  .copy-button:hover {
+	background-color: #e9ecef;
+	color: #212529;
+  }
+  
+  .copy-button.copied {
+	color: #28a745;
+  }
 /* ------------------
 Navigation
 ------------------ */
@@ -525,6 +583,16 @@ Custom Media Queries
 		display: contents !important;
 	}
 }
+@media (max-width: 480px) {
+	.command {
+	  font-size: 12px;
+	  max-width: 70%; /* Further reduces width on smaller screens */
+	}
+  
+	.copy-button {
+	  font-size: 12px;
+	}
+  }
 
 @media (max-width: 767px) {
 	.hero-header {
@@ -592,6 +660,20 @@ Custom Media Queries
 	}
 }
 
+@media (max-width: 768px) {
+	.command {
+	  font-size: 14px;
+	  overflow-x: auto; /* Enables horizontal scrolling on small screens */
+	  max-width: 80%; /* Limits the width to avoid breaking */
+	}
+  
+	.copy-button {
+	  margin-right: 10px;
+	  font-size: 14px;
+	}
+  }
+  
+
 
 /* iPad Landscape */
 
@@ -628,3 +710,5 @@ Custom Media Queries
 		font-size: 22px;
 	}
 }
+
+
