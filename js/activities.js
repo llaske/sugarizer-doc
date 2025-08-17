@@ -214,6 +214,9 @@ var app = new Vue({
 			var vm = this;
 			for (let i = 0 ; i < data.length ; i++) {
 				let activity = data[i];
+				if (!activity.id || !activitiesInfo[activity.id]) {
+					continue;
+				}
 				let directory = activity.directory.replace(".activity","").replace("activities/","");
 				activities.push({
 					id: activity.id,
