@@ -75,6 +75,7 @@ const activitiesInfo = {
 	"org.sugarlabs.ChartActivity": {tags: ["math","collaborate"], age: 11},
 	"org.sugarlabs.3DVolume": {tags: ["math","simulate","collaborate"], age: 8},
 	"org.sugarlabs.HumanBody": {tags: ["explore","collaborate"], age: 8},
+	"org.sugarlabs.Stickman": {tags: ["create","simulate","collaborate"], age: 11}
 };
 
 // Rebase require directory
